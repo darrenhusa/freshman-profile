@@ -10,7 +10,8 @@
       <h1>2 - FTFT F1 by Gender</h1>
 
       <div id="app">
-        <example-component></example-component>
+        <pie-chart-component></pie-chart-component>
+        {{-- <example-component></example-component> --}}
       </div>
 
       {{-- <canvas id="hbc"></canvas> --}}
