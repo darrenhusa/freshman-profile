@@ -10,17 +10,19 @@
         //     console.log('Pie Chart Component mounted.')
         // },
 
+        props: ['labels', 'values'],
+
         mounted() {
-          console.log('Inside mounted().')
+          // console.log('Inside mounted().')
 
           new Chart(document.getElementById("pc"), {
               type: 'pie',
               data: {
-                labels: ["Female", "Male"],
+                labels: this.labels,
                 datasets: [{
                   label: "Headcounts in %",
                   backgroundColor: ["blue", "red"],
-                  data: [52, 48]
+                  data: this.values
                 }]
               },
               options: {

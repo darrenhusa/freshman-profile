@@ -10,7 +10,7 @@
       <h1>2 - FTFT F1 by Gender</h1>
 
       <div id="app">
-        <pie-chart-component></pie-chart-component>
+        <pie-chart-component :labels="['Female', 'Male']" :values="[52, 48]"></pie-chart-component>
         {{-- <example-component></example-component> --}}
       </div>
 
