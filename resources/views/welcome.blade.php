@@ -8,6 +8,7 @@
     </head>
     <body>
       <h1>2 - FTFT F1 by Gender</h1>
+      <h3>Headcounts</h3>
 
       <!-- TODO - Fix how to set the chart size????!!!! -->
       <!-- ref = https://stackoverflow.com/questions/37621020/setting-width-and-height -->
@@ -20,20 +21,20 @@
           </horizontal-bar-component>
         </div>
 
+        <h3>Headcounts %</h3>
         <div class="container">
           <pie-chart-component :labels="['Female', 'Male']"
                                :values="[52, 48]">
           </pie-chart-component>
         </div>
 
+        <h3>Headcounts %</h3>
         <div class="container">
           <pie-chart-component :labels="['Female', 'Male']"
                                :values="[75, 25]">
           </pie-chart-component>
         </div>
 
-
-        {{-- <example-component></example-component> --}}
       </div>
 
       <script src="/js/app.js"></script>
