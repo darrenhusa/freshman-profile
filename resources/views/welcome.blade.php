@@ -13,7 +13,7 @@
       <!-- style="position: relative; width:600vw; height:400vh;" -->
 
       <div id="app">
-        <h1>1 - F1 Headcounts by FT/PT Status and Entry-types</h1>
+        <h1 class="text-xl text-indigo-300">1 - F1 Headcounts by FT/PT Status and Entry-types</h1>
 
         <table class="table-auto">
           <thead>
@@ -26,11 +26,6 @@
               <th class="px-4 py-2">FT/PT Percent</th>
             </tr>
           </thead>
-          <tfoot>
-            <tr>
-              <p>Note: FTFT F1 = First-time, Full-time F1 students</p>
-            </tr>
-          </tfoot>
           <tbody>
             <tr>
               <td class="border px-4 py-2">Full-time</td>
@@ -40,7 +35,7 @@
               <td class="border px-4 py-2">{{ 8 + 156 + 6 }}</td>
               <td class="border px-4 py-2">{{ round(100*170/172, 1) }}%</td>
             </tr>
-            <tr lass="bg-gray-100">
+            <tr lass="bg-gray-300">
               <td class="border px-4 py-2">Part-time</td>
               <td class="border px-4 py-2">0</td>
               <td class="border px-4 py-2">2</td>
@@ -57,6 +52,11 @@
               <td class="border px-4 py-2">100.0%</td>
             </tr>
           </tbody>
+          <tfoot>
+            <tr>
+              <p>Note: FTFT F1 = First-time, Full-time F1 students</p>
+            </tr>
+          </tfoot>
         </table>
 
         <h1>2 - FTFT F1 by Gender</h1>
