@@ -9,6 +9,10 @@
     <body>
       <h1>2 - FTFT F1 by Gender</h1>
 
+      <!-- TODO - Fix how to set the chart size????!!!! -->
+      <!-- ref = https://stackoverflow.com/questions/37621020/setting-width-and-height -->
+      <!-- style="position: relative; width:600vw; height:400vh;" -->
+
       <div id="app">
         <div class="container">
           <horizontal-bar-chart-component :labels="['Female', 'Male']"
@@ -21,6 +25,13 @@
                                :values="[52, 48]">
           </pie-chart-component>
         </div>
+
+        <div class="container">
+          <pie-chart-component :labels="['Female', 'Male']"
+                               :values="[75, 25]">
+          </pie-chart-component>
+        </div>
+
 
         {{-- <example-component></example-component> --}}
       </div>
