@@ -36,24 +36,24 @@
               <td>8</td>
               <td>156</td>
               <td>6</td>
-              <td>170</td>
-              <td>%%.%</td>
+              <td>{{ 8 + 156 + 6 }}</td>
+              <td>{{ round(100*170/172, 1) }}%</td>
             </tr>
             <tr>
               <td>Part-time</td>
               <td>0</td>
               <td>2</td>
               <td>0</td>
-              <td>2</td>
-              <td>%%.%</td>
+              <td>{{ 0 + 2 + 0 }}</td>
+              <td>{{ round(100*2/172, 1) }}%</td>
             </tr>
             <tr>
               <td>Total</td>
               <td>8</td>
               <td>158</td>
               <td>6</td>
-              <td>172</td>
-              <td>%%.%</td>
+              <td>{{ 8 + 158 + 6 }}</td>
+              <td>100.0%</td>
             </tr>
           </tbody>
         </table>
