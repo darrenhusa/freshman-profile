@@ -33,22 +33,24 @@
   });
 
 // Pie chart
-  new Chart(document.getElementById("pc"), {
-      type: 'pie',
-      data: {
-        labels: ["Female", "Male"],
-        datasets: [{
-          label: "Headcounts in %",
-          backgroundColor: ["blue", "red"],
-          data: [52, 48]
-        }]
-      },
-      options: {
-        // responsive: true,
-        // maintainAspectRatio: false,
-        title: {
-          display: false,
-          text: 'TITLE'
-        }
-      }
-    });
+  // var context = document.getElementById("pc");
+
+  // new Chart(document.getElementById("pc"), {
+  //     type: 'pie',
+  //     data: {
+  //       labels: ["Female", "Male"],
+  //       datasets: [{
+  //         label: "Headcounts in %",
+  //         backgroundColor: ["blue", "red"],
+  //         data: [52, 48]
+  //       }]
+  //     },
+  //     options: {
+  //       // responsive: true,
+  //       // maintainAspectRatio: false,
+  //       title: {
+  //         display: false,
+  //         text: 'TITLE'
+  //       }
+  //     }
+  //   });
