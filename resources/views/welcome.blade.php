@@ -14,6 +14,50 @@
       <div id="app">
         <h1>1 - F1 Headcounts by FT/PT Status and Entry-types</h1>
 
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Continuing</th>
+              <th>First-time</th>
+              <th>Transfer</th>
+              <th>Total</th>
+              <th>FT/PT Percent</th>
+            </tr>
+          </thead>
+          <tfoot>
+            <tr>
+              <p>Note: FTFT F1 = First-time, Full-time F1 students</p>
+            </tr>
+          </tfoot>
+          <tbody>
+            <tr>
+              <td>Full-time</td>
+              <td>8</td>
+              <td>156</td>
+              <td>6</td>
+              <td>170</td>
+              <td>%%.%</td>
+            </tr>
+            <tr>
+              <td>Part-time</td>
+              <td>0</td>
+              <td>2</td>
+              <td>0</td>
+              <td>2</td>
+              <td>%%.%</td>
+            </tr>
+            <tr>
+              <td>Total</td>
+              <td>8</td>
+              <td>158</td>
+              <td>6</td>
+              <td>172</td>
+              <td>%%.%</td>
+            </tr>
+          </tbody>
+        </table>
+
         <h1>2 - FTFT F1 by Gender</h1>
         <h3>Headcounts</h3>
 
