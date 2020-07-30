@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Fall 2020 Freshman Profile</title>
         {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script> --}}
+        <link rel="stylesheet" href="\css\app.css">
     </head>
     <body>
       <!-- TODO - Fix how to set the chart size????!!!! -->
@@ -14,15 +15,15 @@
       <div id="app">
         <h1>1 - F1 Headcounts by FT/PT Status and Entry-types</h1>
 
-        <table>
+        <table class="table-auto">
           <thead>
             <tr>
-              <th></th>
-              <th>Continuing</th>
-              <th>First-time</th>
-              <th>Transfer</th>
-              <th>Total</th>
-              <th>FT/PT Percent</th>
+              <th class="px-4 py-2"></th>
+              <th class="px-4 py-2">Continuing</th>
+              <th class="px-4 py-2">First-time</th>
+              <th class="px-4 py-2">Transfer</th>
+              <th class="px-4 py-2">Total</th>
+              <th class="px-4 py-2">FT/PT Percent</th>
             </tr>
           </thead>
           <tfoot>
@@ -32,28 +33,28 @@
           </tfoot>
           <tbody>
             <tr>
-              <td>Full-time</td>
-              <td>8</td>
-              <td>156</td>
-              <td>6</td>
-              <td>{{ 8 + 156 + 6 }}</td>
-              <td>{{ round(100*170/172, 1) }}%</td>
+              <td class="border px-4 py-2">Full-time</td>
+              <td class="border px-4 py-2">8</td>
+              <td class="border px-4 py-2">156</td>
+              <td class="border px-4 py-2">6</td>
+              <td class="border px-4 py-2">{{ 8 + 156 + 6 }}</td>
+              <td class="border px-4 py-2">{{ round(100*170/172, 1) }}%</td>
+            </tr>
+            <tr lass="bg-gray-100">
+              <td class="border px-4 py-2">Part-time</td>
+              <td class="border px-4 py-2">0</td>
+              <td class="border px-4 py-2">2</td>
+              <td class="border px-4 py-2">0</td>
+              <td class="border px-4 py-2">{{ 0 + 2 + 0 }}</td>
+              <td class="border px-4 py-2">{{ round(100*2/172, 1) }}%</td>
             </tr>
             <tr>
-              <td>Part-time</td>
-              <td>0</td>
-              <td>2</td>
-              <td>0</td>
-              <td>{{ 0 + 2 + 0 }}</td>
-              <td>{{ round(100*2/172, 1) }}%</td>
-            </tr>
-            <tr>
-              <td>Total</td>
-              <td>8</td>
-              <td>158</td>
-              <td>6</td>
-              <td>{{ 8 + 158 + 6 }}</td>
-              <td>100.0%</td>
+              <td class="border px-4 py-2">Total</td>
+              <td class="border px-4 py-2">8</td>
+              <td class="border px-4 py-2">158</td>
+              <td class="border px-4 py-2">6</td>
+              <td class="border px-4 py-2">{{ 8 + 158 + 6 }}</td>
+              <td class="border px-4 py-2">100.0%</td>
             </tr>
           </tbody>
         </table>
