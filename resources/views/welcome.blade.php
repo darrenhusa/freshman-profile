@@ -10,19 +10,21 @@
       <h1>2 - FTFT F1 by Gender</h1>
 
       <div id="app">
-        <pie-chart-component :labels="['Female', 'Male']" :values="[52, 48]"></pie-chart-component>
+        <div class="container">
+          <horizontal-bar-chart-component :labels="['Female', 'Male']"
+                                          :values="[71, 53]">
+          </horizontal-bar-component>
+        </div>
+
+        <div class="container">
+          <pie-chart-component :labels="['Female', 'Male']"
+                               :values="[52, 48]">
+          </pie-chart-component>
+        </div>
+
         {{-- <example-component></example-component> --}}
       </div>
 
-      {{-- <canvas id="hbc"></canvas> --}}
-      {{-- <canvas id="pc"></canvas>         --}}
-
-      {{-- <canvas id="pc" width="1600" height="900"></canvas> --}}
-
-      {{-- <canvas id="hbc" width="1600" height="900"></canvas> --}}
-      {{-- <canvas id="pc" width="1600" height="900"></canvas> --}}
-
-      {{-- <script src="/js/ccsj-sample-charts.js"></script> --}}
       <script src="/js/app.js"></script>
     </body>
 </html>

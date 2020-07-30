@@ -1,5 +1,5 @@
 <template>
-  <canvas id="pc" width="600" height="400"></canvas>
+  <canvas ref="canvas" width="600" height="400"></canvas>
 </template>
 
 <script>
@@ -15,7 +15,7 @@
         mounted() {
           // console.log('Inside mounted().')
 
-          new Chart(document.getElementById("pc"), {
+          new Chart(this.$refs.canvas, {
               type: 'pie',
               data: {
                 labels: this.labels,
