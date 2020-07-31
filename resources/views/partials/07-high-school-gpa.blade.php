@@ -9,6 +9,10 @@
     </horizontal-bar-component>
   </div>
 
+  <div class="note mt-5">
+    <h4 class="italic"><span class="underline">Note</span>: FTFT F1 = First-time, Full-time F1 students</h4>
+  </div>
+
   <div class="source mt-5">
     <h4 class="italic"><span class="underline">Source</span>: Slate CRM</h4>
   </div>
@@ -18,6 +22,10 @@
     <pie-chart-component :labels="['1.0 to 2.0', '2.01 to 3.0', '3.01 and above']"
                          :values="[21, 52, 27]">
     </pie-chart-component>
+  </div>
+
+  <div class="note mt-5">
+    <h4 class="italic"><span class="underline">Note</span>: FTFT F1 = First-time, Full-time F1 students</h4>
   </div>
 
   <div class="source mt-5">

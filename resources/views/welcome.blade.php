@@ -16,8 +16,6 @@
 
         <h1>Fall 2020 CCSJ Freshman Profile</h1>
 
-        <p>TODO - FOR ALL DATA ITEMS -- INDICATE DATA SOURCE AS EMPOWER SR OR SLATE CRM!!!!!</p>
-
         <p>TODO - EXPERIMENT WITH IMAGE DIMENSIONS!!!</p>
         <p>TODO - EXPERIMENT WITH CHART LABEL FORMATTING - BOLD, CHANGE COLOR</p>
 
@@ -38,6 +36,7 @@
         {{-- @include('partials.09-top-recruiting-sources') --}}
 
         {{-- TODO 10 = FTFT F1 by first major --}}
+        @include('partials.10-top-majors')
 
       </div>
 

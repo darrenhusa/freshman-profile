@@ -11,30 +11,31 @@
           <th class="px-4 py-2">Percentage (%)</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody class="text-right">
         <tr>
-          <td class="border px-4 py-2">Indiana</td>
+          <td class="border px-4 py-2 text-left">Indiana</td>
           <td class="border px-4 py-2">97</td>
           <td class="border px-4 py-2">{{ round(100*97/160, 1) }}%</td>
         </tr>
         <tr class="bg-gray-200">
-          <td class="border px-4 py-2">Illinois</td>
+          <td class="border px-4 py-2 text-left">Illinois</td>
           <td class="border px-4 py-2">52</td>
           <td class="border px-4 py-2">{{ round(100*52/160, 1) }}%</td>
         </tr>
         <tr>
-          <td class="border px-4 py-2">Out-of-State</td>
+          <td class="border px-4 py-2 text-left">Out-of-State</td>
           <td class="border px-4 py-2">11</td>
           <td class="border px-4 py-2">{{ round(100*11/160, 1) }}%</td>
         </tr>
         <tr class="bg-gray-200">
-          <td class="border px-4 py-2">Total</td>
+          <td class="border px-4 py-2 text-left">Total</td>
           <td class="border px-4 py-2">{{ 97 + 52 + 11 }}</td>
           <td class="border px-4 py-2">100%</td>
         </tr>
       </tbody>
     </table>
-    <div class="note">
+    
+    <div class="note mt-5">
       <h4 class="italic"><span class="underline">Note</span>: FTFT F1 = First-time, Full-time F1 students</h4>
     </div>
 

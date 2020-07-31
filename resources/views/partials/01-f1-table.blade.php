@@ -12,9 +12,9 @@
           <th class="px-4 py-2">FT/PT Percent</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody class="text-right">
         <tr>
-          <td class="border px-4 py-2">Full-time</td>
+          <td class="border px-4 py-2 text-left">Full-time</td>
           <td class="border px-4 py-2">8</td>
           <td class="border px-4 py-2">156</td>
           <td class="border px-4 py-2">6</td>
@@ -22,7 +22,7 @@
           <td class="border px-4 py-2">{{ round(100*170/172, 1) }}%</td>
         </tr>
         <tr class="bg-gray-200">
-          <td class="border px-4 py-2">Part-time</td>
+          <td class="border px-4 py-2 text-left">Part-time</td>
           <td class="border px-4 py-2">0</td>
           <td class="border px-4 py-2">2</td>
           <td class="border px-4 py-2">0</td>
@@ -30,7 +30,7 @@
           <td class="border px-4 py-2">{{ round(100*2/172, 1) }}%</td>
         </tr>
         <tr>
-          <td class="border px-4 py-2">Total</td>
+          <td class="border px-4 py-2 text-left">Total</td>
           <td class="border px-4 py-2">8</td>
           <td class="border px-4 py-2">158</td>
           <td class="border px-4 py-2">6</td>
@@ -39,9 +39,7 @@
         </tr>
       </tbody>
     </table>
-    <div class="note">
-      <h4 class="italic"><span class="underline">Note</span>: FTFT F1 = First-time, Full-time F1 students</h4>
-    </div>
+
     <div class="source mt-5">
       <h4 class="italic"><span class="underline">Source</span>: Empower Student Records (SR)</h4>
     </div>

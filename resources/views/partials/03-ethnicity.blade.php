@@ -9,6 +9,10 @@
     </horizontal-bar-component>
   </div>
 
+  <div class="note mt-5">
+    <h4 class="italic"><span class="underline">Note</span>: FTFT F1 = First-time, Full-time F1 students</h4>
+  </div>
+
   <div class="source mt-5">
     <h4 class="italic"><span class="underline">Source</span>: Empower Student Records (SR)</h4>
   </div>
@@ -18,6 +22,10 @@
     <pie-chart-component :labels="['Black or African American', 'Hispanics of any race', 'White', 'Other']"
                          :values="[9.6, 16.7, 5.1, 68.6]">
     </pie-chart-component>
+  </div>
+
+  <div class="note mt-5">
+    <h4 class="italic"><span class="underline">Note</span>: FTFT F1 = First-time, Full-time F1 students</h4>
   </div>
 
   <div class="source mt-5">
