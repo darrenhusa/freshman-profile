@@ -44,14 +44,17 @@
           <td class="border px-4 py-2">100%</td>
         </tr>
       </tbody>
-    </table>
+    </table>  --}}
+
+    <img src="/images/top-majors-data.png" alt="">
+
     <div class="note mt-5">
       <h4 class="italic"><span class="underline">Note</span>: FTFT F1 = First-time, Full-time F1 students</h4>
     </div>
 
     <div class="source mt-5">
       <h4 class="italic"><span class="underline">Source</span>: Slate CRM</h4>
-    </div> --}}
+    </div>
 
   </div>
 </div>

@@ -33,7 +33,7 @@
         @include('partials.08c')
 
         {{-- TODO --}}
-        {{-- @include('partials.09-top-recruiting-sources') --}}
+        @include('partials.09-top-recruiting-sources')
 
         {{-- TODO 10 = FTFT F1 by first major --}}
         @include('partials.10-top-majors')

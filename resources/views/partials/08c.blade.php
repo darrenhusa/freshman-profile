@@ -11,7 +11,7 @@
           <th class="px-4 py-2">Percentage (%)</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody class="text-right">
         <tr>
           <td class="border px-4 py-2 text-left">Hammond</td>
           <td class="border px-4 py-2">27</td>
