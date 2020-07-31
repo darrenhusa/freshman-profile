@@ -20,7 +20,7 @@
               datasets: [
                 {
                   label: "Headcounts",
-                  backgroundColor: ["blue", "red"],
+                  backgroundColor: ['blue', 'red', 'purple', 'lime'],
                   data: this.values
                 }
               ]

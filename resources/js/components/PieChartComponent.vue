@@ -1,6 +1,6 @@
 <template>
-  <canvas ref="canvas"></canvas>
-  <!-- <canvas ref="canvas" width="600" height="400"></canvas> -->
+  <!-- <canvas ref="canvas"></canvas> -->
+  <canvas ref="canvas" width="300" height="200"></canvas>
 </template>
 
 <script>
@@ -20,7 +20,7 @@
                 labels: this.labels,
                 datasets: [{
                   label: "Headcounts in %",
-                  backgroundColor: ["blue", "red"],
+                  backgroundColor: ['blue', 'red', 'purple', 'lime'],
                   data: this.values
                 }]
               },
