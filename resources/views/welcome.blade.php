@@ -29,7 +29,15 @@
         @include('partials.05-athletic-status')
         @include('partials.06-zero-efc')
         @include('partials.07-high-school-gpa')
-        @include('partials.08-primary-residence')
+        {{-- 08 = FTFT F1 by primary-residence --}}
+        @include('partials.08a')
+        @include('partials.08b')
+        @include('partials.08c')
+
+        {{-- TODO --}}
+        {{-- @include('partials.09-top-recruiting-sources') --}}
+
+        {{-- TODO 10 = FTFT F1 by first major --}}
 
       </div>
 
