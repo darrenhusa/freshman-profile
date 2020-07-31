@@ -40,6 +40,10 @@
       </tbody>
     </table>
 
+    <div class="note mt-5">
+      <h4 class="italic"><span class="underline">Note</span>: F1 = Freshman (First-semester) students</h4>
+    </div>
+
     <div class="source mt-5">
       <h4 class="italic"><span class="underline">Source</span>: Empower Student Records (SR)</h4>
     </div>

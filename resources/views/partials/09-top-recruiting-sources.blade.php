@@ -3,6 +3,7 @@
   <h1 class="text-xl font-bold">09</h1>
   <h2>Top Recruiting Sources for FTFT F1 Students</h2>
   <div class="table-container ml-10">
+{{--
     <table class="table-auto">
       <thead>
         <tr>
@@ -50,7 +51,7 @@
 
     <div class="source mt-5">
       <h4 class="italic"><span class="underline">Source</span>: Slate CRM</h4>
-    </div>
+    </div> --}}
 
   </div>
 </div>
