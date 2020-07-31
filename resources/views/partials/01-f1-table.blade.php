@@ -39,8 +39,11 @@
         </tr>
       </tbody>
     </table>
-    <div class="my-5">
+    <div class="note">
       <h4 class="italic"><span class="underline">Note</span>: FTFT F1 = First-time, Full-time F1 students</h4>
+    </div>
+    <div class="source mt-5">
+      <h4 class="italic"><span class="underline">Source</span>: Empower Student Records (SR)</h4>
     </div>
   </div>
 </div>

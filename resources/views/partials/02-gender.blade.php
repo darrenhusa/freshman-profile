@@ -9,11 +9,19 @@
     </horizontal-bar-component>
   </div>
 
+  <div class="source mt-5">
+    <h4 class="italic"><span class="underline">Source</span>: Empower Student Records (SR)</h4>
+  </div>
+
   <h3>Headcounts %</h3>
   <div class="pc-container">
     <pie-chart-component :labels="['Female', 'Male']"
                          :values="[52, 48]">
     </pie-chart-component>
+  </div>
+
+  <div class="source mt-5">
+    <h4 class="italic"><span class="underline">Source</span>: Empower Student Records (SR)</h4>
   </div>
 
 </div>
