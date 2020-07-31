@@ -20,7 +20,7 @@
 
         <p>TODO - EXPERIMENT WITH IMAGE DIMENSIONS!!!</p>
         <p>TODO - EXPERIMENT WITH CHART LABEL FORMATTING - BOLD, CHANGE COLOR</p>
-        
+
         @include('partials.01-f1-table')
         @include('partials.02-gender')
         @include('partials.03-ethnicity')
@@ -29,14 +29,7 @@
         @include('partials.05-athletic-status')
         @include('partials.06-zero-efc')
         @include('partials.07-high-school-gpa')
-
-  {{-- <h1>8</h1>
-  <p>FTFT F1 by State of Primary Residence</p>
-  <p>FTFT F1 Indiana Residents by County</p>
-  <p>FTFT F1 Lake County Residents by City</p>
-
-  <h1>9</h1>
-  <p>Top Recruiting Sources for FTFT F1 Students</p> --}}
+        @include('partials.08-primary-residence')
 
       </div>
 
