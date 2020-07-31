@@ -5,11 +5,9 @@
 
 <script>
     import Chart from 'chart.js';
+    import ChartDataLabels from 'chartjs-plugin-datalabels';
 
     export default {
-        // mounted() {
-        //     console.log('Pie Chart Component mounted.')
-        // },
 
         props: ['labels', 'values'],
 
@@ -27,8 +25,8 @@
                 }]
               },
               options: {
-                // responsive: true,
-                // maintainAspectRatio: false,
+                responsive: true,
+                maintainAspectRatio: false,
                 title: {
                   display: false,
                   text: 'TITLE'

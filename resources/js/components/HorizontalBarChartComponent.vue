@@ -7,9 +7,6 @@
     import Chart from 'chart.js';
 
     export default {
-        // mounted() {
-        //     console.log('Pie Chart Component mounted.')
-        // },
 
         props: ['labels', 'values'],
 
@@ -39,8 +36,8 @@
                         stacked: true
                     }]
                 },
-              // responsive: true,
-              // maintainAspectRatio: false,
+              responsive: true,
+              maintainAspectRatio: false,
               legend: { display: false },
               title: {
                 display: false,
