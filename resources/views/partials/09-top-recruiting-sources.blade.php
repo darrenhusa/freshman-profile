@@ -46,8 +46,6 @@
       </tbody>
     </table>  --}}
 
-    <img src="/images/top-majors-data.png" alt="">
-
     <div class="note mt-5">
       <h4 class="italic"><span class="underline">Note</span>: FTFT F1 = First-time, Full-time F1 students</h4>
     </div>

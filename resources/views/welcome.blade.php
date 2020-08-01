@@ -16,9 +16,6 @@
 
         <h1>Fall 2020 CCSJ Freshman Profile</h1>
 
-        <p>TODO - EXPERIMENT WITH IMAGE DIMENSIONS!!!</p>
-        <p>TODO - EXPERIMENT WITH CHART LABEL FORMATTING - BOLD, CHANGE COLOR</p>
-
         @include('partials.01-f1-table')
         @include('partials.02-gender')
         @include('partials.03-ethnicity')
@@ -37,6 +34,9 @@
 
         {{-- TODO 10 = FTFT F1 by first major --}}
         @include('partials.10-top-majors')
+
+        <p>TODO - EXPERIMENT WITH IMAGE DIMENSIONS!!!</p>
+        <p>TODO - EXPERIMENT WITH CHART LABEL FORMATTING - BOLD, CHANGE COLOR</p>
 
       </div>
 
