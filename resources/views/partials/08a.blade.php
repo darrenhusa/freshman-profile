@@ -43,7 +43,7 @@
       </ul>
     </div>
 
-    <div class="source mt-5">
+    <div class="source mt-3">
       <h4 class="italic"><span class="underline">Source</span>: Slate CRM</h4>
     </div>
 
@@ -51,7 +51,6 @@
       <h4 class="italic text-red-500"><span class="underline">Data Anomalies/Irregularities</span>:</h4>
       <p>There are some data anomalies/discrepancies between Slate CRM records and Empower SR records which account for the difference between the FTFT F1 totals.</p>
     </div>
-
 
   </div>
 </div>

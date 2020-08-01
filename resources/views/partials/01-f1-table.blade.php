@@ -47,5 +47,10 @@
     <div class="source mt-2">
       <h4 class="italic"><span class="underline">Source</span>: Empower Student Records (SR)</h4>
     </div>
+
+    <div class="caveat mt-5">
+      <h4 class="italic text-red-500"><span class="underline">Data Anomalies/Irregularities</span>:</h4>
+      <p>There are some data anomalies/discrepancies between Slate CRM records and Empower SR records which account for the difference between the FTFT F1 totals.</p>
+    </div>
   </div>
 </div>
