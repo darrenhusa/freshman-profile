@@ -32,11 +32,12 @@
         {{-- TODO --}}
         @include('partials.09-top-recruiting-sources')
 
-        {{-- TODO 10 = FTFT F1 by first major --}}
         @include('partials.10-top-majors')
 
-        <p>TODO - EXPERIMENT WITH IMAGE DIMENSIONS!!!</p>
-        <p>TODO - EXPERIMENT WITH CHART LABEL FORMATTING - BOLD, CHANGE COLOR</p>
+        <div class="container ml-5 italic my-10">
+          <p>TODO - EXPERIMENT WITH IMAGE DIMENSIONS!!!</p>
+          <p>TODO - EXPERIMENT WITH CHART LABEL FORMATTING - BOLD, CHANGE COLOR</p>
+        </div>
 
       </div>
 

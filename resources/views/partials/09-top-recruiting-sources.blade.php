@@ -2,6 +2,10 @@
 
   <h1 class="text-xl font-bold">09</h1>
   <h2>Top Recruiting Sources for FTFT F1 Students</h2>
+
+  <p class="text-red-500 font-bold mt-5">TODO - ADD THE HIGH SCHOOL NAME DATA!</p>
+  <p class="text-red-500 font-bold">TODO - INVESTIGATE DATA ISSUES!!!!</p>
+
   <div class="table-container ml-10">
 {{--
     <table class="table-auto">

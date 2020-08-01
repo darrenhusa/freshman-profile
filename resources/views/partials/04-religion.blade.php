@@ -1,6 +1,8 @@
 <div class="item-container ml-5 mt-5">
   <h1 class="text-xl font-bold">04 - FTFT F1 by Religion</h1>
 
+  <h1 class="text-red-500 font-bold">TODO - CHECK THE ACCURACY OF THE RELIGION DATA.</h1>
+
   <h3>Headcounts</h3>
 
   <div class="hbc-container">

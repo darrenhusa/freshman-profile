@@ -16,7 +16,7 @@
         <tr>
           <td class="border px-4 py-2 text-left">Full-time (FT)</td>
           <td class="border px-4 py-2">8</td>
-          <td class="border px-4 py-2">156</td>
+          <td class="border px-4 py-2"><span class="text-red-500 font-bold">156</span></td>
           <td class="border px-4 py-2">6</td>
           <td class="border px-4 py-2">{{ 8 + 156 + 6 }}</td>
           <td class="border px-4 py-2">{{ round(100*170/172, 1) }}%</td>

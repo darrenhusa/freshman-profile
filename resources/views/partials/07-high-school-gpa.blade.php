@@ -32,7 +32,7 @@
     <h4 class="italic"><span class="underline">Source</span>: Slate CRM</h4>
   </div>
 
-  <p>TODO - ADD THE TOTAL COUNT WITH HS GPA!</p>
-  <p>TODO - ADD THE AVERAGE HS GPA!</p>
+  <p class="text-red-500 font-bold">TODO - ADD THE TOTAL COUNT WITH HS GPA!</p>
+  <p class="text-red-500 font-bold">TODO - ADD THE AVERAGE HS GPA!</p>
 
 </div>

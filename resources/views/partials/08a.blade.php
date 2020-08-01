@@ -1,7 +1,7 @@
 <div class="item-container ml-5 mt-5">
 
   <h1 class="text-xl font-bold">08</h1>
-  <h2>FTFT F1 by State of Primary Residence</h2>
+  <h2>A) FTFT F1 by State of Primary Residence</h2>
   <div class="table-container ml-10">
     <table class="table-auto">
       <thead>
@@ -29,7 +29,7 @@
         </tr>
         <tr class="bg-gray-200">
           <td class="border px-4 py-2 text-left">Total</td>
-          <td class="border px-4 py-2">{{ 97 + 52 + 11 }}</td>
+          <td class="border px-4 py-2"><span class="text-red-500 font-bold">{{ 97 + 52 + 11 }}</span></td>
           <td class="border px-4 py-2">100%</td>
         </tr>
       </tbody>
