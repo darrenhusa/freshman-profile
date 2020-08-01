@@ -14,7 +14,7 @@
 
       <div id="app">
 
-        <h1>Fall 2020 CCSJ Freshman Profile</h1>
+        <h1 class="ml-5 mt-5 text-2xl font-bold">Fall 2020 CCSJ Freshman Profile</h1>
 
         @include('partials.01-f1-table')
         @include('partials.02-gender')

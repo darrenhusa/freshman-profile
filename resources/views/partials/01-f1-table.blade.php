@@ -1,6 +1,6 @@
-<div class="item-container ml-5 mt-5">
+<div class="item-container ml-10 mt-8">
   <h1 class="text-xl font-bold">01 - F1 Headcounts by FT/PT Status and Entry-types</h1>
-  <div class="table-container ml-10">
+  <div class="table-container ml-10 mt-5">
     <table class="table-auto">
       <thead>
         <tr>
@@ -14,7 +14,7 @@
       </thead>
       <tbody class="text-right">
         <tr>
-          <td class="border px-4 py-2 text-left">Full-time</td>
+          <td class="border px-4 py-2 text-left">Full-time (FT)</td>
           <td class="border px-4 py-2">8</td>
           <td class="border px-4 py-2">156</td>
           <td class="border px-4 py-2">6</td>
@@ -22,7 +22,7 @@
           <td class="border px-4 py-2">{{ round(100*170/172, 1) }}%</td>
         </tr>
         <tr class="bg-gray-200">
-          <td class="border px-4 py-2 text-left">Part-time</td>
+          <td class="border px-4 py-2 text-left">Part-time (PT)</td>
           <td class="border px-4 py-2">0</td>
           <td class="border px-4 py-2">2</td>
           <td class="border px-4 py-2">0</td>
@@ -44,7 +44,7 @@
       <h4 class="italic"><span class="underline">Note</span>: F1 = Freshman (First-semester) students</h4>
     </div>
 
-    <div class="source mt-5">
+    <div class="source mt-2">
       <h4 class="italic"><span class="underline">Source</span>: Empower Student Records (SR)</h4>
     </div>
   </div>

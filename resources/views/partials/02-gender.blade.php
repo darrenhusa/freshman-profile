@@ -1,4 +1,4 @@
-<div class="item-container ml-5 mt-5">
+<div class="item-container ml-5 mt-8">
   <h1 class="text-xl font-bold">02 - FTFT F1 by Gender</h1>
 
   <h3>Headcounts</h3>
@@ -28,7 +28,7 @@
     <h4 class="italic"><span class="underline">Note</span>: FTFT F1 = First-time, Full-time F1 students</h4>
   </div>
 
-  <div class="source mt-5">
+  <div class="source mt-3">
     <h4 class="italic"><span class="underline">Source</span>: Empower Student Records (SR)</h4>
   </div>
 
