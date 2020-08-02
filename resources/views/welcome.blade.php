@@ -15,7 +15,7 @@
       <div id="app">
 
         <h1 class="ml-5 mt-5 text-2xl font-bold">Fall 2020 CCSJ Freshman Profile</h1>
-
+        <h3 class="ml-5 italic">(as of August 3, 2020 at 8:00 AM)</h3>
         @include('partials.01-f1-table')
         @include('partials.02-gender')
         @include('partials.03-ethnicity')

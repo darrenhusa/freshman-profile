@@ -1,11 +1,11 @@
 <div class="item-container ml-5 mt-5">
   <h1 class="text-xl font-bold">04 - FTFT F1 by Religion</h1>
 
-  <h1 class="text-red-500 font-bold">TODO - CHECK THE ACCURACY OF THE RELIGION DATA.</h1>
+  <h1 class="text-red-500 font-bold">TODO - INVESTIGATE ISSUES WITH THE RELIGION DATA.</h1>
 
   <h3>Headcounts</h3>
 
-  <div class="hbc-container">
+  {{-- <div class="hbc-container">
     <horizontal-bar-chart-component :labels="['Catholic', 'Other']"
                                     :values="[71, 53]">
     </horizontal-bar-component>
@@ -17,10 +17,11 @@
 
   <div class="source mt-5">
     <h4 class="italic"><span class="underline">Source</span>: Empower Student Records (SR)</h4>
-  </div>
+  </div> --}}
 
   <h3>Headcounts %</h3>
-  <div class="pc-container">
+
+  {{-- <div class="pc-container">
     <pie-chart-component :labels="['Catholic', 'Other']"
                          :values="[52, 48]">
     </pie-chart-component>
@@ -32,6 +33,6 @@
 
   <div class="source mt-5">
     <h4 class="italic"><span class="underline">Source</span>: Empower Student Records (SR)</h4>
-  </div>
+  </div> --}}
 
 </div>
