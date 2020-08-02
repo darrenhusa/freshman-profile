@@ -1,4 +1,4 @@
-<div class="item-container ml-5 mt-5">
+<div class="item-container mt-5">
   <h1 class="text-xl font-bold">05 - FTFT F1 by Athletic-Status</h1>
 
   <h3>Headcounts</h3>

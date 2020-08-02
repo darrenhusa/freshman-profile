@@ -1,4 +1,4 @@
-<div class="item-container ml-5 mt-5">
+<div class="item-container mt-5">
   <h1 class="text-xl font-bold">06 - FTFT F1 by Zero EFC Status</h1>
 
   <h3>Headcounts</h3>

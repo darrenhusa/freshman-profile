@@ -1,4 +1,4 @@
-<div class="item-container ml-5 mt-5">
+<div class="item-container mt-5">
   <h1 class="text-xl font-bold">04 - FTFT F1 by Religion</h1>
 
   <h1 class="text-red-500 font-bold">TODO - INVESTIGATE ISSUES WITH THE RELIGION DATA.</h1>

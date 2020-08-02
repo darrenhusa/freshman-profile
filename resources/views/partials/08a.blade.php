@@ -1,4 +1,4 @@
-<div class="item-container ml-5 mt-5">
+<div class="item-container mt-5">
 
   <h1 class="text-xl font-bold">08</h1>
   <h2>A) FTFT F1 by State of Primary Residence</h2>

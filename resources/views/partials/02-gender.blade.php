@@ -1,4 +1,4 @@
-<div class="item-container ml-5 mt-8">
+<div class="item-container mt-8">
   <h1 class="text-xl font-bold">02 - FTFT F1 by Gender</h1>
 
   <h3>Headcounts</h3>
