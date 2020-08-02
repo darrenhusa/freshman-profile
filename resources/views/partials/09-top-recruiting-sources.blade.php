@@ -62,7 +62,7 @@
           <td class="border px-4 py-2 text-left">All Remaining High Schools</td>
           <td class="border px-4 py-2">{{ (142-8-8-6-6-5-5) }}</td>
           <td class="border px-4 py-2">{{ round(100*((142-8-8-6-6-5-5))/142, 0) }}%</td>
-          <td class="border px-4 py-2">5</td>
+          <td class="border px-4 py-2">--</td>
         </tr>
         <tr class="bg-gray-200">
           <td class="border px-4 py-2 text-left">Grand Total</td>

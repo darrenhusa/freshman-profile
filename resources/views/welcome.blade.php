@@ -35,6 +35,9 @@
         @include('partials.10-top-majors')
 
         <div class="container ml-5 italic my-10">
+          <p>TODO - ADD INTERNATIONAL STUDENTS CODE!!!</p>
+          <p>TODO - ADD PYTHON CODE TO GET HS GPA RESULTS!!!</p>
+
           <p>TODO - EXPERIMENT WITH IMAGE DIMENSIONS!!!</p>
           <p>TODO - EXPERIMENT WITH CHART LABEL FORMATTING - BOLD, CHANGE COLOR</p>
         </div>
