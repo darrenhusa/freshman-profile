@@ -15,26 +15,26 @@
       <tbody class="text-right">
         <tr>
           <td class="border px-4 py-2 text-left">Full-time (FT)</td>
-          <td class="border px-4 py-2">8</td>
-          <td class="border px-4 py-2"><span class="text-red-500 font-bold">156</span></td>
+          <td class="border px-4 py-2">9</td>
+          <td class="border px-4 py-2"><span class="text-red-500 font-bold">157</span></td>
           <td class="border px-4 py-2">6</td>
-          <td class="border px-4 py-2">{{ 8 + 156 + 6 }}</td>
-          <td class="border px-4 py-2">{{ round(100*170/172, 1) }}%</td>
+          <td class="border px-4 py-2">{{ 9 + 157 + 6 }}</td>
+          <td class="border px-4 py-2">{{ round(100*172/175, 1) }}%</td>
         </tr>
         <tr class="bg-gray-200">
           <td class="border px-4 py-2 text-left">Part-time (PT)</td>
           <td class="border px-4 py-2">0</td>
-          <td class="border px-4 py-2">2</td>
+          <td class="border px-4 py-2">3</td>
           <td class="border px-4 py-2">0</td>
-          <td class="border px-4 py-2">{{ 0 + 2 + 0 }}</td>
-          <td class="border px-4 py-2">{{ round(100*2/172, 1) }}%</td>
+          <td class="border px-4 py-2">{{ 0 + 3 + 0 }}</td>
+          <td class="border px-4 py-2">{{ round(100*3/175, 1) }}%</td>
         </tr>
         <tr>
           <td class="border px-4 py-2 text-left">Total</td>
-          <td class="border px-4 py-2">8</td>
-          <td class="border px-4 py-2">158</td>
+          <td class="border px-4 py-2">9</td>
+          <td class="border px-4 py-2">160</td>
           <td class="border px-4 py-2">6</td>
-          <td class="border px-4 py-2">{{ 8 + 158 + 6 }}</td>
+          <td class="border px-4 py-2">{{ 9 + 160 + 6 }}</td>
           <td class="border px-4 py-2">100.0%</td>
         </tr>
       </tbody>
