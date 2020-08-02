@@ -5,7 +5,7 @@
 
   <div class="hbc-container">
     <horizontal-bar-chart-component :labels="['Athlete', 'Non-Athlete']"
-                                    :values="[54, 102]">
+                                    :values="[55, 102]">
     </horizontal-bar-component>
   </div>
 

@@ -80,13 +80,13 @@
           <td class="border px-4 py-2">Total (from top 10)</td>
           <td class="border px-4 py-2">142</td>
           <td class="border px-4 py-2">{{ round(100*142/157, 0) }}%</td>
-          <td class="border px-4 py-2"></td>
+          <td class="border px-4 py-2">--</td>
         </tr>
         <tr class="bg-gray-200">
           <td class="border px-4 py-2">Grand Total (from all FTFT F1)</td>
           <td class="border px-4 py-2">157</td>
           <td class="border px-4 py-2">100%</td>
-          <td class="border px-4 py-2"></td>
+          <td class="border px-4 py-2">--</td>
         </tr>
       </tbody>
     </table>
