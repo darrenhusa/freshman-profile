@@ -1,9 +1,10 @@
 <div class="item-container ml-5 mt-5">
 
-  {{-- TODO - check data!!!! --}}
-
   {{-- <h1 class="text-xl font-bold">08</h1> --}}
   <h2>B) FTFT F1 Indiana Residents by County</h2>
+
+  <h3>TODO - Add query definitions</h3>
+
   <div class="table-container ml-10">
     <table class="table-auto">
       <thead>
@@ -16,22 +17,22 @@
       <tbody class="text-right">
         <tr>
           <td class="border px-4 py-2 text-left">Lake</td>
-          <td class="border px-4 py-2">84</td>
-          <td class="border px-4 py-2">{{ round(100*84/97, 0) }}%</td>
+          <td class="border px-4 py-2">81</td>
+          <td class="border px-4 py-2">{{ round(100*81/94, 1) }}%</td>
         </tr>
         <tr class="bg-gray-200">
           <td class="border px-4 py-2 text-left">Porter</td>
           <td class="border px-4 py-2">6</td>
-          <td class="border px-4 py-2">{{ round(100*6/97, 0) }}%</td>
+          <td class="border px-4 py-2">{{ round(100*6/94, 1) }}%</td>
         </tr>
         <tr>
           <td class="border px-4 py-2 text-left">Other</td>
           <td class="border px-4 py-2">7</td>
-          <td class="border px-4 py-2">{{ round(100*7/97, 0) }}%</td>
+          <td class="border px-4 py-2">{{ round(100*7/94, 1) }}%</td>
         </tr>
         <tr class="bg-gray-200">
           <td class="border px-4 py-2 text-left">Total</td>
-          <td class="border px-4 py-2">{{ 84 + 6 + 7 }}</td>
+          <td class="border px-4 py-2">{{ 81 + 6 + 7 }}</td>
           <td class="border px-4 py-2">100%</td>
         </tr>
       </tbody>

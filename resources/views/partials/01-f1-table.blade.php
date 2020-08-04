@@ -16,10 +16,10 @@
         <tr>
           <td class="border px-4 py-2 text-left">Full-time (FT)</td>
           <td class="border px-4 py-2">9</td>
-          <td class="border px-4 py-2"><span class="text-red-500 font-bold">157</span></td>
+          <td class="border px-4 py-2">159</td>
           <td class="border px-4 py-2">6</td>
-          <td class="border px-4 py-2">{{ 9 + 157 + 6 }}</td>
-          <td class="border px-4 py-2">{{ round(100*172/175, 1) }}%</td>
+          <td class="border px-4 py-2">{{ 9 + 159 + 6 }}</td>
+          <td class="border px-4 py-2">{{ round(100*174/177, 1) }}%</td>
         </tr>
         <tr class="bg-gray-200">
           <td class="border px-4 py-2 text-left">Part-time (PT)</td>
@@ -27,14 +27,14 @@
           <td class="border px-4 py-2">3</td>
           <td class="border px-4 py-2">0</td>
           <td class="border px-4 py-2">{{ 0 + 3 + 0 }}</td>
-          <td class="border px-4 py-2">{{ round(100*3/175, 1) }}%</td>
+          <td class="border px-4 py-2">{{ round(100*3/177, 1) }}%</td>
         </tr>
         <tr>
           <td class="border px-4 py-2 text-left">Total</td>
           <td class="border px-4 py-2">9</td>
-          <td class="border px-4 py-2">160</td>
+          <td class="border px-4 py-2">162</td>
           <td class="border px-4 py-2">6</td>
-          <td class="border px-4 py-2">{{ 9 + 160 + 6 }}</td>
+          <td class="border px-4 py-2">{{ 9 + 162 + 6 }}</td>
           <td class="border px-4 py-2">100.0%</td>
         </tr>
       </tbody>
@@ -47,10 +47,10 @@
     <div class="source mt-2">
       <h4 class="italic"><span class="underline">Source</span>: Empower Student Records (SR)</h4>
     </div>
-
+{{--
     <div class="caveat mt-5">
       <h4 class="italic text-red-500"><span class="underline">Data Anomalies/Irregularities</span>:</h4>
       <p>There are some data anomalies/discrepancies between Slate CRM records and Empower SR records which account for the difference between the FTFT F1 totals.</p>
-    </div>
+    </div> --}}
   </div>
 </div>

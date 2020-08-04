@@ -1,13 +1,11 @@
 <div class="item-container mt-5">
   <h1 class="text-xl font-bold">04 - FTFT F1 by Religion</h1>
 
-  {{-- <h1 class="text-red-500 font-bold">TODO - INVESTIGATE ISSUES WITH THE RELIGION DATA.</h1> --}}
-
   <h3>Headcounts</h3>
 
   <div class="hbc-container">
     <horizontal-bar-chart-component :labels="['Catholic', 'Other', 'Unknown']"
-                                    :values="[22, 33, 102]">
+                                    :values="[22, 33, 104]">
     </horizontal-bar-component>
   </div>
 
@@ -23,7 +21,7 @@
 
   <div class="pc-container">
     <pie-chart-component :labels="['Catholic', 'Other', 'Unknown']"
-                         :values="[14, 21, 64.9]">
+                         :values="[13.8, 20.8, 65.4]">
     </pie-chart-component>
   </div>
 

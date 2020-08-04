@@ -15,7 +15,7 @@
       <div id="app">
 
         <h1 class="mt-5 text-2xl font-bold">Fall 2020 CCSJ Freshman Profile</h1>
-        <h3 class="italic">(as of August 2, 2020 at 6:00 AM)</h3>
+        <h3 class="italic">(as of August 3, 2020 at 3:00 PM)</h3>
         @include('partials.01-f1-table')
         @include('partials.02-gender')
         @include('partials.03-ethnicity')
@@ -35,11 +35,10 @@
         @include('partials.10-top-majors')
 
         <div class="container ml-5 italic my-10">
-          <p>TODO - ADD INTERNATIONAL STUDENTS CODE!!!</p>
-          <p>TODO - ADD PYTHON CODE TO GET HS GPA RESULTS!!!</p>
+          {{-- <p>TODO - ADD INTERNATIONAL STUDENTS CODE!!!</p> --}}
 
-          <p>TODO - EXPERIMENT WITH IMAGE DIMENSIONS!!!</p>
-          <p>TODO - EXPERIMENT WITH CHART LABEL FORMATTING - BOLD, CHANGE COLOR</p>
+          {{-- <p>TODO - EXPERIMENT WITH IMAGE DIMENSIONS!!!</p> --}}
+          {{-- <p>TODO - EXPERIMENT WITH CHART LABEL FORMATTING - BOLD, CHANGE COLOR</p> --}}
         </div>
 
       </div>

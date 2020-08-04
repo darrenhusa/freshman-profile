@@ -5,7 +5,7 @@
 
   <div class="hbc-container">
     <horizontal-bar-chart-component :labels="['Black or African American', 'Hispanics of any race', 'White', 'Other']"
-                                    :values="[15, 26, 8, 108]">
+                                    :values="[15, 26, 8, 110]">
     </horizontal-bar-component>
   </div>
 
@@ -20,7 +20,7 @@
   <h3>Headcounts %</h3>
   <div class="pc-container">
     <pie-chart-component :labels="['Black or African American', 'Hispanics of any race', 'White', 'Other']"
-                         :values="[9.6, 16.6, 5.1, 68.8]">
+                         :values="[9.4, 16.4, 5.0, 69.2]">
     </pie-chart-component>
   </div>
 
@@ -29,7 +29,7 @@
   </div>
 
   {{-- TODO - Add note about rounding error --}}
-  
+
   <div class="source mt-5">
     <h4 class="italic"><span class="underline">Source</span>: Empower Student Records (SR)</h4>
   </div>
