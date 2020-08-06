@@ -10,7 +10,7 @@
     <li>Using Rank 1 High School (SchoolsTypeLevelofStudy = 'High School' and SchoolsRankByLevelofStudy = '1')</li>
     <li>HS GPA = Slate SchoolsGPAVerified field</li>
   </ul>
-  
+
   <h3>Headcounts</h3>
 
   <div class="hbc-container">
@@ -35,7 +35,7 @@
   </div>
 
   <h3>Total with high school GPA = 114</h3>
-  <h3>Average high school GPA = x.xx</h3>
+  <h3>Average high school GPA = 2.64</h3>
 
   <div class="note mt-5 italic">
     <h4><span class="underline">Notes</span>:</h4>

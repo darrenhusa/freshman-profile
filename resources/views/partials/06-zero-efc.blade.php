@@ -5,7 +5,7 @@
 
   <div class="hbc-container">
     <horizontal-bar-chart-component :labels="['Zero EFC', 'Not Zero EFC']"
-                                    :values="[73, 86]">
+                                    :values="[74, 85]">
     </horizontal-bar-component>
   </div>
 
@@ -20,7 +20,7 @@
   <h3>Headcounts %</h3>
   <div class="pc-container">
     <pie-chart-component :labels="['Zero EFC', 'Not Zero EFC']"
-                         :values="[45.9, 54.1]">
+                         :values="[46.5, 53.5]">
     </pie-chart-component>
   </div>
 
