@@ -1,5 +1,6 @@
 <div class="item-container mt-8">
   <h1 class="text-xl font-bold">01 - F1 Headcounts by FT/PT Status and Entry-types</h1>
+
   <div class="table-container mt-5">
     <table class="table-auto">
       <thead>

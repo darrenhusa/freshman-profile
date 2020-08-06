@@ -1,8 +1,16 @@
 <div class="item-container mt-5">
   <h1 class="text-xl font-bold">07 - FTFT F1 by High School GPA</h1>
 
-  <h3>TODO - Add query definitions</h3>
-
+  <h3>Slate Query Definitions</h3>
+  <ul>
+    <li>The FTFT F1 data set is defined in Slate as:</li>
+    <li>PersonEntryType = 'High School' for first-time and</li>
+    <li>PersonStudentTime = 'FT' for full-time and</li>
+    <li>PersonClassDivision = 'F1' for Freshman (first-semester)</li>
+    <li>Using Rank 1 High School (SchoolsTypeLevelofStudy = 'High School' and SchoolsRankByLevelofStudy = '1')</li>
+    <li>HS GPA = Slate SchoolsGPAVerified field</li>
+  </ul>
+  
   <h3>Headcounts</h3>
 
   <div class="hbc-container">

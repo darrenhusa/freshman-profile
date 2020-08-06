@@ -3,7 +3,14 @@
   <h1 class="text-xl font-bold">08</h1>
   <h2>A) FTFT F1 by State of Primary Residence</h2>
 
-  <h3>TODO - Add query definitions</h3>
+  <h3>Slate Query Definitions</h3>
+  <ul>
+    <li>The FTFT F1 data set is defined in Slate as:</li>
+    <li>PersonEntryType = 'High School' for first-time and</li>
+    <li>PersonStudentTime = 'FT' for full-time and</li>
+    <li>PersonClassDivision = 'F1' for Freshman (first-semester)</li>
+    <li>Using Rank 1 Address (AddressesRank = '1' and AddressesRankOverall = '1')</li>
+  </ul>
 
   <div class="table-container ml-10">
     <table class="table-auto">

@@ -4,8 +4,6 @@
   <h2>C) FTFT F1 Lake County Residents by City</h2>
   <h3>showing cities with 5 or more residents only</h3>
 
-  <h3>TODO - Add query definitions</h3>
-
   <div class="table-container ml-10">
     <table class="table-auto">
       <thead>

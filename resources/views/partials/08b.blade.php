@@ -3,8 +3,6 @@
   {{-- <h1 class="text-xl font-bold">08</h1> --}}
   <h2>B) FTFT F1 Indiana Residents by County</h2>
 
-  <h3>TODO - Add query definitions</h3>
-
   <div class="table-container ml-10">
     <table class="table-auto">
       <thead>
