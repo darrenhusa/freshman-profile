@@ -25,6 +25,7 @@ window.Vue = require('vue');
 
 import PieChartComponent from './components/PieChartComponent.vue'
 import HorizontalBarChartComponent from './components/HorizontalBarChartComponent.vue'
+import GroupedBarChartComponent from './components/GroupedBarChartComponent.vue'
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -37,6 +38,7 @@ const app = new Vue({
 
     components: {
       PieChartComponent,
-      HorizontalBarChartComponent
+      HorizontalBarChartComponent,
+      GroupedBarChartComponent
     }
 });
