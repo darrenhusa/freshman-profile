@@ -8,10 +8,29 @@
 
     export default {
 
-        props: ['labels', 'values'],
+      props: {
+        labels: {},
+        dataset1: {},
+        dataset2: {},
+      },
+        // props: [
+        //   labels: ['Jan', 'Feb', 'Mar', 'Apr']
+        //   dataset1: {
+        //     label: 'Africa',
+        //     backgroundColor: "blue",
+        //     data: [133, 221, 783, 2478]
+        //   },
+        //   dataset2: {
+        //     label: 'Europe',
+        //     backgroundColor: "red",
+        //     data: [408, 547, 675, 734]
+        //   }
+        // ],
+        // // props: ['labels', 'values'],
 
         mounted() {
-          // console.log('Inside mounted().')
+          console.log('Inside GroupedBarChart component mounted().')
+          // console.log(this.dataset1.data);
 
           new Chart(this.$refs.canvas, {
             type: 'bar',
@@ -19,16 +38,8 @@
               labels: this.labels,
 
             datasets: [
-                {
-                  label: "Africa",
-                  backgroundColor: "blue",
-                  data: this.values
-                },
-                {
-                  label: "Europe",
-                  backgroundColor: "red",
-                  data: [408,547,675,734]
-                }
+                this.dataset1,
+                this.dataset2,
               ]
             },
             options: {

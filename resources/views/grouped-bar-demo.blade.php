@@ -22,8 +22,9 @@
         {{-- <h3>Headcounts</h3> --}}
 
         <div class="gbc-container">
-          <grouped-bar-chart-component :labels="['1900', '1950', '1999', '2050']"
-                                          :values="[133, 221, 783, 2478]">
+          <grouped-bar-chart-component labels="['1900', '1950', '1999', '2050']"
+                                       dataset1="[label: 'Africa', backgroundColor: 'blue', data: [133, 221, 783, 2478]]"
+                                       dataset2="[label: 'Europe', backgroundColor: 'red', data: [408, 547, 675, 734]]">
           </grouped-bar-component>
         </div>
 
