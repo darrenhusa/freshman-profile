@@ -75,7 +75,7 @@
                 labels: this.labels,
                 datasets: [{
                   label: "Headcounts in %",
-                  backgroundColor: ['blue', 'red', 'purple', 'lime'],
+                  backgroundColor: ['blue', 'red', 'purple', 'lime', 'orange'],
                   data: this.values
                   // data: calculatePercentages()
                 }]
