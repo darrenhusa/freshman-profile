@@ -5,7 +5,7 @@
 
   <div class="hbc-container">
     <horizontal-bar-chart-component :labels="['Catholic', 'Other', 'Unknown']"
-                                    :values="[22, 33, 104]">
+                                    :values="[22, 31, 108]">
     </horizontal-bar-component>
   </div>
 
@@ -21,7 +21,7 @@
 
   <div class="pc-container">
     <pie-chart-component :labels="['Catholic', 'Other', 'Unknown']"
-                         :values="[13.8, 20.8, 65.4]">
+                         :values="[13.7, 19.3, 67.1]">
     </pie-chart-component>
   </div>
 

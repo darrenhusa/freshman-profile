@@ -15,22 +15,22 @@
       <tbody class="text-right">
         <tr>
           <td class="border px-4 py-2 text-left">Lake</td>
-          <td class="border px-4 py-2">81</td>
-          <td class="border px-4 py-2">{{ round(100*81/94, 1) }}%</td>
+          <td class="border px-4 py-2">84</td>
+          <td class="border px-4 py-2">{{ round(100*84/100, 1) }}%</td>
         </tr>
         <tr class="bg-gray-200">
           <td class="border px-4 py-2 text-left">Porter</td>
-          <td class="border px-4 py-2">6</td>
-          <td class="border px-4 py-2">{{ round(100*6/94, 1) }}%</td>
+          <td class="border px-4 py-2">7</td>
+          <td class="border px-4 py-2">{{ round(100*7/100, 1) }}%</td>
         </tr>
         <tr>
           <td class="border px-4 py-2 text-left">Other</td>
-          <td class="border px-4 py-2">7</td>
-          <td class="border px-4 py-2">{{ round(100*7/94, 1) }}%</td>
+          <td class="border px-4 py-2">9</td>
+          <td class="border px-4 py-2">{{ round(100*9/100, 1) }}%</td>
         </tr>
         <tr class="bg-gray-200">
           <td class="border px-4 py-2 text-left">Total</td>
-          <td class="border px-4 py-2">{{ 81 + 6 + 7 }}</td>
+          <td class="border px-4 py-2">{{ 84 + 7 + 9 }}</td>
           <td class="border px-4 py-2">100%</td>
         </tr>
       </tbody>

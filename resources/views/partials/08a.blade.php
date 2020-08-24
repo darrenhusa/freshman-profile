@@ -24,23 +24,23 @@
       <tbody class="text-right">
         <tr>
           <td class="border px-4 py-2 text-left">Indiana</td>
-          <td class="border px-4 py-2">94</td>
-          <td class="border px-4 py-2">{{ round(100*94/159, 1) }}%</td>
+          <td class="border px-4 py-2">100</td>
+          <td class="border px-4 py-2">{{ round(100*100/169, 1) }}%</td>
         </tr>
         <tr class="bg-gray-200">
           <td class="border px-4 py-2 text-left">Illinois</td>
-          <td class="border px-4 py-2">52</td>
-          <td class="border px-4 py-2">{{ round(100*52/159, 1) }}%</td>
+          <td class="border px-4 py-2">56</td>
+          <td class="border px-4 py-2">{{ round(100*56/169, 1) }}%</td>
         </tr>
         <tr>
           <td class="border px-4 py-2 text-left">Out-of-State</td>
           <td class="border px-4 py-2">13</td>
-          <td class="border px-4 py-2">{{ round(100*13/159, 1) }}%</td>
+          <td class="border px-4 py-2">{{ round(100*13/169, 1) }}%</td>
         </tr>
         <tr class="bg-gray-200">
           <td class="border px-4 py-2 text-left">Total</td>
-          <td class="border px-4 py-2">{{ 94 + 52 + 13 }}</td>
-          {{-- <td class="border px-4 py-2"><span class="text-red-500 font-bold">{{ 94 + 52 + 13 }}</span></td> --}}
+          <td class="border px-4 py-2">{{ 100 + 56 + 13 }}</td>
+          {{-- <td class="border px-4 py-2"><span class="text-red-500 font-bold">{{ 100 + 56 + 13 }}</span></td> --}}
           <td class="border px-4 py-2">100%</td>
         </tr>
       </tbody>
