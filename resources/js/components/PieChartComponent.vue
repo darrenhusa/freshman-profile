@@ -1,6 +1,5 @@
 <template>
-  <!-- <canvas ref="canvas"></canvas> -->
-  <canvas ref="canvas" width="300" height="300"></canvas>
+  <canvas ref="canvas" v-bind:width="width" v-bind:height="height"></canvas>
 </template>
 
 <script>
@@ -9,7 +8,18 @@
 
     export default {
 
-        props: ['labels', 'values'],
+        props: {
+          labels: Array,
+          values: Array,
+          width: {
+            type: String,
+            default: '300'
+          },
+          height: {
+            type: String,
+            default: '300'
+          }
+        },
 
          data() {
            return {
