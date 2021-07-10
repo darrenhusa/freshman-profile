@@ -11,63 +11,53 @@
 
         props: ['labels', 'values'],
 
-        // data() {
-        //   return {
-        //     sum: 0,
-        //     percentages: [],
-        //     numberDecimals: 0
-        //   }
-        // },
+         data() {
+           return {
+             percentages: [],
+             numberDecimalDigits: 0
+           }
+         },
 
-        // computed: {
-        //   // a computed getter
-        //   reversedMessage: function () {
-        //     // `this` points to the vm instance
-        //     return this.message.split('').reverse().join('')
-        //   }
-        // },
+          methods: {
+          
+             calculateSum: function (list) {
+               // loop over values to get the list sum
+               var i;
+               var sum = 0;
+          
+               for (i = 0; i < list.length; i++) {
+                 sum += list[i];
+               }
+               return sum;
+             },
+          
+             calculatePercentages: function (list) {
+               var percentages = [];
+               var sum;
+               var i;
+               var result;
 
-          // methods: {
-          //   reverseMessage: function () {
-          //     return this.message.split('').reverse().join('')
-          //   }
-          // },
+               sum = this.calculateSum(list);
 
-          // methods: {
-          //
-          //   calculateSum: function () {
-          //     // loop over values to get the list sum
-          //     var i;
-          //     var sum = 0;
-          //
-          //     for (i = 0; i < this.values.length; i++) {
-          //       sum += this.values[i];
-          //     }
-          //     return sum;
-          //   },
-          //
-          //   calculatePercentages: function () {
-          //     var percentages = [];
-          //
-          //     // loop over list values and calculate EACH percentage
-          //     // return the percentages list
-          //
-          //     // var percent = (percentToGet / 100) * number;
-          //     for (i = 0; i < this.values.length; i++) {
-          //       percentages.push( ((this.values[i] / 100) * this.sum) );
-          //     }
-          //     this.percentages = percentages;
-          //   }
-          // },
+               // loop over list values and calculate EACH percentage
+               // return the percentages list
+          
+               for (i = 0; i < list.length; i++) {
+                 result = (100.0 * list[i] / sum);
+                 percentages.push(result.toFixed(this.numberDecimalDigits));
+               }
+               return percentages;
+             }
+           },
 
         mounted() {
           // console.log('Inside mounted().')
 
           var context = this.$refs.canvas;
 
-          // this.sum = calculateSum();
-          // this.sum = calculateSum(this.values);
-          // this.sum = calculateSum(this.values);
+          this.percentages = this.calculatePercentages(this.values);
+
+          // console.log(this.percentages)
 
           new Chart(context, {
               type: 'pie',
@@ -76,8 +66,7 @@
                 datasets: [{
                   label: "Headcounts in %",
                   backgroundColor: ['blue', 'red', 'purple', 'lime', 'orange'],
-                  data: this.values
-                  // data: calculatePercentages()
+                  data: this.percentages
                 }]
               },
               options: {

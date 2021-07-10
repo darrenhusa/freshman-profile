@@ -13,7 +13,7 @@
       <div class="pc-container">
         <h3 class="my-5 text-lg font-semibold">Headcounts %</h3>
           <pie-chart-component :labels="['Female', 'Male', 'Unknown']"
-                          :values="[44.7, 42.9, 12.4]">
+                          :values="[72, 69, 20]">
           </pie-chart-component>
       </div>
   </div>
