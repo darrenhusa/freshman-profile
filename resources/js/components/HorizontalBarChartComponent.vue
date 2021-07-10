@@ -18,7 +18,7 @@
             type: String,
             default: '300'
           }
-        },
+        }, // end props
 
         mounted() {
           // console.log('Inside mounted().')
@@ -31,10 +31,10 @@
                 {
                   label: "Headcounts",
                   backgroundColor: ['blue', 'red', 'purple', 'lime', 'orange'],
-                  data: this.values
+                  data: this.values,
                 }
               ]
-            },
+            }, // end data
             options: {
               scales: {
                     xAxes: [{
@@ -45,16 +45,28 @@
                     yAxes: [{
                         stacked: true
                     }]
-                },
+                }, // end scales
               responsive: false,
               maintainAspectRatio: false,
               legend: { display: false },
               title: {
                 display: false,
                 text: 'TITLE TEXT'
-              }
-            }
-          });
-        }
-      }
+              },
+              plugins: {
+                  datalabels: {
+                    color: 'white',
+                    labels: {
+                      title: {
+                        font: {
+                          weight: 'bold'
+                        }
+                      }
+                    }
+                  }
+                } // end plugins
+            } // end options
+          }); // end new Chart
+        } // end mounted() 
+    } // end export default
 </script>
