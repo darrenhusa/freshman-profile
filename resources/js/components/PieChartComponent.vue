@@ -19,14 +19,14 @@
             type: String,
             default: '300'
           }
-        },
+        }, // end props
 
          data() {
            return {
              percentages: [],
              numberDecimalDigits: 0
            }
-         },
+         }, // end data()
 
           methods: {
           
@@ -39,7 +39,7 @@
                  sum += list[i];
                }
                return sum;
-             },
+             }, // end calculateSum()
           
              calculatePercentages: function (list) {
                var percentages = [];
@@ -57,8 +57,8 @@
                  percentages.push(result.toFixed(this.numberDecimalDigits));
                }
                return percentages;
-             }
-           },
+             } // end calculatePercentages()
+           }, // end methods
 
         mounted() {
           // console.log('Inside mounted().')
@@ -78,7 +78,8 @@
                   backgroundColor: ['blue', 'red', 'purple', 'lime', 'orange'],
                   data: this.percentages
                 }]
-              },
+              }, // end data
+
               options: {
                 responsive: false,
                 maintainAspectRatio: false,
@@ -86,40 +87,20 @@
                   display: false,
                   text: 'TITLE'
                 },
-
-                // TODO - Add a computed property to calculate the percentages??
-                //
-                // new code to display as %
-                // plugins: {
-                //     datalabels: {
-                //         formatter: function(value, context) {
-                //             return context.chart.data.labels[context.dataIndex];
-                //         }
-                //     }
-                // }
-              }
-
-              // reference 1
-              // formatter: function(value, context) {
-              //     return context.dataIndex + ': ' + Math.round(value*100) + '%';
-              // }
-
-              // label for data at index 0 with value 0.23: "0: 23%"
-              // label for data at index 1 with value 0.42: "1: 42%"
-              // ...
-
-              // reference 2
-              // options: {
-              //        plugins: {
-              //            datalabels: {
-              //                formatter: function(value, context) {
-              //                    return context.chart.data.labels[context.dataIndex];
-              //                }
-              //            }
-              //        }
-              //    }
-              //
-            });
-        }
-    }
+                plugins: {
+                  datalabels: {
+                    color: 'white',
+                    labels: {
+                      title: {
+                        font: {
+                          weight: 'bold'
+                        }
+                      }
+                    }
+                  }
+                } // end plugins
+              } // end options
+            }); // end new Chart
+        } // end mounted()
+    } // end export default
 </script>
