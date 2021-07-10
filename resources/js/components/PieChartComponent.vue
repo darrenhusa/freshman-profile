@@ -1,6 +1,6 @@
 <template>
   <!-- <canvas ref="canvas"></canvas> -->
-  <canvas ref="canvas" width="300" height="200"></canvas>
+  <canvas ref="canvas" width="300" height="300"></canvas>
 </template>
 
 <script>
@@ -70,7 +70,7 @@
                 }]
               },
               options: {
-                responsive: true,
+                responsive: false,
                 maintainAspectRatio: false,
                 title: {
                   display: false,
