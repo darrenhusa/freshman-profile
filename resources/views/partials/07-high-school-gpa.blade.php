@@ -1,3 +1,41 @@
+<div class="item-container mt-12">
+    <h1 class="text-2xl font-bold">07 - FTFT F1 by High School GPA</h1>
+
+    <div class="grid grid-cols-2 gap-4 place-items-start">
+      <div class="hbc-container max-w-5xl">
+        <h3 class="my-5 text-lg font-semibold">Headcounts</h3>
+
+        <horizontal-bar-chart-component :labels="['1.0 to 2.0', '2.01 to 3.0', '3.01 and above']"
+                                        :values="[21, 26, 9]"
+                                        width="600"
+                                        height="350"
+        >
+        </horizontal-bar-component>
+      </div>
+
+      <div class="pc-container">
+        <h3 class="my-5 text-lg font-semibold">Headcounts %</h3>
+          <pie-chart-component :labels="['1.0 to 2.0', '2.01 to 3.0', '3.01 and above']"
+                               :values="[21, 26, 9]"
+                               width="350"
+                               height="350"
+          >
+          </pie-chart-component>
+      </div>
+  </div>
+   
+  <div class="note mt-5">
+    <h4 class="italic"><span class="underline">Note</span>: FTFT F1 = First-time, Full-time F1 students</h4>
+  </div>
+
+  <div class="source mt-5">
+    <h4 class="italic"><span class="underline">Source</span>: Empower Student Records (SR)</h4>
+  </div>
+
+</div>
+
+
+
 <div class="item-container mt-5">
   <h1 class="text-xl font-bold">07 - FTFT F1 by High School GPA</h1>
 
