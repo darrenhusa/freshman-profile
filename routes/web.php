@@ -8,6 +8,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::view('/axios-test', 'axios-test');
+
 // Route::view('/demo', 'grouped-bar-demo');
 
 Route::get('/gender-data', [ChartDataController::class, 'getGenderData']);
