@@ -42,14 +42,19 @@ Route::get('/chart-data', function () {
     // TODO Add Empower zero EFC-status
     // TODO Add high school GPA
      $studentsWithNewFields = $students->map(function($student) {
-         $student->Gender = EmpowerHelper::build_demographic_field($student->DFLT_ID, 'GEND');
-         $student->EthnicCode = EmpowerHelper::build_demographic_field($student->DFLT_ID, 'ETHR');
-         $student->Ethnicity = EmpowerHelper::build_ethnicity_field($student->EthnicCode);
-         $student->Religion = EmpowerHelper::build_demographic_field($student->DFLT_ID, 'RELI');
+         $student->EmpowerGender = EmpowerHelper::build_demographic_field($student->DFLT_ID, 'GEND');
+         $student->Gender = EmpowerHelper::build_chart_gender_field($student->EmpowerGender);
+         $student->EmpowerEthnicCode = EmpowerHelper::build_demographic_field($student->DFLT_ID, 'ETHR');
+         $student->Ethnicity = EmpowerHelper::build_ethnicity_field($student->EmpowerEthnicCode);
+         $student->EmpowerReligion = EmpowerHelper::build_demographic_field($student->DFLT_ID, 'RELI');
                 
          return $student;
      });
 
-     dd($studentsWithNewFields->count(), $studentsWithNewFields);
+     $chartData = clone $studentsWithNewFields;
+     $chart1 = $chartData->groupBy('Gender')->map->count();
+     dd($chart1->keys(), $chart1->values());
+
+    //  dd($studentsWithNewFields->count(), $studentsWithNewFields);
 });
 

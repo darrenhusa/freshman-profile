@@ -44,7 +44,24 @@ class EmpowerHelper
       return $result;
     }
 
-    
+    public static function build_chart_gender_field($value)
+    {
+      if($value == 'F')
+      {
+        $result = 'Female';
+      }
+      elseif($value == 'M')
+      {
+        $result = 'Male';
+      }
+      else
+      {
+        // empty
+        $result = 'Unknown';
+      }
+
+      return $result;
+    }
     
     public static function build_entry_type_alt_field($value)
     {
