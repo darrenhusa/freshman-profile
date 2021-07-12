@@ -2,13 +2,15 @@
 
 use Illuminate\Support\Facades\Route;
 use \App\Helpers\EmpowerHelper;
-
+use App\Http\Controllers\ChartDataController;
 
 Route::get('/', function () {
     return view('welcome');
 });
 
 // Route::view('/demo', 'grouped-bar-demo');
+
+Route::get('/gender-data', [ChartDataController::class, 'getGenderData']);
 
 Route::get('/chart-data', function () {
     
