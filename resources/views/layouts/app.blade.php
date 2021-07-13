@@ -8,6 +8,7 @@
       <meta name="description" content="">
       <meta name="keywords" content="">
       <link href="https://unpkg.com/tailwindcss@next/dist/tailwind.min.css" rel="stylesheet">
+      <link rel="stylesheet" media="print" href="/css/print.css" />
       <!--Replace with your tailwind.css once created-->
       <style>
          @import url('https://fonts.googleapis.com/css?family=Lato');

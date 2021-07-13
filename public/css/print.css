@@ -1,0 +1,12 @@
+* {
+    background-image: none !important;
+  }
+  
+  img, svg {
+    display: none !important;
+  }
+  
+  canvas, img.print, svg.print {
+    display: block;
+    max-width: 100%;
+  }
