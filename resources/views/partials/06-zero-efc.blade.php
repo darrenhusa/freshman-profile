@@ -29,7 +29,7 @@
   </div>
 
   <div class="source mt-2">
-    <h4 class="italic"><span class="underline mr-1">Source</span>Empower Student Records (SR)</h4>
+    <h4 class="italic"><span class="underline mr-1">Source:</span>Empower Student Records (SR)</h4>
   </div>
 
 </div>
