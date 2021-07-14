@@ -1,5 +1,5 @@
 <div class="item-container mt-12">
-    <h1 class="text-2xl font-bold">07 - FTFT F1 by High School GPA</h1>
+    <h2 class="text-2xl font-bold">07 - FTFT F1 by High School GPA</h2>
 
     <div class="grid grid-cols-2 gap-4 place-items-start">
       <div class="hbc-container max-w-5xl">

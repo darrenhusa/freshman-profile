@@ -6,7 +6,18 @@
     display: none !important;
   }
   
-  canvas, img.print, svg.print {
-    display: block;
-    max-width: 100%;
+  @media print {
+    canvas {
+      display: block;
+      width: 90%;
+    }
+
+    h1 {
+      break-before: avoid-page;
+    }
+
+    .item-container h2 {
+      break-before: always;
+    }
   }
+  
