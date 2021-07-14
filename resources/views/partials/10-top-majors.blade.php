@@ -1,7 +1,7 @@
 <div class="item-container ml-5 mt-5">
 
-  <h1 class="text-xl font-bold">10</h1>
-  <h2>Top Ten Majors for FTFT F1 Students</h2>
+  <h2 class="text-2xl font-bold">10</h2>
+  <h3 class="text-2xl font-bold">Top Ten Majors for FTFT F1 Students</h3>
 
   <div class="table-container ml-10">
     <table class="table-auto">
@@ -89,11 +89,11 @@
       </tbody>
     </table>
     <div class="note mt-5">
-      <h4 class="italic"><span class="underline">Note</span>: FTFT F1 = First-time, Full-time F1 students</h4>
+      <h4 class="italic"><span class="underline mr-1">Note:</span>FTFT F1 = First-time, Full-time F1 students</h4>
     </div>
 
-    <div class="source mt-5">
-      <h4 class="italic"><span class="underline">Source</span>: Empower Student Records (SR)</h4>
+    <div class="source mt-2">
+      <h4 class="italic"><span class="underline mr-1">Source:</span>Empower Student Records (SR)</h4>
     </div>
 
   </div>

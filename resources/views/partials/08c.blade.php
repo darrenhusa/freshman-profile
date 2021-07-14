@@ -1,7 +1,6 @@
 <div class="item-container ml-5 mt-5">
 
-  {{-- <h1 class="text-xl font-bold">08</h1> --}}
-  <h2>C) FTFT F1 Lake County Residents by City</h2>
+  <h2 class="text-2xl font-bold"><span>C) FTFT F1 Lake County Residents by City</span></h2>
   <h3>showing municipalities with 5 or more residents only</h3>
 
   <div class="table-container ml-10">
@@ -47,11 +46,11 @@
       </tbody>
     </table>
     <div class="note mt-5">
-      <h4 class="italic"><span class="underline">Note</span>: FTFT F1 = First-time, Full-time F1 students</h4>
+      <h4 class="italic"><span class="underline mr-1">Note:</span>FTFT F1 = First-time, Full-time F1 students</h4>
     </div>
 
-    <div class="source mt-5">
-      <h4 class="italic"><span class="underline">Source</span>: Slate CRM</h4>
+    <div class="source mt-2">
+      <h4 class="italic"><span class="underline mr-1">Source:</span>Slate CRM</h4>
     </div>
 
   </div>

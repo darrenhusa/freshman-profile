@@ -33,6 +33,8 @@
         @include('partials.09-top-recruiting-sources')
 
         @include('partials.10-top-majors')
+        
+        <!-- @include('partials.technology') -->
 
         <div class="container ml-5 italic my-10">
           {{-- <p>TODO - ADD INTERNATIONAL STUDENTS CODE!!!</p> --}}

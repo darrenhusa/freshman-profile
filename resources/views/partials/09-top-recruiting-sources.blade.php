@@ -1,11 +1,11 @@
 <div class="item-container ml-5 mt-5">
 
-  <h1 class="text-xl font-bold">09</h1>
-  <h2>Top Recruiting Sources for FTFT F1 Students</h2>
-
+  <h2 class="text-2xl font-bold">09</h2>
+  <h3 class="text-2xl font-bold">Top Recruiting Sources for FTFT F1 Students</h3>
+  
   <h3>only showing high schools where the enrolled students >= 5</h3>
 
-  <h3>Slate Query Definitions</h3>
+  <!-- <h3>Slate Query Definitions</h3>
   <ul>
     <li>The FTFT F1 data set is defined in Slate as:</li>
     <li>PersonEntryType = 'High School' for first-time and</li>
@@ -13,7 +13,7 @@
     <li>PersonClassDivision = 'F1' for Freshman (first-semester)</li>
     <li>Using Rank 1 High School (SchoolsTypeLevelofStudy = 'High School' and SchoolsRankByLevelofStudy = '1')</li>
     <li>In the event of current rank ties, the items are listed in alphabetical order by school name.</li>
-  </ul>
+  </ul> -->
 
   <div class="table-container ml-10">
 
@@ -73,11 +73,11 @@
     </table>
 
     <div class="note mt-5">
-      <h4 class="italic"><span class="underline">Note</span>: FTFT F1 = First-time, Full-time F1 students</h4>
+      <h4 class="italic"><span class="underline mr-1">Note:</span>FTFT F1 = First-time, Full-time F1 students</h4>
     </div>
 
-    <div class="source mt-5">
-      <h4 class="italic"><span class="underline">Source</span>: Slate CRM</h4>
+    <div class="source mt-2">
+      <h4 class="italic"><span class="underline mr-1">Source:</span>Slate CRM</h4>
     </div>
 
   </div>
