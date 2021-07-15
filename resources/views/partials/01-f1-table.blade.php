@@ -1,3 +1,12 @@
+@php
+  $data = array (
+    array("Full-time (FT)", 12, 72, 1, 85, '92.4%'),
+    array("Part-time (PT)", 2, 3, 2, 7, '7.6%'),
+    array("Total", 14, 75, 3, 92, '100.0%')
+  );
+
+@endphp
+
 <div class="item-container mt-8">
   <h1 class="text-2xl font-bold">01 - F1 Headcounts by FT/PT Status and Entry-types</h1>
 
@@ -14,30 +23,23 @@
         </tr>
       </thead>
       <tbody class="text-right">
-        <tr>
-          <td class="border px-4 py-2 text-left">Full-time (FT)</td>
-          <td class="border px-4 py-2">12</td>
-          <td class="border px-4 py-2">72</td>
-          <td class="border px-4 py-2">1</td>
-          <td class="border px-4 py-2">{{ 12 + 72 + 1 }}</td>
-          <td class="border px-4 py-2">{{ round(100*85/92, 1) }}%</td>
-        </tr>
-        <tr class="bg-gray-200">
-          <td class="border px-4 py-2 text-left">Part-time (PT)</td>
-          <td class="border px-4 py-2">2</td>
-          <td class="border px-4 py-2">3</td>
-          <td class="border px-4 py-2">2</td>
-          <td class="border px-4 py-2">{{ 2 + 3 + 2 }}</td>
-          <td class="border px-4 py-2">{{ round(100*7/92, 1) }}%</td>
-        </tr>
-        <tr>
-          <td class="border px-4 py-2 text-left">Total</td>
-          <td class="border px-4 py-2">14</td>
-          <td class="border px-4 py-2">75</td>
-          <td class="border px-4 py-2">3</td>
-          <td class="border px-4 py-2">{{ 14 + 75 + 3 }}</td>
-          <td class="border px-4 py-2">100.0%</td>
-        </tr>
+      @for ($i = 0; $i < 3; $i++)
+          @if($i % 2 == 0)
+            <!-- found an even row -->
+            <tr>
+          @else
+            <!-- found an odd row -->
+            <tr class="bg-gray-200">
+          @endif
+            <td class="border px-4 py-2 text-left">{{ $data[$i][0] }}</td>
+            <td class="border px-4 py-2">{{ $data[$i][1] }}</td>
+            <td class="border px-4 py-2">{{ $data[$i][2] }}</td>
+            <td class="border px-4 py-2">{{ $data[$i][3] }}</td>
+            <td class="border px-4 py-2">{{ $data[$i][4] }}</td>
+            <td class="border px-4 py-2">{{ $data[$i][5] }}</td>
+          </tr>
+        @endfor  
+        
       </tbody>
     </table>
 
