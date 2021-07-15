@@ -22,13 +22,40 @@
     return $result;
   }
 
+  function calculate_rank($numbers) {
+
+    rsort($numbers);
+
+    $arrlength = count($numbers);
+    $rank = 1;
+    $prev_rank = $rank;
+    $result = [];
+
+    for($x = 0; $x < $arrlength; $x++) {
+      if ($x == 0) {
+          array_push($result, $rank);
+      }elseif ($numbers[$x] != $numbers[$x-1]) {
+          $rank++;
+          $prev_rank = $rank;
+          array_push($result, $rank);
+      }else{
+        $rank++;
+        array_push($result, $prev_rank);
+      }
+    }
+    return $result;
+    /* return implode(', ', $result); */
+  }
+
   $majors = array('General Studies', 'Business Management', 'Biomedical Science', 'Criminal Justice',
                   'Digital & Studio Arts', 'Kinesiology', 'Psychology', 'Accounting',
                   'Human Services', 'English & Media Communications');
+  
+  /* Only enter the first 10 majors - in descending order!*/               
   $numbers = array(17, 14, 7, 7, 7, 5, 5, 3, 3, 2);
   $grand_total = 72;
-  $ranks = [1, 2, 3, 3, 3, 6, 6, 8, 8, 10];
 
+  $ranks = calculate_rank($numbers);
   $sum_from_top_ten = calculate_sum($numbers);
   $percentage_from_top_ten = round(100.0*$sum_from_top_ten/$grand_total, 0);
   $percentages = calculate_percentages($numbers, $grand_total, 1);
