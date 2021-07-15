@@ -17,72 +17,72 @@
         <tr>
           <td class="border px-4 py-2 text-left">General Studies</td>
           <td class="border px-4 py-2">17</td>
-          <td class="border px-4 py-2">{{ round(100*17/69, 0) }}%</td>
+          <td class="border px-4 py-2">{{ round(100*17/72, 1) }}%</td>
           <td class="border px-4 py-2">1</td>
         </tr>
         <tr class="bg-gray-200">
           <td class="border px-4 py-2 text-left">Business Management</td>
-          <td class="border px-4 py-2">12</td>
-          <td class="border px-4 py-2">{{ round(100*12/69, 0) }}%</td>
+          <td class="border px-4 py-2">14</td>
+          <td class="border px-4 py-2">{{ round(100*14/72, 1) }}%</td>
           <td class="border px-4 py-2">2</td>
         </tr>
         <tr>
           <td class="border px-4 py-2 text-left">Biomedical Science</td>
           <td class="border px-4 py-2">7</td>
-          <td class="border px-4 py-2">{{ round(100*7/69, 0) }}%</td>
+          <td class="border px-4 py-2">{{ round(100*7/72, 1) }}%</td>
           <td class="border px-4 py-2">3</td>
         </tr>
         <tr class="bg-gray-200">
           <td class="border px-4 py-2 text-left">Criminal Justice</td>
           <td class="border px-4 py-2">7</td>
-          <td class="border px-4 py-2">{{ round(100*7/69, 0) }}%</td>
+          <td class="border px-4 py-2">{{ round(100*7/72, 1) }}%</td>
           <td class="border px-4 py-2">3</td>
         </tr>
         <tr>
           <td class="border px-4 py-2 text-left">Digital & Studio Arts</td>
           <td class="border px-4 py-2">7</td>
-          <td class="border px-4 py-2">{{ round(100*7/69, 0) }}%</td>
+          <td class="border px-4 py-2">{{ round(100*7/72, 1) }}%</td>
           <td class="border px-4 py-2">3</td>
         </tr>
         <tr class="bg-gray-200">
-          <td class="border px-4 py-2 text-left">Psychology</td>
+          <td class="border px-4 py-2 text-left">Kinesiology</td>
           <td class="border px-4 py-2">5</td>
-          <td class="border px-4 py-2">{{ round(100*5/69, 0) }}%</td>
+          <td class="border px-4 py-2">{{ round(100*5/72, 1) }}%</td>
           <td class="border px-4 py-2">6</td>
         </tr>
         <tr>
-          <td class="border px-4 py-2 text-left">Kinesiology</td>
-          <td class="border px-4 py-2">4</td>
-          <td class="border px-4 py-2">{{ round(100*4/69, 0) }}%</td>
-          <td class="border px-4 py-2">7</td>
+          <td class="border px-4 py-2 text-left">Psychology</td>
+          <td class="border px-4 py-2">5</td>
+          <td class="border px-4 py-2">{{ round(100*5/72, 1) }}%</td>
+          <td class="border px-4 py-2">6</td>
         </tr>
         <tr class="bg-gray-200">
           <td class="border px-4 py-2 text-left">Accounting</td>
           <td class="border px-4 py-2">3</td>
-          <td class="border px-4 py-2">{{ round(100*3/69, 0) }}%</td>
+          <td class="border px-4 py-2">{{ round(100*3/72, 1) }}%</td>
           <td class="border px-4 py-2">8</td>
         </tr>
         <tr>
           <td class="border px-4 py-2 text-left">Human Services</td>
           <td class="border px-4 py-2">3</td>
-          <td class="border px-4 py-2">{{ round(100*3/69, 0) }}%</td>
+          <td class="border px-4 py-2">{{ round(100*3/72, 1) }}%</td>
           <td class="border px-4 py-2">8</td>
         </tr>
         <tr class="bg-gray-200">
           <td class="border px-4 py-2 text-left">English & Media Communications</td>
           <td class="border px-4 py-2">2</td>
-          <td class="border px-4 py-2">{{ round(100*2/69, 0) }}%</td>
+          <td class="border px-4 py-2">{{ round(100*2/72, 1) }}%</td>
           <td class="border px-4 py-2">10</td>
         </tr>
-        <tr class="bg-gray-200">
+        <tr class="font-semibold">
           <td class="border px-4 py-2">Total (from top 10)</td>
-          <td class="border px-4 py-2">{{ (69 - 2) }}</td>
-          <td class="border px-4 py-2">{{ round(100*(69 - 2)/69, 0) }}%</td>
+          <td class="border px-4 py-2">{{ (72 - 2) }}</td>
+          <td class="border px-4 py-2">{{ round(100*(72 - 2)/72, 0) }}%</td>
           <td class="border px-4 py-2">--</td>
         </tr>
-        <tr class="bg-gray-200">
+        <tr class="font-semibold">
           <td class="border px-4 py-2">Grand Total (from all FTFT F1)</td>
-          <td class="border px-4 py-2">69</td>
+          <td class="border px-4 py-2">72</td>
           <td class="border px-4 py-2">100%</td>
           <td class="border px-4 py-2">--</td>
         </tr>

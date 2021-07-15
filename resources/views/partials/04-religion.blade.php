@@ -6,7 +6,7 @@
         <h3 class="my-5 text-lg font-semibold">Headcounts</h3>
 
         <horizontal-bar-chart-component :labels="['Catholic', 'Other', 'Unknown']"
-                                        :values="[23, 35, 11]"
+                                        :values="[23, 35, 14]"
                                         width="600"
                                         height="350"
         >
@@ -16,7 +16,7 @@
       <div class="pc-container">
         <h3 class="my-5 text-lg font-semibold">Headcounts %</h3>
           <pie-chart-component :labels="['Catholic', 'Other', 'Unknown']"
-                               :values="[23, 35, 11]"
+                               :values="[23, 35, 14]"
                                width="350"
                                height="350"
           >
