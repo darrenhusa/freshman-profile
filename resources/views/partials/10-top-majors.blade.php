@@ -1,3 +1,41 @@
+@php
+
+  function calculate_sum($array) {
+    $sum = 0;
+
+    for ($i = 0; $i < count($array); ++$i)
+    {
+      $sum += $array[$i];
+    }
+    return $sum;
+  }
+
+  function calculate_percentages($array, $numberOfDecimalDigits) {
+    $sum = calculate_sum($array);
+
+    $result = [];
+
+    for ($i = 0; $i < count($array); ++$i)
+    {
+      $temp = round(100.0 * $array[$i] / $sum, $numberOfDecimalDigits);
+      array_push($result, $temp);
+    }
+    return $result;
+  }
+
+  $majors = array('General Studies', 'Business Management', 'Biomedical Science', 'Criminal Justice',
+                  'Digital & Studio Arts', 'Kinesiology', 'Psychology', 'Accounting',
+                  'Human Services', 'English & Media Communications');
+  $numbers = array(17, 14, 7, 7, 7, 5, 5, 3, 3, 2);
+  $grand_total = 72;
+  $ranks = [1, 2, 3, 3, 3, 6, 6, 8, 8, 10];
+
+  $sum_from_top_ten = calculate_sum($numbers);
+  $percentage_from_top_ten = round(100.0*$sum_from_top_ten/$grand_total, 0);
+  $percentages = calculate_percentages($numbers, 1);
+@endphp
+
+
 <div class="item-container ml-5 mt-5">
 
   <h2 class="text-2xl font-bold">10</h2>
@@ -14,75 +52,30 @@
         </tr>
       </thead>
       <tbody class="text-right">
-        <tr>
-          <td class="border px-4 py-2 text-left">General Studies</td>
-          <td class="border px-4 py-2">17</td>
-          <td class="border px-4 py-2">{{ round(100*17/72, 1) }}%</td>
-          <td class="border px-4 py-2">1</td>
-        </tr>
-        <tr class="bg-gray-200">
-          <td class="border px-4 py-2 text-left">Business Management</td>
-          <td class="border px-4 py-2">14</td>
-          <td class="border px-4 py-2">{{ round(100*14/72, 1) }}%</td>
-          <td class="border px-4 py-2">2</td>
-        </tr>
-        <tr>
-          <td class="border px-4 py-2 text-left">Biomedical Science</td>
-          <td class="border px-4 py-2">7</td>
-          <td class="border px-4 py-2">{{ round(100*7/72, 1) }}%</td>
-          <td class="border px-4 py-2">3</td>
-        </tr>
-        <tr class="bg-gray-200">
-          <td class="border px-4 py-2 text-left">Criminal Justice</td>
-          <td class="border px-4 py-2">7</td>
-          <td class="border px-4 py-2">{{ round(100*7/72, 1) }}%</td>
-          <td class="border px-4 py-2">3</td>
-        </tr>
-        <tr>
-          <td class="border px-4 py-2 text-left">Digital & Studio Arts</td>
-          <td class="border px-4 py-2">7</td>
-          <td class="border px-4 py-2">{{ round(100*7/72, 1) }}%</td>
-          <td class="border px-4 py-2">3</td>
-        </tr>
-        <tr class="bg-gray-200">
-          <td class="border px-4 py-2 text-left">Kinesiology</td>
-          <td class="border px-4 py-2">5</td>
-          <td class="border px-4 py-2">{{ round(100*5/72, 1) }}%</td>
-          <td class="border px-4 py-2">6</td>
-        </tr>
-        <tr>
-          <td class="border px-4 py-2 text-left">Psychology</td>
-          <td class="border px-4 py-2">5</td>
-          <td class="border px-4 py-2">{{ round(100*5/72, 1) }}%</td>
-          <td class="border px-4 py-2">6</td>
-        </tr>
-        <tr class="bg-gray-200">
-          <td class="border px-4 py-2 text-left">Accounting</td>
-          <td class="border px-4 py-2">3</td>
-          <td class="border px-4 py-2">{{ round(100*3/72, 1) }}%</td>
-          <td class="border px-4 py-2">8</td>
-        </tr>
-        <tr>
-          <td class="border px-4 py-2 text-left">Human Services</td>
-          <td class="border px-4 py-2">3</td>
-          <td class="border px-4 py-2">{{ round(100*3/72, 1) }}%</td>
-          <td class="border px-4 py-2">8</td>
-        </tr>
-        <tr class="bg-gray-200">
-          <td class="border px-4 py-2 text-left">English & Media Communications</td>
-          <td class="border px-4 py-2">2</td>
-          <td class="border px-4 py-2">{{ round(100*2/72, 1) }}%</td>
-          <td class="border px-4 py-2">10</td>
-        </tr>
+
+        @for ($i = 0; $i < 10; $i++)
+          @if($i % 2 == 0)
+            <!-- found an even row -->
+            <tr>
+          @else
+            <!-- found an odd row -->
+            <tr class="bg-gray-200">
+          @endif
+            <td class="border px-4 py-2 text-left">{{ $majors[$i] }}</td>
+            <td class="border px-4 py-2">{{ $numbers[$i] }}</td>
+            <td class="border px-4 py-2">{{ $percentages[$i] }}%</td>
+            <td class="border px-4 py-2">{{ $ranks[$i] }}</td>
+          </tr>
+        @endfor
         <tr class="font-semibold">
           <td class="border px-4 py-2">Total (from top 10)</td>
-          <td class="border px-4 py-2">{{ (72 - 2) }}</td>
-          <td class="border px-4 py-2">{{ round(100*(72 - 2)/72, 0) }}%</td>
+          <td class="border px-4 py-2">{{ $sum_from_top_ten }}</td>
+          <td class="border px-4 py-2">{{ $percentage_from_top_ten }}%</td>
           <td class="border px-4 py-2">--</td>
         </tr>
         <tr class="font-semibold">
           <td class="border px-4 py-2">Grand Total (from all FTFT F1)</td>
-          <td class="border px-4 py-2">72</td>
+          <td class="border px-4 py-2">{{ $grand_total }}</td>
           <td class="border px-4 py-2">100%</td>
           <td class="border px-4 py-2">--</td>
         </tr>
