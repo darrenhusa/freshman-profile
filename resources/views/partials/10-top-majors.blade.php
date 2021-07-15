@@ -10,14 +10,13 @@
     return $sum;
   }
 
-  function calculate_percentages($array, $numberOfDecimalDigits) {
-    $sum = calculate_sum($array);
-
+  function calculate_percentages($array, $grand_total, $numberOfDecimalDigits) {
+    
     $result = [];
 
     for ($i = 0; $i < count($array); ++$i)
     {
-      $temp = round(100.0 * $array[$i] / $sum, $numberOfDecimalDigits);
+      $temp = round(100.0 * $array[$i] / $grand_total, $numberOfDecimalDigits);
       array_push($result, $temp);
     }
     return $result;
@@ -32,7 +31,7 @@
 
   $sum_from_top_ten = calculate_sum($numbers);
   $percentage_from_top_ten = round(100.0*$sum_from_top_ten/$grand_total, 0);
-  $percentages = calculate_percentages($numbers, 1);
+  $percentages = calculate_percentages($numbers, $grand_total, 1);
 @endphp
 
 
