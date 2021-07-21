@@ -1,3 +1,11 @@
+@php
+  $by_hs_gpa = "[13, 35, 16]";
+
+  $total_with_hs_gpa = 64;
+  $average_hs_gpa = 2.62
+
+@endphp
+
 <div class="item-container mt-12">
     <h2 class="text-2xl font-bold">07 - FTFT F1 by High School GPA</h2>
 
@@ -6,7 +14,7 @@
         <h3 class="my-5 text-lg font-semibold">Headcounts</h3>
 
         <horizontal-bar-chart-component :labels="['1.0 to 2.0', '2.01 to 3.0', '3.01 and above']"
-                                        :values="[21, 26, 9]"
+                                        :values="{{ $by_hs_gpa }}"
                                         width="600"
                                         height="350"
         >
@@ -16,7 +24,7 @@
       <div class="pc-container">
         <h3 class="my-5 text-lg font-semibold">Headcounts %</h3>
           <pie-chart-component :labels="['1.0 to 2.0', '2.01 to 3.0', '3.01 and above']"
-                               :values="[21, 26, 9]"
+                               :values="{{ $by_hs_gpa }}"
                                width="350"
                                height="350"
           >
@@ -24,15 +32,15 @@
       </div>
   </div>
 
-  <h3 class="mt-5 text-lg font-semibold">Total with high school GPA = 119</h3>
-  <h3 class="mb-5 text-lg font-semibold">Average high school GPA = 2.63</h3>
+  <h3 class="mt-5 text-lg font-semibold">Total with high school GPA = {{ $total_with_hs_gpa }}</h3>
+  <h3 class="mb-5 text-lg font-semibold">Average high school GPA = {{ $average_hs_gpa }}</h3>
 
   <div class="note mt-5">
     <h4 class="italic"><span class="underline mr-1">Note:</span>FTFT F1 = First-time, Full-time F1 students</h4>
   </div>
 
   <div class="source mt-2">
-    <h4 class="italic"><span class="underline mr-1">Source:</span>Slate CRM</h4>
+    <h4 class="italic"><span class="underline mr-1">Source:</span>Empower Student Records (SR) for student list. Slate CRM for HS GPA data.</h4>
   </div>
 
 </div>

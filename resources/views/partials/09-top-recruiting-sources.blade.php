@@ -5,16 +5,6 @@
   
   <h3>only showing high schools where the enrolled students >= 5</h3>
 
-  <!-- <h3>Slate Query Definitions</h3>
-  <ul>
-    <li>The FTFT F1 data set is defined in Slate as:</li>
-    <li>PersonEntryType = 'High School' for first-time and</li>
-    <li>PersonStudentTime = 'FT' for full-time and</li>
-    <li>PersonClassDivision = 'F1' for Freshman (first-semester)</li>
-    <li>Using Rank 1 High School (SchoolsTypeLevelofStudy = 'High School' and SchoolsRankByLevelofStudy = '1')</li>
-    <li>In the event of current rank ties, the items are listed in alphabetical order by school name.</li>
-  </ul> -->
-
   <div class="table-container ml-10">
 
     <table class="table-auto">

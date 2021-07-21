@@ -1,3 +1,14 @@
+@php
+  $data = [
+    ["Hammond", 14, '35.9%'],
+    ["Gary", 7, '17.9%'],
+    ["Whiting", 7, '17.9%'],
+    ["All Other", 11, '28.2%'],
+    ["Total", 39, '100.0%'],
+  ];
+
+@endphp
+
 <div class="item-container ml-5 mt-5">
 
   <h2 class="text-2xl font-bold"><span>C) FTFT F1 Lake County Residents by City</span></h2>
@@ -13,44 +24,27 @@
         </tr>
       </thead>
       <tbody class="text-right">
-        <tr>
-          <td class="border px-4 py-2 text-left">Hammond</td>
-          <td class="border px-4 py-2">28</td>
-          <td class="border px-4 py-2">{{ round(100*28/84, 1) }}%</td>
-        </tr>
-        <tr class="bg-gray-200">
-          <td class="border px-4 py-2 text-left">Gary</td>
-          <td class="border px-4 py-2">20</td>
-          <td class="border px-4 py-2">{{ round(100*20/84, 1) }}%</td>
-        </tr>
-        <tr>
-          <td class="border px-4 py-2 text-left">Whiting</td>
-          <td class="border px-4 py-2">9</td>
-          <td class="border px-4 py-2">{{ round(100*9/84, 1) }}%</td>
-        </tr>
-        <tr class="bg-gray-200">
-          <td class="border px-4 py-2 text-left">East Chicago</td>
-          <td class="border px-4 py-2">8</td>
-          <td class="border px-4 py-2">{{ round(100*8/84, 1) }}%</td>
-        </tr>
-        <tr>
-          <td class="border px-4 py-2 text-left">All Other</td>
-          <td class="border px-4 py-2">{{ 84-28-20-9-8 }}</td>
-          <td class="border px-4 py-2">{{ round(100*(84-28-20-9-8)/84, 1) }}%</td>
-        </tr>
-        <tr class="bg-gray-200">
-          <td class="border px-4 py-2 text-left">Total</td>
-          <td class="border px-4 py-2">81</td>
-          <td class="border px-4 py-2">100%</td>
-        </tr>
-      </tbody>
+      @for ($i = 0; $i < 5; $i++)
+          @if($i % 2 == 0)
+            <!-- found an even row -->
+            <tr>
+          @else
+            <!-- found an odd row -->
+            <tr class="bg-gray-200">
+          @endif
+            <td class="border px-4 py-2 text-left">{{ $data[$i][0] }}</td>
+            <td class="border px-4 py-2">{{ $data[$i][1] }}</td>
+            <td class="border px-4 py-2">{{ $data[$i][2] }}</td>
+          </tr>
+        @endfor  
+    </tbody>
     </table>
     <div class="note mt-5">
       <h4 class="italic"><span class="underline mr-1">Note:</span>FTFT F1 = First-time, Full-time F1 students</h4>
     </div>
 
     <div class="source mt-2">
-      <h4 class="italic"><span class="underline mr-1">Source:</span>Slate CRM</h4>
+      <h4 class="italic"><span class="underline mr-1">Source:</span>Empower Student Records (SR) for student list. Slate CRM for residency information.</h4>
     </div>
 
   </div>

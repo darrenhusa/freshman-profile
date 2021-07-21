@@ -1,3 +1,13 @@
+@php
+  $data = [
+    ["Lake", 39, '83.0%'],
+    ["Porter", 3, '6.4%'],
+    ["Other", 5, '10.6%'],
+    ["Total", 47, '100.0%'],
+  ];
+
+@endphp
+
 <div class="item-container ml-5 mt-5">
 
   <h2 class="text-2xl font-bold"><span>B) FTFT F1 Indiana Residents by County</span></h2>
@@ -12,26 +22,19 @@
         </tr>
       </thead>
       <tbody class="text-right">
-        <tr>
-          <td class="border px-4 py-2 text-left">Lake</td>
-          <td class="border px-4 py-2">84</td>
-          <td class="border px-4 py-2">{{ round(100*84/100, 1) }}%</td>
-        </tr>
-        <tr class="bg-gray-200">
-          <td class="border px-4 py-2 text-left">Porter</td>
-          <td class="border px-4 py-2">7</td>
-          <td class="border px-4 py-2">{{ round(100*7/100, 1) }}%</td>
-        </tr>
-        <tr>
-          <td class="border px-4 py-2 text-left">Other</td>
-          <td class="border px-4 py-2">9</td>
-          <td class="border px-4 py-2">{{ round(100*9/100, 1) }}%</td>
-        </tr>
-        <tr class="bg-gray-200">
-          <td class="border px-4 py-2 text-left">Total</td>
-          <td class="border px-4 py-2">{{ 84 + 7 + 9 }}</td>
-          <td class="border px-4 py-2">100%</td>
-        </tr>
+      @for ($i = 0; $i < 4; $i++)
+          @if($i % 2 == 0)
+            <!-- found an even row -->
+            <tr>
+          @else
+            <!-- found an odd row -->
+            <tr class="bg-gray-200">
+          @endif
+            <td class="border px-4 py-2 text-left">{{ $data[$i][0] }}</td>
+            <td class="border px-4 py-2">{{ $data[$i][1] }}</td>
+            <td class="border px-4 py-2">{{ $data[$i][2] }}</td>
+          </tr>
+        @endfor  
       </tbody>
     </table>
 
@@ -40,7 +43,7 @@
     </div>
 
     <div class="source mt-2">
-      <h4 class="italic"><span class="underline mr-1">Source:</span>Slate CRM</h4>
+      <h4 class="italic"><span class="underline mr-1">Source:</span>Empower Student Records (SR) for student list. Slate CRM for residency information.</h4>
     </div>
 
   </div>

@@ -25,17 +25,17 @@
         @include('partials.06-zero-efc')
         
         <!-- SLATE CRM -->
-        <div style="display: none">
-          @include('partials.07-high-school-gpa')
-        </div>
+        <!-- <div style="display: none"> -->
+        @include('partials.07-high-school-gpa')
+        <!-- </div> -->
 
         <!-- SLATE CRM -->
         <!-- 08 = FTFT F1 by primary-residence -->
-        <div style="display: none">
-          @include('partials.08a')
-          @include('partials.08b')
-          @include('partials.08c')
-        </div>
+        <!-- <div style="display: none"> -->
+        @include('partials.08a')
+        @include('partials.08b')
+        @include('partials.08c')
+        <!-- </div> -->
 
         <!-- SLATE CRM -->
         <div style="display: none">
