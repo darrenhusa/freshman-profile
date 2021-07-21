@@ -10,7 +10,7 @@
     ['Psychology', 5],
     ['Accounting', 3],
     ['Human Services', 3],
-    ['English & Media Communications', 2];
+    ['English & Media Communications', 2],
   ];
 
   foreach ($data as $val)
@@ -18,12 +18,7 @@
        $majors[] = $val[0];
        $numbers[] = $val[1];
    }
-  <!-- $majors = ['General Studies', 'Business Management', 'Biomedical Science', 'Criminal Justice',
-                  'Digital & Studio Arts', 'Kinesiology', 'Psychology', 'Accounting',
-                  'Human Services', 'English & Media Communications'];
-   -->
   /* Only enter the first 10 majors - in descending order!*/               
-  <!-- $numbers = [19, 17, 7, 7, 7, 5, 5, 3, 3, 2]; -->
   $grand_total = 78;
 
   $ranks = calculate_rank($numbers);
