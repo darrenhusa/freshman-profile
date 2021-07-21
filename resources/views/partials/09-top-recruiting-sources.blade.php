@@ -5,8 +5,8 @@
     ["Morton Senior High School", 5, '7.1%', 3],
     ["George Rogers Clark Middle/High School (Hammond)", 5, '7.1%', 3],
     ["Hanover Central High School (Cedar Lake)", 4, '5.7%', 5],
-    ["Highland High School", 3, '4.3%', 6],
     ["D E Gavit Junior-Senior High School (Hammond)", 3, '4.3%', 6],
+    ["Highland High School", 3, '4.3%', 6],
     ["All Remaining High Schools", 38, '54.3%', '--'],
     ["Grand Total", 70, '100.0%', '--'],
   ];

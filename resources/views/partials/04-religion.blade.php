@@ -1,5 +1,5 @@
 @php
-  $by_religion = "[23, 43, 8]";
+  $by_religion = "[23, 43, 12]";
 
 @endphp
 

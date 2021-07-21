@@ -1,9 +1,9 @@
 @php
   $data = [
-    ["Indiana", 47, '62.7%'],
-    ["Illinois", 22, '29.3%'],
-    ["Out-of-State", 6, '8.0%'],
-    ["Total", 75, '100.0%'],
+    ["Indiana", 49, '63.6%'],
+    ["Illinois", 22, '28.6%'],
+    ["Out-of-State", 6, '7.8%'],
+    ["Total", 77, '100.0%'],
   ];
 
 @endphp

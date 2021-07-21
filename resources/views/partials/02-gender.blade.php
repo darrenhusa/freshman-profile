@@ -1,5 +1,5 @@
 @php
-  $by_gender = "[39, 33, 2]";
+  $by_gender = "[41, 33, 4]";
 
 @endphp
 

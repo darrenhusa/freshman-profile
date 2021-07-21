@@ -1,5 +1,5 @@
 @php
-  $by_ethnicity = "[24, 27, 12, 4, 7]";
+  $by_ethnicity = "[24, 27, 12, 4, 11]";
 
 @endphp
 

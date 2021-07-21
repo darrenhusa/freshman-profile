@@ -1,8 +1,8 @@
 @php
-  $by_hs_gpa = "[13, 35, 16]";
+  $by_hs_gpa = "[14, 37, 20]";
 
-  $total_with_hs_gpa = 64;
-  $average_hs_gpa = 2.62
+  $total_with_hs_gpa = 71;
+  $average_hs_gpa = 2.65
 
 @endphp
 

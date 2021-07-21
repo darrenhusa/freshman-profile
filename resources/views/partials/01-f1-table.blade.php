@@ -1,9 +1,9 @@
 @php
-  $data = array (
-    array("Full-time (FT)", 13, 74, 1, 88, '92.6%'),
-    array("Part-time (PT)", 2, 3, 2, 7, '7.4%'),
-    array("Total", 15, 77, 3, 95, '100.0%')
-  );
+  $data = [
+    ["Full-time (FT)", 13, 78, 1, 92, '92.9%'],
+    ["Part-time (PT)", 2, 3, 2, 7, '7.1%'],
+    ["Total", 15, 81, 3, 99, '100.0%']
+  ];
 
 @endphp
 
