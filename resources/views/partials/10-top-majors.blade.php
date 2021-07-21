@@ -52,8 +52,8 @@
                   'Human Services', 'English & Media Communications');
   
   /* Only enter the first 10 majors - in descending order!*/               
-  $numbers = array(17, 14, 7, 7, 7, 5, 5, 3, 3, 2);
-  $grand_total = 72;
+  $numbers = array(17, 16, 7, 7, 7, 5, 5, 3, 3, 2);
+  $grand_total = 74;
 
   $ranks = calculate_rank($numbers);
   $sum_from_top_ten = calculate_sum($numbers);

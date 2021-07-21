@@ -1,8 +1,8 @@
 @php
   $data = array (
-    array("Full-time (FT)", 12, 72, 1, 85, '92.4%'),
-    array("Part-time (PT)", 2, 3, 2, 7, '7.6%'),
-    array("Total", 14, 75, 3, 92, '100.0%')
+    array("Full-time (FT)", 13, 74, 1, 88, '92.6%'),
+    array("Part-time (PT)", 2, 3, 2, 7, '7.4%'),
+    array("Total", 15, 77, 3, 95, '100.0%')
   );
 
 @endphp

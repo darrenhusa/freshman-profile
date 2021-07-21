@@ -1,3 +1,8 @@
+@php
+  $by_ethnicity = "[24, 27, 12, 4, 7]";
+
+@endphp
+
 <div class="item-container mt-12">
     <h2 class="text-2xl font-bold">03 - FTFT F1 by Ethnicity</h2>
 
@@ -6,7 +11,7 @@
         <h3 class="my-5 text-lg font-semibold">Headcounts</h3>
 
         <horizontal-bar-chart-component :labels="['Black or African American', 'Hispanics of any race', 'White', 'Other', 'Unknown']"
-                                        :values="[21, 26, 9, 3, 13]"
+                                        :values="{{ $by_ethnicity }}"
                                         width="600"
                                         height="350"
         >
@@ -16,7 +21,7 @@
       <div class="pc-container">
         <h3 class="my-5 text-lg font-semibold">Headcounts %</h3>
           <pie-chart-component :labels="['Black or African American', 'Hispanics of any race', 'White', 'Other', 'Unknown']"
-                               :values="[21, 26, 9, 3, 13]"
+                               :values="{{ $by_ethnicity }}"
                                width="350"
                                height="350"
           >
