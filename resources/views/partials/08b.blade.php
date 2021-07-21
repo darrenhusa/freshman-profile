@@ -1,10 +1,17 @@
 @php
   $data = [
-    ["Lake", 40, '81.6%'],
-    ["Porter", 3, '6.1%'],
-    ["Other", 6, '12.2%'],
-    ["Total", 49, '100.0%'],
+    ["Lake", 40],
+    ["Porter", 3],
+    ["Other", 6],
   ];
+
+  foreach ($data as $val)
+   {
+       $numbers[] = $val[1];
+   }
+
+    $grand_total = calculate_sum($numbers);
+    $percentages = calculate_percentages($numbers, $grand_total, 1);
 
 @endphp
 
@@ -22,7 +29,7 @@
         </tr>
       </thead>
       <tbody class="text-right">
-      @for ($i = 0; $i < 4; $i++)
+      @for ($i = 0; $i < 3; $i++)
           @if($i % 2 == 0)
             <!-- found an even row -->
             <tr>
@@ -31,10 +38,17 @@
             <tr class="bg-gray-200">
           @endif
             <td class="border px-4 py-2 text-left">{{ $data[$i][0] }}</td>
-            <td class="border px-4 py-2">{{ $data[$i][1] }}</td>
-            <td class="border px-4 py-2">{{ $data[$i][2] }}</td>
+            <td class="border px-4 py-2">{{ $numbers[$i] }}</td>
+            <td class="border px-4 py-2">{{ $percentages[$i] }}</td>
           </tr>
         @endfor  
+
+        <tr class="font-semibold">
+          <td class="border px-4 py-2">Total</td>
+          <td class="border px-4 py-2">{{ $grand_total }}</td>
+          <td class="border px-4 py-2">100%</td>
+        </tr>
+
       </tbody>
     </table>
 
