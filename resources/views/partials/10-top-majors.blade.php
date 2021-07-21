@@ -1,58 +1,29 @@
 @php
 
-  function calculate_sum($array) {
-    $sum = 0;
+  $data = [
+    ['General Studies', 19], 
+    ['Business Management', 17], 
+    ['Biomedical Science', 7],
+    ['Criminal Justice', 7],
+    ['Digital & Studio Arts', 7], 
+    ['Kinesiology', 5],
+    ['Psychology', 5],
+    ['Accounting', 3],
+    ['Human Services', 3],
+    ['English & Media Communications', 2];
+  ];
 
-    for ($i = 0; $i < count($array); ++$i)
-    {
-      $sum += $array[$i];
-    }
-    return $sum;
-  }
-
-  function calculate_percentages($array, $grand_total, $numberOfDecimalDigits) {
-    
-    $result = [];
-
-    for ($i = 0; $i < count($array); ++$i)
-    {
-      $temp = round(100.0 * $array[$i] / $grand_total, $numberOfDecimalDigits);
-      array_push($result, $temp);
-    }
-    return $result;
-  }
-
-  function calculate_rank($numbers) {
-
-    rsort($numbers);
-
-    $arrlength = count($numbers);
-    $rank = 1;
-    $prev_rank = $rank;
-    $result = [];
-
-    for($x = 0; $x < $arrlength; $x++) {
-      if ($x == 0) {
-          array_push($result, $rank);
-      }elseif ($numbers[$x] != $numbers[$x-1]) {
-          $rank++;
-          $prev_rank = $rank;
-          array_push($result, $rank);
-      }else{
-        $rank++;
-        array_push($result, $prev_rank);
-      }
-    }
-    return $result;
-    /* return implode(', ', $result); */
-  }
-
-  $majors = array('General Studies', 'Business Management', 'Biomedical Science', 'Criminal Justice',
+  foreach ($data as $val)
+   {
+       $majors[] = $val[0];
+       $numbers[] = $val[1];
+   }
+  <!-- $majors = ['General Studies', 'Business Management', 'Biomedical Science', 'Criminal Justice',
                   'Digital & Studio Arts', 'Kinesiology', 'Psychology', 'Accounting',
-                  'Human Services', 'English & Media Communications');
-  
+                  'Human Services', 'English & Media Communications'];
+   -->
   /* Only enter the first 10 majors - in descending order!*/               
-  $numbers = array(19, 17, 7, 7, 7, 5, 5, 3, 3, 2);
+  <!-- $numbers = [19, 17, 7, 7, 7, 5, 5, 3, 3, 2]; -->
   $grand_total = 78;
 
   $ranks = calculate_rank($numbers);

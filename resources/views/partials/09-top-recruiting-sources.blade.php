@@ -1,15 +1,28 @@
 @php
+  
   $data = [
-    ["Whiting High School", 6, '8.6%', 1],
-    ["Dwight D Eisenhower High School (Blue Island, IL)", 6, '8.6%', 1],
-    ["Morton Senior High School", 5, '7.1%', 3],
-    ["George Rogers Clark Middle/High School (Hammond)", 5, '7.1%', 3],
-    ["Hanover Central High School (Cedar Lake)", 4, '5.7%', 5],
-    ["D E Gavit Junior-Senior High School (Hammond)", 3, '4.3%', 6],
-    ["Highland High School", 3, '4.3%', 6],
-    ["All Remaining High Schools", 38, '54.3%', '--'],
-    ["Grand Total", 70, '100.0%', '--'],
+    ["Whiting High School", 6],
+    ["Eisenhower High School (Blue Island, IL)", 6],
+    ["Morton Senior High School", 5],
+    ["Clark Middle/High School (Hammond)", 5],
+    ["Hanover Central High School (Cedar Lake)", 4],
+    ["Gavit Junior-Senior High School (Hammond)", 3],
+    ["Highland High School", 3],
   ];
+
+  foreach ($data as $val)
+   {
+       $school_names[] = $val[0];
+       $numbers[] = $val[1];
+   }
+  $grand_total = 70;
+
+  $ranks = calculate_rank($numbers);
+  $sum = calculate_sum($numbers);
+  $percentages = calculate_percentages($numbers, $grand_total, 1);
+  $remaining_schools_total = $grand_total - $sum;
+  $temp = (100.0 * $remaining_schools_total)/$grand_total;
+  $remaining_schools_percentage = round($temp, 1);
 
 @endphp
 
@@ -32,7 +45,7 @@
         </tr>
       </thead>
       <tbody class="text-right">
-      @for ($i = 0; $i < 9; $i++)
+      @for ($i = 0; $i < 7; $i++)
           @if($i % 2 == 0)
             <!-- found an even row -->
             <tr>
@@ -40,13 +53,27 @@
             <!-- found an odd row -->
             <tr class="bg-gray-200">
           @endif
-            <td class="border px-4 py-2 text-left">{{ $data[$i][0] }}</td>
-            <td class="border px-4 py-2">{{ $data[$i][1] }}</td>
-            <td class="border px-4 py-2">{{ $data[$i][2] }}</td>
-            <td class="border px-4 py-2">{{ $data[$i][3] }}</td>
+            <td class="border px-4 py-2 text-left">{{ $school_names[$i] }}</td>
+            <td class="border px-4 py-2">{{ $numbers[$i] }}</td>
+            <td class="border px-4 py-2">{{ $percentages[$i] }}</td>
+            <td class="border px-4 py-2">{{ $ranks[$i] }}</td>
           </tr>
         @endfor  
         
+        <tr class="font-semibold">
+          <td class="border px-4 py-2 text-left">All Remaining High Schools</td>
+          <td class="border px-4 py-2">{{ $remaining_schools_total }}</td>
+          <td class="border px-4 py-2">{{ $remaining_schools_percentage }}</td>
+          <td class="border px-4 py-2">--</td>
+        </tr>
+
+        <tr class="font-semibold">
+          <td class="border px-4 py-2 text-left">Grand Total</td>
+          <td class="border px-4 py-2">{{ $grand_total }}</td>
+          <td class="border px-4 py-2">100%</td>
+          <td class="border px-4 py-2">--</td>
+        </tr>
+
       </tbody>
     </table>
 
