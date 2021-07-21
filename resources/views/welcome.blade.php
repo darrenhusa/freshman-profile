@@ -38,9 +38,9 @@
         <!-- </div> -->
 
         <!-- SLATE CRM -->
-        <div style="display: none">
-          @include('partials.09-top-recruiting-sources')
-        </div>
+        <!-- <div style="display: none"> -->
+        @include('partials.09-top-recruiting-sources')
+        <!-- </div> -->
 
         @include('partials.10-top-majors')
         
