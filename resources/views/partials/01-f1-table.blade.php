@@ -5,6 +5,8 @@
     ["Total", 15, 81, 3, 99, '100.0%']
   ];
 
+  $length = count($data);
+
 @endphp
 
 <div class="item-container mt-8">
@@ -23,7 +25,7 @@
         </tr>
       </thead>
       <tbody class="text-right">
-      @for ($i = 0; $i < 3; $i++)
+      @for ($i = 0; $i < $length; $i++)
           @if($i % 2 == 0)
             <!-- found an even row -->
             <tr>

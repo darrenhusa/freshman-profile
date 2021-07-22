@@ -3,7 +3,7 @@
   $data = [
     ["Whiting High School", 6],
     ["Eisenhower High School (Blue Island, IL)", 6],
-    ["Morton Senior High School", 5],
+    ["Morton Senior High School (Hammond)", 5],
     ["Clark Middle/High School (Hammond)", 5],
     ["Hanover Central High School (Cedar Lake)", 4],
     ["Gavit Junior-Senior High School (Hammond)", 3],
@@ -23,6 +23,8 @@
   $remaining_schools_total = $grand_total - $sum;
   $temp = (100.0 * $remaining_schools_total)/$grand_total;
   $remaining_schools_percentage = round($temp, 1);
+
+  $length = count($data);
 
 @endphp
 
@@ -45,7 +47,7 @@
         </tr>
       </thead>
       <tbody class="text-right">
-      @for ($i = 0; $i < 7; $i++)
+      @for ($i = 0; $i < $length; $i++)
           @if($i % 2 == 0)
             <!-- found an even row -->
             <tr>

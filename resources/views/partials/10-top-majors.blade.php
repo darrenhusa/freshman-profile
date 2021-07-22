@@ -25,6 +25,9 @@
   $sum_from_top_ten = calculate_sum($numbers);
   $percentage_from_top_ten = round(100.0*$sum_from_top_ten/$grand_total, 0);
   $percentages = calculate_percentages($numbers, $grand_total, 1);
+
+  $length = count($data);
+
 @endphp
 
 
@@ -45,7 +48,7 @@
       </thead>
       <tbody class="text-right">
 
-        @for ($i = 0; $i < 10; $i++)
+        @for ($i = 0; $i < $length; $i++)
           @if($i % 2 == 0)
             <!-- found an even row -->
             <tr>

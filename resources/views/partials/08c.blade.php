@@ -15,6 +15,8 @@
     $grand_total = calculate_sum($numbers);
     $percentages = calculate_percentages($numbers, $grand_total, 1);
 
+    $length = count($data);
+
 @endphp
 
 <div class="item-container ml-5 mt-5">
@@ -32,7 +34,7 @@
         </tr>
       </thead>
       <tbody class="text-right">
-      @for ($i = 0; $i < 6; $i++)
+      @for ($i = 0; $i < $length; $i++)
           @if($i % 2 == 0)
             <!-- found an even row -->
             <tr>
