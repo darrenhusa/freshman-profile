@@ -1,6 +1,6 @@
 @php
-  $by_athletic_status = "[26, 52]";
-
+  $by_athletic_status = "[30, 53]";
+  $athletic_statuses = "['Athlete', 'Non-Athlete']";
 @endphp
 
 <div class="item-container mt-12">
@@ -10,7 +10,7 @@
       <div class="hbc-container max-w-5xl">
         <h3 class="my-5 text-lg font-semibold">Headcounts</h3>
 
-        <horizontal-bar-chart-component :labels="['Athlete', 'Non-Athlete']"
+        <horizontal-bar-chart-component :labels="{{ $athletic_statuses }}"
                                         :values="{{ $by_athletic_status }}"
                                         width="600"
                                         height="350"

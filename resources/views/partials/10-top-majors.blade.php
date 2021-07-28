@@ -1,26 +1,28 @@
 @php
-
+  /* Only enter the first 10 majors - in descending order!*/               
+  
   $data = [
+    ['Business Management', 20], 
     ['General Studies', 19], 
-    ['Business Management', 17], 
+    ['Criminal Justice', 8],
     ['Biomedical Science', 7],
-    ['Criminal Justice', 7],
     ['Digital & Studio Arts', 7], 
+    ['Psychology', 6],
     ['Kinesiology', 5],
-    ['Psychology', 5],
     ['Accounting', 3],
     ['Human Services', 3],
     ['English & Media Communications', 2],
+    ['Health Sciences', 2],
   ];
+
+  $grand_total = 83;
 
   foreach ($data as $val)
    {
        $majors[] = $val[0];
        $numbers[] = $val[1];
    }
-  /* Only enter the first 10 majors - in descending order!*/               
-  $grand_total = 78;
-
+  
   $ranks = calculate_rank($numbers);
   $sum_from_top_ten = calculate_sum($numbers);
   $percentage_from_top_ten = round(100.0*$sum_from_top_ten/$grand_total, 0);

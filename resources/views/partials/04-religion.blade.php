@@ -1,6 +1,6 @@
 @php
-  $by_religion = "[23, 43, 12]";
-
+  $by_religion = "[25, 48, 10]";
+  $religions = "['Catholic', 'Other', 'Unknown']";
 @endphp
 
 <div class="item-container mt-12">
@@ -10,7 +10,7 @@
       <div class="hbc-container max-w-5xl">
         <h3 class="my-5 text-lg font-semibold">Headcounts</h3>
 
-        <horizontal-bar-chart-component :labels="['Catholic', 'Other', 'Unknown']"
+        <horizontal-bar-chart-component :labels="{{ $religions }}"
                                         :values="{{ $by_religion }}"
                                         width="600"
                                         height="350"

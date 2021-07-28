@@ -1,6 +1,6 @@
 @php
-  $by_zero_efc_status = "[33, 45]";
-
+  $by_zero_efc_status = "[36, 47]";
+  $efc_categories = "['Zero EFC', 'Not Zero EFC']";
 @endphp
 
 <div class="item-container mt-12">
@@ -10,7 +10,7 @@
       <div class="hbc-container max-w-5xl">
         <h3 class="my-5 text-lg font-semibold">Headcounts</h3>
 
-        <horizontal-bar-chart-component :labels="['Zero EFC', 'Not Zero EFC']"
+        <horizontal-bar-chart-component :labels="{{ $efc_categories }}"
                                         :values="{{ $by_zero_efc_status }}"
                                         width="600"
                                         height="350"

@@ -16,7 +16,7 @@
       <div id="app">
 
         <h1 class="mt-5 text-2xl font-bold">Fall 2021 CCSJ Freshman Profile</h1>
-        <h3 class="italic">(as of July 21, 2021 at 1:30 PM)</h3>
+        <h3 class="italic">(as of July 28, 2021 at 7:00 AM)</h3>
         @include('partials.01-f1-table')
         @include('partials.02-gender')
         @include('partials.03-ethnicity')

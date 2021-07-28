@@ -1,6 +1,10 @@
 @php
-  $by_ethnicity = "[24, 27, 12, 4, 11]";
-
+  $by_ethnicity = "[27, 27, 16, 4, 9]";
+  $ethnicities = "['Black or African American', 
+                  'Hispanics of any race', 
+                  'White', 
+                  'Other', 
+                  'Unknown']";
 @endphp
 
 <div class="item-container mt-12">
@@ -10,7 +14,7 @@
       <div class="hbc-container max-w-5xl">
         <h3 class="my-5 text-lg font-semibold">Headcounts</h3>
 
-        <horizontal-bar-chart-component :labels="['Black or African American', 'Hispanics of any race', 'White', 'Other', 'Unknown']"
+        <horizontal-bar-chart-component :labels="{{ $ethnicities }}"
                                         :values="{{ $by_ethnicity }}"
                                         width="600"
                                         height="350"
