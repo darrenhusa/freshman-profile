@@ -1,5 +1,5 @@
 @php
-  $by_ethnicity = "[27, 27, 16, 4, 9]";
+  $by_ethnicity = "[31, 32, 17, 5, 10]";
   $ethnicities = "['Black or African American', 
                   'Hispanics of any race', 
                   'White', 
@@ -35,6 +35,7 @@
    
   <div class="note mt-5">
     <h4 class="italic"><span class="underline mr-1">Note:</span>FTFT F1 = First-time, Full-time F1 students</h4>
+    <h4 class="italic">"Other" includes ethnicities entered as "Two or more races".</h4>
   </div>
 
   <div class="source mt-2">

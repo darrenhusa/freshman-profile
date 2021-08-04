@@ -1,9 +1,9 @@
 @php
-  $by_hs_gpa = "[16, 39, 23]";
+  $by_hs_gpa = "[16, 41, 30]";
   $gpa_ranges = "['1.0 to 2.0', '2.01 to 3.0', '3.01 and above']";
 
-  $total_with_hs_gpa = 78;
-  $average_hs_gpa = 2.64
+  $total_with_hs_gpa = 87;
+  $average_hs_gpa = 2.71
 
 @endphp
 
@@ -33,7 +33,7 @@
       </div>
   </div>
 
-  <h3 class="mt-5 text-lg font-semibold">Total with high school GPA = {{ $total_with_hs_gpa }}</h3>
+  <h3 class="mt-5 text-lg font-semibold">Total with verified high school GPA = {{ $total_with_hs_gpa }}</h3>
   <h3 class="mb-5 text-lg font-semibold">Average high school GPA = {{ $average_hs_gpa }}</h3>
 
   <div class="note mt-5">
