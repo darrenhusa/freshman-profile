@@ -82,11 +82,12 @@
       </tbody>
     </table>
 
-    <div class="note mt-5">
+    <!-- adjust margins for notes to force contents onto one page in PDF! -->
+    <div class="note mt-2">
       <h4 class="italic"><span class="underline mr-1">Note:</span>FTFT F1 = First-time, Full-time F1 students</h4>
     </div>
 
-    <div class="source mt-2">
+    <div class="source mt-1">
       <h4 class="italic"><span class="underline mr-1">Source:</span>Empower Student Records (SR) for student list. Slate CRM for high school information.</h4>
     </div>
 
