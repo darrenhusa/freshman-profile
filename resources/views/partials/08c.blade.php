@@ -4,8 +4,8 @@
     ["Gary", 8],
     ["Whiting", 7],
     ["East Chicago", 4],
+    ["Griffith", 4],
     ["Highland", 4],
-    ["Griffith", 3],
     ["All Other", 2],
   ];
   foreach ($data as $val)

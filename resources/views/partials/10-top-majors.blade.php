@@ -5,17 +5,18 @@
     ['Business Management', 24], 
     ['General Studies', 22], 
     ['Criminal Justice', 9],
-    ['Digital & Studio Arts', 8], 
-    ['Biomedical Science', 7],
+    ['Digital & Studio Arts', 9], 
+    ['Biomedical Science', 8],
     ['Psychology', 7],
-    ['Kinesiology', 5],
-    ['Accounting', 4],
+    ['Kinesiology', 6],
+    ['Accounting', 5],
     ['English & Media Communications', 3],
-    ['Health Sciences', 2],
+    ['Forensic Science', 2],
+    ['Health Science', 2],
     ['Human Services', 2],
   ];
 
-  $grand_total = 95;
+  $grand_total = 100;
 
   foreach ($data as $val)
    {

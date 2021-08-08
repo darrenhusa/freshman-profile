@@ -1,5 +1,5 @@
 @php
-  $by_ethnicity = "[31, 32, 17, 5, 10]";
+  $by_ethnicity = "[35, 32, 18, 6, 9]";
   $ethnicities = "['Black or African American', 
                   'Hispanics of any race', 
                   'White', 
