@@ -2,7 +2,7 @@
   $data = [
     ["Lake", 45],
     ["Porter", 3],
-    ["Other", 10],
+    ["Other", 11],
   ];
 
   foreach ($data as $val)

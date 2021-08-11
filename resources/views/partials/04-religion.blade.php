@@ -1,5 +1,5 @@
 @php
-  $by_religion = "[30, 62, 8]";
+  $by_religion = "[31, 65, 7]";
   $religions = "['Catholic', 'Other', 'Unknown']";
 @endphp
 

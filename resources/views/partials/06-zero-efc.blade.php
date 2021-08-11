@@ -1,5 +1,5 @@
 @php
-  $by_zero_efc_status = "[41, 59]";
+  $by_zero_efc_status = "[44, 59]";
   $efc_categories = "['Zero EFC', 'Not Zero EFC']";
 @endphp
 
