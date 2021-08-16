@@ -1,7 +1,7 @@
 @php
   $data = [
-    ["Indiana", 59],
-    ["Illinois", 31],
+    ["Indiana", 61],
+    ["Illinois", 32],
     ["Out-of-State", 12],
   ];
 

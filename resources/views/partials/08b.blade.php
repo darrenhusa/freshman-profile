@@ -1,6 +1,6 @@
 @php
   $data = [
-    ["Lake", 45],
+    ["Lake", 47],
     ["Porter", 3],
     ["Other", 11],
   ];

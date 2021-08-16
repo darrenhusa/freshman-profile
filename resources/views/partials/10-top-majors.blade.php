@@ -2,13 +2,13 @@
   /* Only enter the first 10 majors - in descending order!*/               
   
   $data = [
-    ['Business Management', 26], 
+    ['Business Management', 28], 
     ['General Studies', 23], 
     ['Criminal Justice', 9],
     ['Digital & Studio Arts', 9], 
     ['Biomedical Science', 8],
+    ['Kinesiology', 7],
     ['Psychology', 7],
-    ['Kinesiology', 6],
     ['Accounting', 5],
     ['English & Media Communications', 3],
     ['Forensic Science', 2],
@@ -16,7 +16,7 @@
     ['Human Services', 2],
   ];
 
-  $grand_total = 103;
+  $grand_total = 106;
 
   foreach ($data as $val)
    {
