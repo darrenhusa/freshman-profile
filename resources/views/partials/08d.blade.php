@@ -22,7 +22,7 @@
 
 <div class="item-container ml-5 mt-5">
 
-  <h2 class="text-2xl font-bold"><span>C) FTFT F1 Lake County Residents by City</span></h2>
+  <h2 class="text-2xl font-bold"><span>D)Top Lake County Resident Cities for FTFT F1</span></h2>
   <h3>showing municipalities with 3 or more residents only</h3>
 
   <div class="table-container ml-10">

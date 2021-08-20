@@ -30,8 +30,9 @@
         <!-- SLATE CRM -->
         <!-- 08 = FTFT F1 by primary-residence -->
         @include('partials.08a')
-        @include('partials.08b')
-        @include('partials.08c')
+        @include('partials.08b-illinois')
+        @include('partials.08c-indiana')
+        @include('partials.08d')
 
         <!-- SLATE CRM -->
         @include('partials.09-top-recruiting-sources')
