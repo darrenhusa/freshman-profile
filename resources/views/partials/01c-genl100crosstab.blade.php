@@ -1,8 +1,8 @@
 @php
   $data = [
-    ["Full-time (FT)", 13, 106, 2, 121, '92.4%'],
-    ["Part-time (PT)", 4, 5, 1, 10, '7.6%'],
-    ["Total", 17, 111, 3, 131, '100.0%']
+    ["Full-time (FT)", 14, 109, 33, 156, '94.5%'],
+    ["Part-time (PT)", 1, 5, 3, 9, '5.5%'],
+    ["Total", 15, 114, 36, 165, '100.0%']
   ];
 
   $length = count($data);
@@ -10,7 +10,7 @@
 @endphp
 
 <div class="item-container mt-8">
-  <h1 class="text-2xl font-bold">01 - A - F1 Headcounts by FT/PT Status and Entry-types</h1>
+  <h1 class="text-2xl font-bold">01 - C - GENL 100 Headcounts by FT/PT Status and Entry-types</h1>
 
   <div class="table-container mt-5">
     <table class="table-auto">
@@ -45,9 +45,9 @@
       </tbody>
     </table>
 
-    <div class="note mt-5">
+    <!-- <div class="note mt-5">
       <h4 class="italic"><span class="underline mr-1">Note:</span>F1 = Freshman (First-semester) students</h4>
-    </div>
+    </div> -->
 
     <div class="source mt-2">
       <h4 class="italic"><span class="underline mr-1">Source:</span>Empower Student Records (SR)</h4>
