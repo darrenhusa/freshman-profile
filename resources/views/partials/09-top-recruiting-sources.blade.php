@@ -34,10 +34,10 @@
 
 <div class="item-container ml-5 mt-5">
 
-  <h2 class="text-2xl font-bold">09</h2>
-  <h3 class="text-2xl font-bold">Top Recruiting Sources for FTFT F1 Students</h3>
+  <h2 class="text-xl font-bold">09</h2>
+  <h3 class="text-xl font-bold">Top Recruiting Sources for FTFT F1 Students</h3>
   
-  <h3>only showing high schools where the enrolled students >= 3</h3>
+  <h3 class="text-sm">only showing high schools where the enrolled students >= 3</h3>
 
   <div class="table-container ml-10">
 
@@ -84,11 +84,11 @@
     </table>
 
     <!-- adjust margins for notes to force contents onto one page in PDF! -->
-    <div class="note mt-2">
+    <div class="note mt-1 text-xs">
       <h4 class="italic"><span class="underline mr-1">Note:</span>FTFT F1 = First-time, Full-time F1 students</h4>
     </div>
 
-    <div class="source mt-1">
+    <div class="source mt-0 text-xs">
       <h4 class="italic"><span class="underline mr-1">Source:</span>Empower Student Records (SR) for student list. Slate CRM for high school information.</h4>
     </div>
 
