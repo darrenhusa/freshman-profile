@@ -1,8 +1,8 @@
 @php
   $data = [
-    ["Full-time (FT)", 13, 106, 2, 121, '92.4%'],
-    ["Part-time (PT)", 4, 5, 1, 10, '7.6%'],
-    ["Total", 17, 111, 3, 131, '100.0%']
+    ["Full-time (FT)", 13, 113, 3, 129, '93.5%'],
+    ["Part-time (PT)", 4, 4, 1, 9, '6.5%'],
+    ["Total", 17, 117, 4, 138, '100.0%']
   ];
 
   $length = count($data);
@@ -10,7 +10,7 @@
 @endphp
 
 <div class="item-container mt-8">
-  <h1 class="text-2xl font-bold">01 - A - F1 Headcounts by FT/PT Status and Entry-types</h1>
+  <h1 class="text-2xl font-bold">01 - F1 Headcounts by FT/PT Status and Entry-types</h1>
 
   <div class="table-container mt-5">
     <table class="table-auto">
