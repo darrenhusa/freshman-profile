@@ -2,10 +2,10 @@
   /* Only enter the first 10 majors - in descending order!*/               
   
   $data = [
-    ['Business Management', 32], 
-    ['General Studies', 23], 
+    ['Business Management', 33], 
+    ['General Studies', 21], 
+    ['Criminal Justice', 11],
     ['Digital & Studio Arts', 11], 
-    ['Criminal Justice', 10],
     ['Kinesiology', 9],
     ['Biomedical Science', 8],
     ['Psychology', 6],

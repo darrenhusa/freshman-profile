@@ -1,12 +1,12 @@
 @php
   $data = [
-    ["Hammond", 18],
-    ["Gary", 9],
+    ["Hammond", 19],
+    ["Gary", 8],
     ["Whiting", 7],
     ["East Chicago", 4],
     ["Griffith", 4],
     ["Highland", 4],
-    ["All Other", 3],
+    ["All Other", 2],
   ];
   foreach ($data as $val)
    {
