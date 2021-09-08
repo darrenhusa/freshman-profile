@@ -2,12 +2,12 @@
   
   $data = [
     ["Eisenhower High School (Blue Island, IL)", 7],
-    ["Morton Senior High School (Hammond)", 6],
     ["Whiting High School", 6],
     ["Clark Middle/High School (Hammond)", 5],
     ["Griffith High School", 4],
     ["Hanover Central High School (Cedar Lake)", 4],
     ["Joliet Township High School West (IL)", 4],
+    ["Morton Senior High School (Hammond)", 4],
     ["Gavit Junior-Senior High School (Hammond)", 3],
     ["Hammond High School", 3],
     ["Highland High School", 3],
@@ -19,7 +19,7 @@
        $school_names[] = $val[0];
        $numbers[] = $val[1];
    }
-  $grand_total = 97;
+  $grand_total = 92;
 
   $ranks = calculate_rank($numbers);
   $sum = calculate_sum($numbers);

@@ -1,5 +1,5 @@
 @php
-  $by_athletic_status = "[70, 43]";
+  $by_athletic_status = "[70, 38]";
   $athletic_statuses = "['Athlete', 'Non-Athlete']";
 @endphp
 

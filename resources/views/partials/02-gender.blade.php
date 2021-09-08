@@ -1,5 +1,5 @@
 @php
-  $by_gender = "[51, 60, 2]";
+  $by_gender = "[50, 57, 1]";
   $genders = "['Female', 'Male', 'Unknown']";
 @endphp
 
