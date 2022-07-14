@@ -12,7 +12,7 @@
 
         <horizontal-bar-chart-component :labels="{{ $religions }}"
                                         :values="{{ $by_religion }}"
-                                        width="600"
+                                        width="475"
                                         height="350"
         >
         </horizontal-bar-component>
@@ -22,8 +22,8 @@
         <h3 class="my-5 text-lg font-semibold">Headcounts %</h3>
           <pie-chart-component :labels="['Catholic', 'Other', 'Unknown']"
                                :values="{{ $by_religion }}"
-                               width="350"
-                               height="350"
+                               width="325"
+                               height="325"
           >
           </pie-chart-component>
       </div>
@@ -40,3 +40,5 @@
 </div>
 
 {{-- TODO - Add rounding error note --}}
+
+<p class="item-end"></p>

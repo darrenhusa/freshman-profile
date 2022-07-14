@@ -19,5 +19,9 @@
     .item-container h2 {
       break-before: always;
     }
+
+    .item-end {
+      page-break-after: always;
+    }
   }
   

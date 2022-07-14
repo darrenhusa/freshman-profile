@@ -21,7 +21,7 @@
 
         <horizontal-bar-chart-component :labels="{{ $gpa_ranges }}"
                                         :values="{{ $by_hs_gpa }}"
-                                        width="600"
+                                        width="475"
                                         height="350"
         >
         </horizontal-bar-component>
@@ -31,8 +31,8 @@
         <h3 class="my-5 text-lg font-semibold">Headcounts %</h3>
           <pie-chart-component :labels="['1.0 to 2.0', '2.01 to 3.0', '3.01 and above']"
                                :values="{{ $by_hs_gpa }}"
-                               width="350"
-                               height="350"
+                               width="325"
+                               height="325"
           >
           </pie-chart-component>
       </div>
@@ -73,3 +73,5 @@
 
 
 </div>
+
+<p class="item-end"></p>

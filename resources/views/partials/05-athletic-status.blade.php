@@ -12,7 +12,7 @@
 
         <horizontal-bar-chart-component :labels="{{ $athletic_statuses }}"
                                         :values="{{ $by_athletic_status }}"
-                                        width="600"
+                                        width="475"
                                         height="350"
         >
         </horizontal-bar-component>
@@ -22,8 +22,8 @@
         <h3 class="my-5 text-lg font-semibold">Headcounts %</h3>
           <pie-chart-component :labels="['Athlete', 'Non-Athlete']"
                                :values="{{ $by_athletic_status }}"
-                               width="350"
-                               height="350"
+                               width="325"
+                               height="325"
           >
           </pie-chart-component>
       </div>
@@ -38,3 +38,5 @@
   </div>
 
 </div>
+
+<p class="item-end"></p>

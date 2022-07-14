@@ -16,7 +16,7 @@
 
         <horizontal-bar-chart-component :labels="{{ $ethnicities }}"
                                         :values="{{ $by_ethnicity }}"
-                                        width="600"
+                                        width="475"
                                         height="350"
         >
         </horizontal-bar-component>
@@ -26,8 +26,8 @@
         <h3 class="my-5 text-lg font-semibold">Headcounts %</h3>
           <pie-chart-component :labels="['Black or African American', 'Hispanics of any race', 'White', 'Other', 'Unknown']"
                                :values="{{ $by_ethnicity }}"
-                               width="350"
-                               height="350"
+                               width="325"
+                               height="325"
           >
           </pie-chart-component>
       </div>
@@ -43,3 +43,5 @@
   </div>
 
 </div>
+
+<p class="item-end"></p>
