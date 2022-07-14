@@ -15,8 +15,8 @@
 
       <div id="app">
 
-        <h1 class="mt-5 text-2xl font-bold">Fall 2021 CCSJ Freshman Profile</h1>
-        <h3 class="italic">(as of September 8, 2021 at 9:00 AM)</h3>
+        <h1 class="mt-5 text-2xl font-bold">Fall 2022 CCSJ Freshman Profile</h1>
+        <h3 class="italic">(as of July 14, 2022 at 9:00 AM)</h3>
         @include('partials.01-f1-table')
 
         @includeWhen(false, 'partials.01b-genl100bysection')

@@ -1,8 +1,8 @@
 @php
   $data = [
-    ["Cook", 21],
-    ["Will", 9],
-    ["Lake", 4],
+    ["Cook", 12],
+    ["Will", 4],
+    ["All Other", 4],
   ];
 
   foreach ($data as $val)
