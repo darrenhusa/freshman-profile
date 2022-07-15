@@ -1,8 +1,27 @@
 @php
+
+/* ENTER input data here!*/
+ $data = [
+    ["Full-time (FT)", 2, 105, 2, 0, 0],
+    ["Part-time (PT)", 0, 2, 0, 0, 0],
+    ["Total", 0, 0, 0, 0, 0]
+  ];
+
+/* Calculations */
+  $ft_total = array_sum(array_slice($data[0], 1, 3));
+  $pt_total = array_sum(array_slice($data[1], 1, 3));
+  $row_totals = [array_sum([$data[0][1], $data[1][1]]), 
+                 array_sum([$data[0][2], $data[1][2]]), 
+                 array_sum([$data[0][3], $data[1][3]]),
+                 array_sum([$ft_total, $pt_total])];
+
+  $ft_percent = round(100.0*$ft_total/$row_totals[3], 1);
+  $pt_percent = round(100.0*$pt_total/$row_totals[3], 1);
+
   $data = [
-    ["Full-time (FT)", 2, 105, 2, 109, '98.2%'],
-    ["Part-time (PT)", 0, 2, 0, 2, '1.8%'],
-    ["Total", 2, 107, 2, 111, '100.0%']
+    ["Full-time (FT)", 2, 105, 2, $ft_total, strval($ft_percent).'%'],
+    ["Part-time (PT)", 0, 2, 0, $pt_total, strval($pt_percent).'%'],
+    ["Total", $row_totals[0], $row_totals[1], $row_totals[2], $row_totals[3], '100%']
   ];
 
   $length = count($data);
