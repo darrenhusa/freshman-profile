@@ -84,7 +84,9 @@ class ChartDataController extends Controller
           ];
         
         
-        ddd($data);
+        return $data;
+        // return $data[0][0];
+        // ddd($data);
     }
     
     public function getGenderData()
