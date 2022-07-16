@@ -3,10 +3,15 @@
 use Illuminate\Support\Facades\Route;
 use \App\Helpers\EmpowerHelper;
 use App\Http\Controllers\ChartDataController;
+use App\Http\Controllers\PageController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [PageController::class, 'index']);
+
+// Route::get('/', function () {
+//     // $data = Route::get('01', "ChartDataController@get_01_data");
+//     // ddd($data);
+//     return view('welcome');
+// });
 
 Route::view('/axios-test', 'axios-test');
 
