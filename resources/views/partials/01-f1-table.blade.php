@@ -1,14 +1,14 @@
 @php
 
 /* ENTER input data here!*/
- $data = [
+/* $data = [
     ["Full-time (FT)", 2, 105, 2, 0, 0],
     ["Part-time (PT)", 0, 2, 0, 0, 0],
     ["Total", 0, 0, 0, 0, 0]
   ];
-
+*/
 /* Calculations */
-  $ft_total = array_sum(array_slice($data[0], 1, 3));
+/*  $ft_total = array_sum(array_slice($data[0], 1, 3));
   $pt_total = array_sum(array_slice($data[1], 1, 3));
   $row_totals = [array_sum([$data[0][1], $data[1][1]]), 
                  array_sum([$data[0][2], $data[1][2]]), 
@@ -25,12 +25,13 @@
   ];
 
   $length = count($data);
-
+*/
 @endphp
 
 <div class="item-container mt-8">
   <h1 class="text-2xl font-bold">01 - F1 Headcounts by FT/PT Status and Entry-types</h1>
-  
+  <ajax-component></ajax-component>
+
   <div class="table-container mt-5">
     <table class="table-auto">
       <thead>
@@ -44,7 +45,7 @@
         </tr>
       </thead>
       <tbody class="text-right">
-      @for ($i = 0; $i < $length; $i++)
+      @for ($i = 0; $i < count($data); $i++)
           @if($i % 2 == 0)
             <!-- found an even row -->
             <tr>
@@ -52,12 +53,16 @@
             <!-- found an odd row -->
             <tr class="bg-gray-200">
           @endif
-            <td class="border px-4 py-2 text-left">{{ $data[$i][0] }}</td>
-            <td class="border px-4 py-2">{{ $data[$i][1] }}</td>
-            <td class="border px-4 py-2">{{ $data[$i][2] }}</td>
-            <td class="border px-4 py-2">{{ $data[$i][3] }}</td>
-            <td class="border px-4 py-2">{{ $data[$i][4] }}</td>
-            <td class="border px-4 py-2">{{ $data[$i][5] }}</td>
+            @for ($j = 0; $j < count($data[0]); $j++)
+              @if($j == 0)
+              <!-- found the first column -->
+              <td class="border px-4 py-2 text-left">{{ $data[$i][$j] }}</td>
+              @else
+              <!-- found all other columns -->
+              <td class="border px-4 py-2">{{ $data[$i][$j] }}</td>              
+              @endif
+      
+            @endfor  
           </tr>
         @endfor  
         

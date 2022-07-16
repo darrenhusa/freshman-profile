@@ -24,23 +24,23 @@ class PageController extends Controller
         //           'Content-Type' => 'application/json'
         //         ]
         //     ])->get($uri);
-        // // $response = Http::timeout(180)->get($uri);
+        // $response = Http::timeout(180)->get($uri);
         // $response = Http::get($uri);
 
         // $data = $response->json();
 
         // hardcode to try and get to passing data to partial!
-        $data1 = [
-            ["Full-time (FT)", 2, 105, 2, 0, 0],
-            ["Part-time (PT)", 0, 2, 0, 0, 0],
-            ["Total", 0, 0, 0, 0, 0]
+        $data = [
+            ["Full-time (FT)", 2, 110, 2, 114, '98%'],
+            ["Part-time (PT)", 0, 2, 0, 0, '12%'],
+            ["Total", 0, 0, 0, 0, '100%']
           ];
 
         // return $data;
 
         // ddd($data);
-        return view('welcome');
-        // return view('welcome', compact('data1'));
+        // return view('welcome');
+        return view('welcome', compact('data'));
 
         // return 'hello world';
     }

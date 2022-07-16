@@ -17,7 +17,7 @@
 
         <h1 class="mt-5 text-2xl font-bold">Fall 2022 CCSJ Freshman Profile</h1>
         <h3 class="italic">(as of July 14, 2022 at 9:00 AM)</h3>
-        @include('partials.01-f1-table')
+        @include('partials.01-f1-table', ['data' => $data])
 
         @includeWhen(false, 'partials.01b-genl100bysection')
         @includeWhen(false, 'partials.01c-genl100crosstab')
