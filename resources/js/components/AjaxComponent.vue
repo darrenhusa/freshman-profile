@@ -6,15 +6,10 @@
 
 <script>
     export default {
-        created() {
+        mounted() {
             console.log('Component mounted.')
 
-            // axios.get('/gender-data').then(response => console.log(response.data));
-            fetch('http://localhost:8000/api/01')
-                .then(response => response.json())
-                .then(data => {
-                    console.log(data)
-            });
+            axios.get('/gender-data').then(response => console.log(response.data));
         }
     }
 </script>
