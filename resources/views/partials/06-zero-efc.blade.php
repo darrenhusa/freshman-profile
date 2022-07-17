@@ -20,7 +20,7 @@
 
       <div class="pc-container">
         <h3 class="my-5 text-lg font-semibold">Headcounts %</h3>
-          <pie-chart-component :labels="['Zero EFC', 'Not Zero EFC']"
+          <pie-chart-component :labels="{{ $efc_categories }}"
                                :values="{{ $by_zero_efc_status }}"
                                width="325"
                                height="325"

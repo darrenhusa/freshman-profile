@@ -32,10 +32,10 @@ class ChartDataController extends Controller
         $chartData = clone $studentsWithNewFields;
         $chart1 = $chartData->groupBy('Gender')->map->count();
 
+        // ddd($chart1, $chart1->keys(), $chart1->values());
         return response()->json(['chart1' => $chart1]);
         
         // ddd($chart1);
-        // dd($chart1->keys(), $chart1->values());
 
         // return $chart1;
     }

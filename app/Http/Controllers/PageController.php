@@ -36,7 +36,12 @@ class PageController extends Controller
         // ddd($data);
         // ddd($data[0][0]);
 
-          /* ENTER input data here!*/
+        $result = (new ChartDataController)->get_gender_data();
+        // ddd($result);
+        $chart1 = $result->getData()->chart1;
+        // ddd($chart1);
+        
+        /* ENTER input data here!*/
         // $data = [
         //     ["Full-time (FT)", 2, 105, 2, 0, 0],
         //     ["Part-time (PT)", 0, 2, 0, 0, 0],
@@ -44,7 +49,10 @@ class PageController extends Controller
         // ];
 
         // return view('welcome');
-        return view('welcome', compact('data'));
+        return view('welcome', [
+            'data' => $data,
+            'chart1' => $chart1
+        ]);
 
         // return 'hello world';
     }

@@ -14,7 +14,7 @@
       <!-- style="position: relative; width:600vw; height:400vh;" -->
 
       <div id="app">
-
+        
         <h1 class="mt-5 text-2xl font-bold">Fall 2022 CCSJ Freshman Profile</h1>
         <h3 class="italic">(as of July 14, 2022 at 9:00 AM)</h3>
         @include('partials.01-f1-table', ['data' => $data])
@@ -22,7 +22,7 @@
         @includeWhen(false, 'partials.01b-genl100bysection')
         @includeWhen(false, 'partials.01c-genl100crosstab')
 
-        @include('partials.02-gender')
+        @include('partials.02-gender', ['chart' => $chart1])
         @include('partials.03-ethnicity')
         @include('partials.04-religion')
         @include('partials.05-athletic-status')

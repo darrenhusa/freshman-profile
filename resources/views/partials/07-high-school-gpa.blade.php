@@ -29,7 +29,7 @@
 
       <div class="pc-container">
         <h3 class="my-5 text-lg font-semibold">Headcounts %</h3>
-          <pie-chart-component :labels="['1.0 to 2.0', '2.01 to 3.0', '3.01 and above']"
+          <pie-chart-component :labels="{{ $gpa_ranges }}"
                                :values="{{ $by_hs_gpa }}"
                                width="325"
                                height="325"

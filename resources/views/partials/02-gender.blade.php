@@ -1,6 +1,23 @@
 @php
-  $by_gender = "[32, 71, 2]";
-  $genders = "['Female', 'Male', 'Unknown']";
+  $labels = "['Male', 'Femnale', 'Unknown']";
+  $values = "[76, 34, 2]";
+
+  /* "chart1": { 
+    "Male": 76,
+    "Female": 34,
+    "Unknown": 2
+  }
+  */
+  /* $labels = $chart1->keys(); 
+    $values = $chart1->values();
+    $labels = $chart1['keys'];
+    $values = $chart1['values'];
+    */
+
+    /* $item_data_decode = json_decode($chart1, true);
+    $array = array_combine(array_column($item_data_decode['meta_data'], 'key'), $item_data_decode['meta_data']);
+    */
+
 @endphp
 
 <div class="item-container mt-12">
@@ -10,8 +27,8 @@
       <div class="hbc-container max-w-5xl">
         <h3 class="my-5 text-lg font-semibold">Headcounts</h3>
 
-        <horizontal-bar-chart-component :labels="{{ $genders }}"
-                                        :values="{{ $by_gender }}"
+        <horizontal-bar-chart-component :labels="{{ $labels }}"
+                                        :values="{{ $values }}"
                                         width="475"
                                         height="350"
         >
@@ -20,8 +37,8 @@
 
       <div class="pc-container">
         <h3 class="my-5 text-lg font-semibold">Headcounts %</h3>
-          <pie-chart-component :labels="['Female', 'Male', 'Unknown']"
-                               :values="{{ $by_gender }}"
+          <pie-chart-component :labels="{{ $labels }}"
+                               :values="{{ $values }}"
                                width="325"
                                height="325"
           >

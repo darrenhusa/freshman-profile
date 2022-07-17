@@ -20,7 +20,7 @@
 
       <div class="pc-container">
         <h3 class="my-5 text-lg font-semibold">Headcounts %</h3>
-          <pie-chart-component :labels="['Athlete', 'Non-Athlete']"
+          <pie-chart-component :labels="{{ $athletic_statuses }}"
                                :values="{{ $by_athletic_status }}"
                                width="325"
                                height="325"

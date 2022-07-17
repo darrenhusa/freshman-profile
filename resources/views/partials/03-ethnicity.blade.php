@@ -24,7 +24,7 @@
 
       <div class="pc-container">
         <h3 class="my-5 text-lg font-semibold">Headcounts %</h3>
-          <pie-chart-component :labels="['Black or African American', 'Hispanics of any race', 'White', 'Other', 'Unknown']"
+          <pie-chart-component :labels="{{ $ethnicities }}"
                                :values="{{ $by_ethnicity }}"
                                width="325"
                                height="325"
