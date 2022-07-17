@@ -1,30 +1,7 @@
 @php
 
-/* ENTER input data here!*/
- $data = [
-    ["Full-time (FT)", 2, 105, 2, 0, 0],
-    ["Part-time (PT)", 0, 2, 0, 0, 0],
-    ["Total", 0, 0, 0, 0, 0]
-  ];
-
-/* Calculations */
-  $ft_total = array_sum(array_slice($data[0], 1, 3));
-  $pt_total = array_sum(array_slice($data[1], 1, 3));
-  $row_totals = [array_sum([$data[0][1], $data[1][1]]), 
-                 array_sum([$data[0][2], $data[1][2]]), 
-                 array_sum([$data[0][3], $data[1][3]]),
-                 array_sum([$ft_total, $pt_total])];
-
-  $ft_percent = round(100.0*$ft_total/$row_totals[3], 1);
-  $pt_percent = round(100.0*$pt_total/$row_totals[3], 1);
-
-  $data = [
-    ["Full-time (FT)", 2, 105, 2, $ft_total, strval($ft_percent).'%'],
-    ["Part-time (PT)", 0, 2, 0, $pt_total, strval($pt_percent).'%'],
-    ["Total", $row_totals[0], $row_totals[1], $row_totals[2], $row_totals[3], '100%']
-  ];
-
-  $length = count($data);
+  $row_length = count($data);
+  $column_length = count($data[0]);
 
 @endphp
 
@@ -44,7 +21,7 @@
         </tr>
       </thead>
       <tbody class="text-right">
-      @for ($i = 0; $i < $length; $i++)
+      @for ($i = 0; $i < $row_length; $i++)
           @if($i % 2 == 0)
             <!-- found an even row -->
             <tr>
@@ -52,12 +29,16 @@
             <!-- found an odd row -->
             <tr class="bg-gray-200">
           @endif
-            <td class="border px-4 py-2 text-left">{{ $data[$i][0] }}</td>
-            <td class="border px-4 py-2">{{ $data[$i][1] }}</td>
-            <td class="border px-4 py-2">{{ $data[$i][2] }}</td>
-            <td class="border px-4 py-2">{{ $data[$i][3] }}</td>
-            <td class="border px-4 py-2">{{ $data[$i][4] }}</td>
-            <td class="border px-4 py-2">{{ $data[$i][5] }}</td>
+      
+            @for ($j = 0; $j < $column_length; $j++)
+              @if($j == 0)
+                <!-- found the first column -->
+                <td class="border px-4 py-2 text-left">{{ $data[$i][$j] }}</td>
+              @else
+                <!-- found all remaining columns -->
+                <td class="border px-4 py-2">{{ $data[$i][$j] }}</td>
+              @endif
+            @endfor  
           </tr>
         @endfor  
         
