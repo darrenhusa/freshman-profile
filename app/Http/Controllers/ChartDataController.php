@@ -71,18 +71,7 @@ class ChartDataController extends Controller
         });
 
         $temp = $students->map(function($student) {
-            if (($student->EmpowerReligion == '') or ($student->EmpowerReligion == 'UNK'))
-            {
-                $student->ReligionAlt = 'Unknown';
-            }
-            elseif ($student->EmpowerReligion == 'CATH' )
-            {
-                $student->ReligionAlt = 'Catholic';
-            }
-            else 
-            {
-                $student->ReligionAlt = 'Other';
-            }
+            $student->ReligionAlt = EmpowerHelper::build_religion_alt_field($student->EmpowerReligion);
             return $student;
         });
 

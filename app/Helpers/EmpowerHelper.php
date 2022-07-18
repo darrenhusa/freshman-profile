@@ -85,4 +85,21 @@ class EmpowerHelper
       return $result;
     }
 
+    public static function build_religion_alt_field($value)
+    {
+      if (($value == '') or ($value == 'UNK'))
+      {
+          $result = 'Unknown';
+      }
+      elseif ($value == 'CATH' )
+      {
+          $result = 'Catholic';
+      }
+      else 
+      {
+          $result = 'Other';
+      }
+      return $result;
+    }
+
 }
