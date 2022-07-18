@@ -10,8 +10,11 @@ class ChartDataController extends Controller
     
     public function get_gender_data()
     {
-        $students = $this->get_f1_students();
-    
+        $f1_students = $this->get_f1_students();
+        $students = $this->get_first_time_full_time_students($f1_students);
+
+        // Need to filter for first-time and full-time only!!
+
         // ddd($students);
 
         // TODO Add Empower SR acticity athletic-status
@@ -38,8 +41,9 @@ class ChartDataController extends Controller
 
     public function get_ethnicity_data()
     {
-        $students = $this->get_f1_students();
-    
+        $f1_students = $this->get_f1_students();
+        $students = $this->get_first_time_full_time_students($f1_students);
+
         // ddd($students);
 
         $studentsWithNewFields = $students->map(function($student) {
@@ -61,8 +65,9 @@ class ChartDataController extends Controller
     
     public function get_religion_data()
     {
-        $students = $this->get_f1_students();
-    
+        $f1_students = $this->get_f1_students();
+        $students = $this->get_first_time_full_time_students($f1_students);
+        
         // ddd($students);
 
         $studentsWithNewFields = $students->map(function($student) {
@@ -108,5 +113,13 @@ class ChartDataController extends Controller
         $students = $query->get();
 
         return $students;
+    }
+
+    private function get_first_time_full_time_students($students)
+    {
+        // NOTE: Using Laravel collection methods on the $students collection.
+        return $students
+            ->where('TU_CREDIT_ENRL', '>=', 12.0)
+            ->whereIn('ETYP_ID', ['AH', 'HS', 'GE']);
     }
 }
