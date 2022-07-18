@@ -1,6 +1,7 @@
 @php
-  $by_religion = "[23, 50, 32]";
-  $religions = "['Catholic', 'Other', 'Unknown']";
+  /* $by_religion = "[23, 50, 32]";
+     $religions = "['Catholic', 'Other', 'Unknown']";
+  */
 @endphp
 
 <div class="item-container mt-12">
@@ -10,8 +11,8 @@
       <div class="hbc-container max-w-5xl">
         <h3 class="my-5 text-lg font-semibold">Headcounts</h3>
 
-        <horizontal-bar-chart-component :labels="{{ $religions }}"
-                                        :values="{{ $by_religion }}"
+        <horizontal-bar-chart-component :labels="{{ $labels }}"
+                                        :values="{{ $values }}"
                                         width="475"
                                         height="350"
         >
@@ -20,8 +21,8 @@
 
       <div class="pc-container">
         <h3 class="my-5 text-lg font-semibold">Headcounts %</h3>
-          <pie-chart-component :labels="{{ $religions }}"
-                               :values="{{ $by_religion }}"
+          <pie-chart-component :labels="{{ $labels }}"
+                               :values="{{ $values }}"
                                width="325"
                                height="325"
           >

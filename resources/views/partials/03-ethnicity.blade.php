@@ -1,10 +1,11 @@
 @php
-  $by_ethnicity = "[39, 34, 22, 5, 5]";
-  $ethnicities = "['Black or African American', 
+  /* $by_ethnicity = "[39, 34, 22, 5, 5]";
+     $ethnicities = "['Black or African American', 
                   'Hispanics of any race', 
                   'White', 
                   'Other', 
                   'Unknown']";
+  */
 @endphp
 
 <div class="item-container mt-12">
@@ -14,8 +15,8 @@
       <div class="hbc-container max-w-5xl">
         <h3 class="my-5 text-lg font-semibold">Headcounts</h3>
 
-        <horizontal-bar-chart-component :labels="{{ $ethnicities }}"
-                                        :values="{{ $by_ethnicity }}"
+        <horizontal-bar-chart-component :labels="{{ $labels }}"
+                                        :values="{{ $values }}"
                                         width="475"
                                         height="350"
         >
@@ -24,8 +25,8 @@
 
       <div class="pc-container">
         <h3 class="my-5 text-lg font-semibold">Headcounts %</h3>
-          <pie-chart-component :labels="{{ $ethnicities }}"
-                               :values="{{ $by_ethnicity }}"
+          <pie-chart-component :labels="{{ $labels }}"
+                               :values="{{ $values }}"
                                width="325"
                                height="325"
           >

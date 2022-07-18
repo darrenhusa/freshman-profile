@@ -22,9 +22,9 @@
         @includeWhen(false, 'partials.01b-genl100bysection')
         @includeWhen(false, 'partials.01c-genl100crosstab')
 
-        @include('partials.02-gender', ['chart' => $chart1])
-        @include('partials.03-ethnicity', ['chart' => $chart2])
-        @include('partials.04-religion', ['chart' => $chart3])
+        @include('partials.02-gender', ['labels' => json_encode($chart1_labels), 'values' => json_encode($chart1_values)])
+        @include('partials.03-ethnicity', ['labels' => json_encode($chart2_labels), 'values' => json_encode($chart2_values)])
+        @include('partials.04-religion', ['labels' => json_encode($chart3_labels), 'values' => json_encode($chart3_values)])
         @include('partials.05-athletic-status')
         @include('partials.06-zero-efc')
         

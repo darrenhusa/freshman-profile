@@ -41,11 +41,22 @@ class PageController extends Controller
         $chart1 = $result->getData()->chart1;
         // ddd($chart1);
         
+        $chart1_labels = $this->extract_chart_labels($chart1);
+        $chart1_values = $this->extract_chart_values($chart1);
+        
+        // ddd($chart1_labels, $chart1_values);
+
         $result = (new ChartDataController)->get_ethnicity_data();
         $chart2 = $result->getData()->chart2;
-
+        
+        $chart2_labels = $this->extract_chart_labels($chart2);
+        $chart2_values = $this->extract_chart_values($chart2);
+        
         $result = (new ChartDataController)->get_religion_data();
         $chart3 = $result->getData()->chart3;
+
+        $chart3_labels = $this->extract_chart_labels($chart3);
+        $chart3_values = $this->extract_chart_values($chart3);
 
         /* ENTER input data here!*/
         // $data = [
@@ -57,11 +68,38 @@ class PageController extends Controller
         // return view('welcome');
         return view('welcome', [
             'data' => $data,
-            'chart1' => $chart1,
-            'chart2' => $chart2,
-            'chart3' => $chart3,
+            'chart1_labels' => $chart1_labels,
+            'chart1_values' => $chart1_values,
+            'chart2_labels' => $chart2_labels,
+            'chart2_values' => $chart2_values,
+            'chart3_labels' => $chart3_labels,
+            'chart3_values' => $chart3_values,
         ]);
 
         // return 'hello world';
+    }
+
+    private function extract_chart_labels($data)
+    {
+        $labels = [];
+        
+        foreach ($data as $key => $val)
+        {
+          array_push($labels, $key);
+        }
+
+        return $labels;
+    }
+
+    private function extract_chart_values($data)
+    {
+        $values = [];
+        
+        foreach ($data as $key => $val)
+        {
+          array_push($values, $val);
+        }
+
+        return $values;
     }
 }

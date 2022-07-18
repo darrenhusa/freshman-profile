@@ -1,22 +1,8 @@
 @php
-  $labels = "['Male', 'Femnale', 'Unknown']";
-  $values = "[76, 34, 2]";
-
-  /* "chart1": { 
-    "Male": 76,
-    "Female": 34,
-    "Unknown": 2
-  }
+  /* 
+    $labels = "['Male', 'Female', 'Unknown']";
+    $values = "[76, 34, 2]"; 
   */
-  /* $labels = $chart1->keys(); 
-    $values = $chart1->values();
-    $labels = $chart1['keys'];
-    $values = $chart1['values'];
-    */
-
-    /* $item_data_decode = json_decode($chart1, true);
-    $array = array_combine(array_column($item_data_decode['meta_data'], 'key'), $item_data_decode['meta_data']);
-    */
 
 @endphp
 
