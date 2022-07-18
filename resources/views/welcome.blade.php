@@ -23,8 +23,8 @@
         @includeWhen(false, 'partials.01c-genl100crosstab')
 
         @include('partials.02-gender', ['chart' => $chart1])
-        @include('partials.03-ethnicity')
-        @include('partials.04-religion')
+        @include('partials.03-ethnicity', ['chart' => $chart2])
+        @include('partials.04-religion', ['chart' => $chart3])
         @include('partials.05-athletic-status')
         @include('partials.06-zero-efc')
         

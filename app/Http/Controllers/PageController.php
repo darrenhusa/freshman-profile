@@ -41,6 +41,12 @@ class PageController extends Controller
         $chart1 = $result->getData()->chart1;
         // ddd($chart1);
         
+        $result = (new ChartDataController)->get_ethnicity_data();
+        $chart2 = $result->getData()->chart2;
+
+        $result = (new ChartDataController)->get_religion_data();
+        $chart3 = $result->getData()->chart3;
+
         /* ENTER input data here!*/
         // $data = [
         //     ["Full-time (FT)", 2, 105, 2, 0, 0],
@@ -51,7 +57,9 @@ class PageController extends Controller
         // return view('welcome');
         return view('welcome', [
             'data' => $data,
-            'chart1' => $chart1
+            'chart1' => $chart1,
+            'chart2' => $chart2,
+            'chart3' => $chart3,
         ]);
 
         // return 'hello world';

@@ -20,10 +20,6 @@ class ChartDataController extends Controller
         $studentsWithNewFields = $students->map(function($student) {
             $student->EmpowerGender = EmpowerHelper::build_demographic_field($student->DFLT_ID, 'GEND');
             $student->Gender = EmpowerHelper::build_chart_gender_field($student->EmpowerGender);
-            // $student->EmpowerEthnicCode = EmpowerHelper::build_demographic_field($student->DFLT_ID, 'ETHR');
-            // $student->Ethnicity = EmpowerHelper::build_ethnicity_field($student->EmpowerEthnicCode);
-            // $student->EmpowerReligion = EmpowerHelper::build_demographic_field($student->DFLT_ID, 'RELI');
-
             return $student;
         });
 
@@ -49,7 +45,6 @@ class ChartDataController extends Controller
         $studentsWithNewFields = $students->map(function($student) {
             $student->EmpowerEthnicCode = EmpowerHelper::build_demographic_field($student->DFLT_ID, 'ETHR');
             $student->Ethnicity = EmpowerHelper::build_ethnicity_field($student->EmpowerEthnicCode);
-            // $student->EmpowerReligion = EmpowerHelper::build_demographic_field($student->DFLT_ID, 'RELI');
             return $student;
         });
 
@@ -75,12 +70,28 @@ class ChartDataController extends Controller
             return $student;
         });
 
-        // ddd($studentsWithNewFields);
+        $temp = $students->map(function($student) {
+            if (($student->EmpowerReligion == '') or ($student->EmpowerReligion == 'UNK'))
+            {
+                $student->ReligionAlt = 'Unknown';
+            }
+            elseif ($student->EmpowerReligion == 'CATH' )
+            {
+                $student->ReligionAlt = 'Catholic';
+            }
+            else 
+            {
+                $student->ReligionAlt = 'Other';
+            }
+            return $student;
+        });
+
+        // ddd($temp);
 
         $chartData = clone $studentsWithNewFields;
-        $chart4 = $chartData->groupBy('EmpowerReligion')->map->count();
+        $chart3 = $chartData->groupBy('ReligionAlt')->map->count();
 
-        return response()->json(['chart4' => $chart4]);
+        return response()->json(['chart3' => $chart3]);
         
         // ddd($chart1);
         // dd($chart1->keys(), $chart1->values());
