@@ -69,6 +69,9 @@ class PageController extends Controller
 
         $chart5_labels = $this->extract_chart_labels($chart5);
         $chart5_values = $this->extract_chart_values($chart5);
+
+        $report_date_time = $this->get_report_date_time();
+
         /* ENTER input data here!*/
         // $data = [
         //     ["Full-time (FT)", 2, 105, 2, 0, 0],
@@ -78,6 +81,7 @@ class PageController extends Controller
 
         // return view('welcome');
         return view('welcome', [
+            'report_date_time' => $report_date_time,
             'data' => $data,
             'chart1_labels' => $chart1_labels,
             'chart1_values' => $chart1_values,
@@ -92,6 +96,13 @@ class PageController extends Controller
         ]);
 
         // return 'hello world';
+    }
+
+    private function get_report_date_time()
+    {   
+        date_default_timezone_set("America/Chicago");
+        $result = '(as of ' . date('F d, Y, h:i A') . ')';
+        return $result;
     }
 
     private function extract_chart_labels($data)
