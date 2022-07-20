@@ -7,6 +7,7 @@ use App\Helpers\EmpowerHelper;
 
 class ChartDataController extends Controller
 {
+    public string $term = '20221';
     
     public function get_gender_data()
     {
@@ -91,9 +92,35 @@ class ChartDataController extends Controller
         // dd($chart1->keys(), $chart1->values());
     }
     
+    
+    public function get_athlete_data()
+    {
+        $f1_students = $this->get_f1_students();
+        $students = $this->get_first_time_full_time_students($f1_students);
+        
+        // ddd($students);
+
+        $studentsWithNewFields = $students->map(function($student) {
+            $student->NumberOfSports = EmpowerHelper::determine_number_of_athlete_records_in_sr_activities($student->DFLT_ID, $this->term);
+            $student->AthleteStatus = EmpowerHelper::build_is_athlete_text_field($student->NumberOfSports);
+            return $student;
+        });
+
+        // ddd($studentsWithNewFields);
+
+        $chartData = clone $studentsWithNewFields;
+        $chart4 = $chartData->groupBy('AthleteStatus')->map->count();
+
+        return response()->json(['chart4' => $chart4]);
+        
+        // ddd($chart1);
+        // dd($chart1->keys(), $chart1->values());
+    }
+    
+    
     private function get_f1_students()
     {
-        $term='20221';
+        // $term='20221';
         $sr_term = 'CCSJ_PROD.SR_STUDENT_TERM';
         $sr_term_credits = 'CCSJ_PROD.SR_ST_TERM_CRED';
         $name = 'CCSJ_PROD.CCSJ_CO_V_NAME';
@@ -105,7 +132,7 @@ class ChartDataController extends Controller
                     $join->on($sr_term.'.TERM_ID', '=', $sr_term_credits.'.TERM_ID');
                 })
             ->join($name, $sr_term . '.NAME_ID', '=', $name . '.NAME_ID') 
-            ->where($sr_term . '.TERM_ID', $term)
+            ->where($sr_term . '.TERM_ID', $this->term)
             ->whereIn($sr_term . '.STUD_STATUS', ['A', 'W'])
             ->where($sr_term . '.CDIV_ID', 'F1')
             ->select('DFLT_ID', 'LAST_NAME', 'FIRST_NAME', 'ETYP_ID', 'TU_CREDIT_ENRL');

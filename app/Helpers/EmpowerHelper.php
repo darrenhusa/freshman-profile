@@ -17,6 +17,20 @@ class EmpowerHelper
           ->first();
     }
 
+    public static function determine_number_of_athlete_records_in_sr_activities($studentId, $term)
+    {
+      return \DB::connection('odbc')
+                ->table('CCSJ_PROD.SR_STUD_TERM_ACT')
+                ->join('CCSJ_PROD.CCSJ_CO_V_NAME', 'CCSJ_PROD.CCSJ_CO_V_NAME.NAME_ID', '=', 'CCSJ_PROD.SR_STUD_TERM_ACT.NAME_ID')
+                ->join('CCSJ_PROD.CO_ACTIV_CODE', 'CCSJ_PROD.CO_ACTIV_CODE.ACTI_ID', '=', 'CCSJ_PROD.SR_STUD_TERM_ACT.ACTI_ID')
+                ->where('DFLT_ID', $studentId)
+                ->where('CCSJ_PROD.SR_STUD_TERM_ACT.TERM_ID', $term)
+                ->where('CCSJ_PROD.CO_ACTIV_CODE.ATHLETIC_FLAG', 'T')
+                ->count();
+          // ->select('CCSJ_PROD.CCSJ_CO_V_NAME.DFLT_ID', 'CCSJ_PROD.CO_ACTIV_CODE.ACTI_ID', 'CCSJ_PROD.CO_ACTIV_CODE.DESCR')
+          // ->get();
+    }
+
     public static function build_ethnicity_field($value)
     {
       if($value == '6')
@@ -98,6 +112,32 @@ class EmpowerHelper
       else 
       {
           $result = 'Other';
+      }
+      return $result;
+    }
+
+    public static function build_is_athlete_boolean_field($value)
+    {
+      if ($value > 0)
+      {
+          $result = true;
+      }
+      else 
+      {
+          $result = false;
+      }
+      return $result;
+    }
+
+    public static function build_is_athlete_text_field($value)
+    {
+      if ($value > 0)
+      {
+          $result = 'Athlete';
+      }
+      else 
+      {
+          $result = 'Non-Athlete';
       }
       return $result;
     }

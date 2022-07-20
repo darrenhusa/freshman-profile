@@ -58,6 +58,12 @@ class PageController extends Controller
         $chart3_labels = $this->extract_chart_labels($chart3);
         $chart3_values = $this->extract_chart_values($chart3);
 
+        $result = (new ChartDataController)->get_athlete_data();
+        $chart4 = $result->getData()->chart4;
+
+        $chart4_labels = $this->extract_chart_labels($chart4);
+        $chart4_values = $this->extract_chart_values($chart4);
+
         /* ENTER input data here!*/
         // $data = [
         //     ["Full-time (FT)", 2, 105, 2, 0, 0],
@@ -74,6 +80,8 @@ class PageController extends Controller
             'chart2_values' => $chart2_values,
             'chart3_labels' => $chart3_labels,
             'chart3_values' => $chart3_values,
+            'chart4_labels' => $chart4_labels,
+            'chart4_values' => $chart4_values,
         ]);
 
         // return 'hello world';
