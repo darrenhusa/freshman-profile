@@ -26,7 +26,7 @@
         @include('partials.03-ethnicity', ['labels' => json_encode($chart2_labels), 'values' => json_encode($chart2_values)])
         @include('partials.04-religion', ['labels' => json_encode($chart3_labels), 'values' => json_encode($chart3_values)])
         @include('partials.05-athletic-status', ['labels' => json_encode($chart4_labels), 'values' => json_encode($chart4_values)])
-        @include('partials.06-zero-efc')
+        @include('partials.06-zero-efc', ['labels' => json_encode($chart5_labels), 'values' => json_encode($chart5_values)])
         
         <!-- SLATE CRM -->
         @include('partials.07-high-school-gpa')

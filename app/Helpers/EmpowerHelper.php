@@ -31,6 +31,20 @@ class EmpowerHelper
           // ->get();
     }
 
+    public static function determine_efc_in_award_year($studentId, $term)
+    {
+      $award_year = (int)substr($term, 0, 4);
+
+      return \DB::connection('odbc')
+      ->table('CCSJ_PROD.FA_STUDENT_DATA')
+      ->join('CCSJ_PROD.CCSJ_CO_V_NAME', 'CCSJ_PROD.CCSJ_CO_V_NAME.NAME_ID', '=', 'CCSJ_PROD.FA_STUDENT_DATA.NAME_ID')
+      ->where('DFLT_ID', $studentId)
+      ->where('CCSJ_PROD.FA_STUDENT_DATA.AWYR_YEAR', $award_year)
+      ->get()
+      ->pluck('PRIMARY_EFC')
+      ->first();
+    }
+
     public static function build_ethnicity_field($value)
     {
       if($value == '6')
@@ -138,6 +152,26 @@ class EmpowerHelper
       else 
       {
           $result = 'Non-Athlete';
+      }
+      return $result;
+    }
+
+    public static function build_is_efc_status_text_field($value)
+    {
+      // Need to handle case when input is empty string (blanks) or None
+      if ($value == '')
+      // if (($value == '') || ($value == None))
+      {
+        return 'NO FAFSA';
+      }
+
+      if ($value == 0)
+      {
+          $result = 'Zero EFC';
+      }
+      else 
+      {
+          $result = 'Not Zero EFC';
       }
       return $result;
     }

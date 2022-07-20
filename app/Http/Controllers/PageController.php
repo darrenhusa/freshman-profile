@@ -64,6 +64,11 @@ class PageController extends Controller
         $chart4_labels = $this->extract_chart_labels($chart4);
         $chart4_values = $this->extract_chart_values($chart4);
 
+        $result = (new ChartDataController)->get_fin_aid_efc_data();
+        $chart5 = $result->getData()->chart5;
+
+        $chart5_labels = $this->extract_chart_labels($chart5);
+        $chart5_values = $this->extract_chart_values($chart5);
         /* ENTER input data here!*/
         // $data = [
         //     ["Full-time (FT)", 2, 105, 2, 0, 0],
@@ -82,6 +87,8 @@ class PageController extends Controller
             'chart3_values' => $chart3_values,
             'chart4_labels' => $chart4_labels,
             'chart4_values' => $chart4_values,
+            'chart5_labels' => $chart5_labels,
+            'chart5_values' => $chart5_values,
         ]);
 
         // return 'hello world';

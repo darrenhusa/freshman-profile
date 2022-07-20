@@ -118,6 +118,31 @@ class ChartDataController extends Controller
     }
     
     
+    public function get_fin_aid_efc_data()
+    {
+        $f1_students = $this->get_f1_students();
+        $students = $this->get_first_time_full_time_students($f1_students);
+        
+        // ddd($students);
+
+        $studentsWithNewFields = $students->map(function($student) {
+            $student->EfcInAwardYear = EmpowerHelper::determine_efc_in_award_year($student->DFLT_ID, $this->term);
+            $student->ZeroEfcStatus = EmpowerHelper::build_is_efc_status_text_field($student->EfcInAwardYear);
+            return $student;
+        });
+
+        // ddd($studentsWithNewFields);
+
+        $chartData = clone $studentsWithNewFields;
+        $chart5 = $chartData->groupBy('ZeroEfcStatus')->map->count();
+
+        return response()->json(['chart5' => $chart5]);
+        
+        // ddd($chart1);
+        // dd($chart1->keys(), $chart1->values());
+    }
+    
+    
     private function get_f1_students()
     {
         // $term='20221';
