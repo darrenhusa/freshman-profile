@@ -34,7 +34,7 @@
 
         <!-- SLATE CRM -->
         <!-- 08 = FTFT F1 by primary-residence -->
-        @include('partials.08a')
+        @include('partials.08a', ['data' => $residents_by_state])
         @include('partials.08b-illinois')
         @include('partials.08c-indiana')
         @include('partials.08d')

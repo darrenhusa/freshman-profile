@@ -1,15 +1,18 @@
-
+@php
+  /*$new-data = [
+        ["Indiana", 63],
+        ["Illinois", 22],
+        ["Out-of-State", 14]
+    ];
+*/
+@endphp
 
 <div class="item-container mt-5">
 
   <h2 class="text-2xl font-bold">08<span class="block">A) FTFT F1 by State of Primary Residence</span></h2>
   
     <x-table-component 
-      :data='[
-          ["Indiana", 63],
-          ["Illinois", 22],
-          ["Out-of-State", 14]
-        ]'
+      :data='$residents_by_state'
     />
 
     <div class="note mt-5 italic">

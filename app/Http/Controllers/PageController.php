@@ -72,6 +72,12 @@ class PageController extends Controller
 
         $report_date_time = $this->get_report_date_time();
 
+        $residents_by_state = [
+            ["Indiana", 63],
+            ["Illinois", 22],
+            ["Out-of-State", 14]
+        ];
+
         /* ENTER input data here!*/
         // $data = [
         //     ["Full-time (FT)", 2, 105, 2, 0, 0],
@@ -93,6 +99,7 @@ class PageController extends Controller
             'chart4_values' => $chart4_values,
             'chart5_labels' => $chart5_labels,
             'chart5_values' => $chart5_values,
+            'residents_by_state' => $residents_by_state,
         ]);
 
         // return 'hello world';
