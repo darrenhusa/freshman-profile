@@ -16,7 +16,7 @@
             <!-- found an odd row -->
             <tr class="bg-gray-200">
           @endif
-            <td class="border px-4 py-2 text-left">{{ $data[$i][0] }}</td>
+            <td class="border px-4 py-2 text-left">{{ $myData[$i][0] }}</td>
             <td class="border px-4 py-2">{{ $numbers[$i] }}</td>
             <td class="border px-4 py-2">{{ $percentages[$i] }}</td>
           </tr>
@@ -24,8 +24,9 @@
        
         <tr class="font-semibold">
           <td class="border px-4 py-2">Total</td>
-          <td class="border px-4 py-2">{{ $grand_total }}</td>
+          <td class="border px-4 py-2">{{ $grandTotal }}</td>
           <td class="border px-4 py-2">100%</td>
         </tr>
       </tbody>
     </table>
+</div>

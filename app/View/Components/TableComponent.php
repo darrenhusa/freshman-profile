@@ -6,25 +6,33 @@ use Illuminate\View\Component;
 
 class TableComponent extends Component
 {
-    public $data;
+    public $myData;
     public $numbers;
-    public $grand_total;
+    public $grandTotal;
     public $percentages;
     public $length;
 
-    public function __construct($data)
+    public function __construct($myData)
     {
-        $this->data = $data;
+        $this->myData = $myData;
+        // $this->data = json_decode($data);
+        // ddd($data);
+        // ddd($myData);
 
-        foreach ($this->data as $val)
+        foreach ($this->myData as $val)
         {
             $this->numbers[] = $val[1];
         }
 
-        $this->grand_total = calculate_sum($this->numbers);
-        $this->percentages = calculate_percentages($this->numbers, $this->grand_total, 1);
+        $this->grandTotal = calculate_sum($this->numbers);
+        $this->percentages = calculate_percentages($this->numbers, $this->grandTotal, 1);
 
-        $this->length = count($this->data);
+        $this->length = count($this->myData);
+
+        // ddd($this->data[0][0]);
+        // ddd($this->numbers);
+        // ddd($this->data[0]);
+
     }
 
     /**
