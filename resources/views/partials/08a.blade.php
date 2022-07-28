@@ -1,8 +1,8 @@
 @php
   $myData = [
-        ["Indiana", 63],
+        ["Indiana", 65],
         ["Illinois", 22],
-        ["Out-of-State", 14]
+        ["Out-of-State", 17]
     ];
 
 @endphp

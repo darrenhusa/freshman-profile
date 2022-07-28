@@ -29,4 +29,6 @@
         </tr>
       </tbody>
     </table>
-</div>
+
+    {{ $slot }}
+  </div>
