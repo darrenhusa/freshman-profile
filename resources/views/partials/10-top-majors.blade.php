@@ -2,23 +2,24 @@
   /* Only enter the first 10 majors - in descending order!*/               
   
   $data = [
-    ['Business Management', 27], 
-    ['Kinesiology', 20],
-    ['General Studies', 16], 
-    ['Digital & Studio Arts', 14], 
+    ['Business Management', 30], 
+    ['Kinesiology', 18],
+    ['General Studies', 17], 
+    ['Digital & Studio Arts', 16], 
     ['Criminal Justice', 12],
     ['Psychology', 7],
-    ['Biomedical Science', 5],
+    ['Biomedical Science', 6],
     ['Elementary Education', 5],
     ['English & Media Communications', 5],
     ['Accounting', 2],
+    ['Health Science', 2],
   ];
 
   /* extra majors - fill-in as needed
     ['Medical Lab Science', 2], 
     ['Forensic Science', 2], */
 
-  $grand_total = 117;
+  $grand_total = 123;
 
   foreach ($data as $val)
    {
@@ -81,11 +82,11 @@
         </tr>
       </tbody>
     </table>
-    <div class="note mt-5">
+    <div class="note mt-1 text-xs">
       <h4 class="italic"><span class="underline mr-1">Note:</span>FTFT F1 = First-time, Full-time F1 students</h4>
     </div>
 
-    <div class="source mt-2">
+    <div class="source mt-0 text-xs">
       <h4 class="italic"><span class="underline mr-1">Source:</span>Empower Student Records (SR)</h4>
     </div>
 

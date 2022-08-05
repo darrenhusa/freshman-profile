@@ -3,20 +3,21 @@
   $data = [
     ["East Chicago Central High School", 7],
     ["Griffith High School", 6],
+    ["Hammond Central High School", 5],
     ["Hammond Morton High School", 5],    
+    ["Whiting High School", 5],
     ["George Washington High School (Marion, IN)", 4],
-    ["Hammond Central High School", 4],
     ["Lighthouse College Preparatory Academy (Gary, IN)", 4],
-    ["Whiting High School", 4],
     ["Highland High School", 3],
-    ["J.W. Sexton High School (Eaton, MI)", 3],
+    ["Joliet West High School West (IL)", 3],
+    ["J.W. Sexton High School (Eaton, MI)", 3],    
     ["Michigan City High School", 3],
+    ["Portage High School", 3],
   ];
 
   /* extra schools to fill in as needed! 
    ["Clark Middle/High School (Hammond)", 5], 
     ["Hanover Central High School (Cedar Lake)", 4],
-    ["Joliet Township High School West (IL)", 4],
     ["Gavit Junior-Senior High School (Hammond)", 3],
     ["Marion Catholic High School (Chicago Heights, IL)", 3], */
 
@@ -25,7 +26,7 @@
        $school_names[] = $val[0];
        $numbers[] = $val[1];
    }
-  $grand_total = 92;
+  $grand_total = 97;
 
   $ranks = calculate_rank($numbers);
   $sum = calculate_sum($numbers);
@@ -40,10 +41,10 @@
 
 <div class="item-container ml-5 mt-5">
 
-  <h2 class="text-xl font-bold">09</h2>
-  <h3 class="text-xl font-bold">Top Recruiting Sources for FTFT F1 Students</h3>
+  <h2 class="text-lg font-bold">09 - Top Recruiting Sources for FTFT F1 Students</h2>
+  <!-- <h3 class="text-lg font-bold">Top Recruiting Sources for FTFT F1 Students</h3> -->
   
-  <h3 class="text-sm">only showing high schools where the enrolled students >= 3</h3>
+  <h3 class="text-xs">only showing high schools where the enrolled students >= 3</h3>
 
   <div class="table-container ml-10">
 
