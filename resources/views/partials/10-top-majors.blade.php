@@ -3,13 +3,13 @@
   
   $data = [
     ['Business Management', 32], 
-    ['Kinesiology', 21],
+    ['Kinesiology', 22],
+    ['General Studies', 19], 
     ['Criminal Justice', 17],
-    ['General Studies', 17], 
-    ['Digital & Studio Arts', 15], 
+    ['Digital & Studio Arts', 16], 
     ['Biomedical Science', 7],
     ['Psychology', 6],
-    ['Elementary Education', 5],
+    ['Elementary Education', 4],
     ['English & Media Communications', 4],
     ['Accounting', 3],
   ];
@@ -19,7 +19,7 @@
     ['Medical Lab Science', 2], 
     ['Forensic Science', 2], */
 
-  $grand_total = 132;
+  $grand_total = 135;
 
   foreach ($data as $val)
    {

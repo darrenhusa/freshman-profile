@@ -1,11 +1,11 @@
 @php
-  $by_hs_gpa = "[23, 54, 30]";
+  $by_hs_gpa = "[26, 58, 32]";
   $gpa_ranges = "['1.0 to 2.0', '2.01 to 3.0', '3.01 and above']";
-  /* Not counting below 1.0 student! */
+  /* Not counting below 1.0 students! */
 
-  $average_hs_gpa = 2.57;
+  $average_hs_gpa = 2.55;
   
-  $total_with_hs_gpa = 107;
+  $total_with_hs_gpa = 116;
 
   /*$total_with_hs_gpa = calculate_sum($by_hs_gpa);*/
 
