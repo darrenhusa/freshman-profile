@@ -1,9 +1,9 @@
 @php
   $myData = [
-    ["Lake", 61],
-    ["La Porte", 6],
+    ["Lake", 59],
+    ["Porter", 7],
     ["Marion", 6],
-    ["Porter", 6],
+    ["La Porte", 5],
     ["All Other", 3],
   ];
   
