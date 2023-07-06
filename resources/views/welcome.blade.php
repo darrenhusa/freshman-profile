@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Fall 2022 Freshman Profile</title>
+        <title>Fall 2023 Freshman Profile</title>
         {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script> --}}
         <link rel="stylesheet" href="/css/app.css">
         <link rel="stylesheet" href="/css/print.css">
@@ -15,7 +15,7 @@
 
       <div id="app">
         
-        <h1 class="mt-5 text-2xl font-bold">Fall 2022 CCSJ Freshman Profile</h1>
+        <h1 class="mt-5 text-2xl font-bold">Fall 2023 CCSJ Freshman Profile</h1>
         <!-- <h3 class="italic">(as of July 14, 2022 at 9:00 AM)</h3> -->
         <h3 class="italic">{{ $report_date_time }}</h3>
         @include('partials.01-f1-table', ['data' => $data])

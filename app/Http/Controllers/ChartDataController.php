@@ -7,7 +7,7 @@ use App\Helpers\EmpowerHelper;
 
 class ChartDataController extends Controller
 {
-    public string $term = '20221';
+    public string $term = '20231';
     
     public function get_gender_data()
     {
