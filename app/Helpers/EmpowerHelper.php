@@ -82,6 +82,10 @@ class EmpowerHelper
       {
         $result = 'Male';
       }
+      elseif($value == 'O')
+      {
+        $result = 'Other';
+      }
       else
       {
         // empty
