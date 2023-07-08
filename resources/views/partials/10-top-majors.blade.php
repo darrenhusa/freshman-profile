@@ -8,6 +8,7 @@
     ['Criminal Justice', 12],
     ['Digital & Studio Arts', 11], 
     ['Kinesiology', 9],
+    ['Elementary Education', 6],
     ['Health Science (Associates)', 5],
     ['Accounting', 3],
     ['English & Media Communications', 3],

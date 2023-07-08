@@ -15,7 +15,7 @@
 <div class="item-container ml-5 mt-5">
 
   <h2 class="text-2xl font-bold"><span>D)Top Lake County Resident Cities for FTFT F1</span></h2>
-  <h3>showing municipalities with 3 or more residents only</h3>
+  <h3>showing municipalities with <span class="underline uppercase">3 or more</span> residents only</h3>
 
     <x-table-component :myData="$myData" />
 
