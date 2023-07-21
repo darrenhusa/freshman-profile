@@ -61,8 +61,12 @@ class F1TableController extends Controller
             ->where($sr_term . '.TERM_ID', $term)
             ->whereIn($sr_term . '.STUD_STATUS', ['A', 'W'])
             ->where($sr_term . '.CDIV_ID', 'F1')
+            ->orderBy($name . '.LAST_NAME', 'ASC')
+            ->orderBy($name . '.FIRST_NAME', 'ASC')
             ->select('DFLT_ID', 'LAST_NAME', 'FIRST_NAME', 'ETYP_ID', 'TU_CREDIT_ENRL');
       
+        // $students = $query->get(['LAST_NAME', 'FIRST_NAME']);
+        // $students = $query->get()->pluck('LAST_NAME', 'FIRST_NAME');
         $students = $query->get();
 
         return $students;
