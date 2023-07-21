@@ -1,13 +1,12 @@
 @php
   $myData = [
-    ["Gary", 20],
-    ["Hammond", 13],
+    ["Gary", 23],
+    ["Hammond", 14],
     ["East Chicago", 11],
     ["Cedar Lake", 3],
     ["Griffith", 3],
     ["Highland", 3],
-    ["Merrillville", 3],
-    ["All Other", 6],
+    ["All Other", 9],
   ];
   
 @endphp
@@ -24,7 +23,7 @@
     </div>
 
     <div class="source mt-2">
-      <h4 class="italic"><span class="underline mr-1">Source:</span>Empower Student Records (SR) for student list. Slate CRM for residency information.</h4>
+      <h4 class="italic"><span class="underline mr-1">Source:</span>Empower Student Records (SR) for student list and residency information.</h4>
     </div>
 
   </div>

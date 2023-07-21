@@ -3,15 +3,15 @@
   
   $data = [
     ['Business Management', 27], 
-    ['Psychology', 15],
-    ['General Studies', 13], 
-    ['Criminal Justice', 12],
+    ['Psychology', 16],
+    ['General Studies', 14], 
+    ['Criminal Justice', 13],
+    ['Kinesiology', 12],
     ['Digital & Studio Arts', 11], 
-    ['Kinesiology', 9],
-    ['Elementary Education', 6],
+    ['Elementary Education', 5],
     ['Health Science (Associates)', 5],
+    ['English & Media Communications', 4],
     ['Accounting', 3],
-    ['English & Media Communications', 3],
   ];
 
   /* extra majors - fill-in as needed
@@ -20,7 +20,7 @@
     ['Medical Lab Science', 2], 
     ['Forensic Science', 2], */
 
-  $grand_total = 109;
+  $grand_total = 116;
 
   foreach ($data as $val)
    {
