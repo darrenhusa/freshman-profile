@@ -6,7 +6,7 @@
     ["Roman Catholic", 15],
     ["Other", 3],
     ["None", 10],
-    ["Unknown Religion", 62]
+    ["Unknown Religion", 67]
   ];
   
 @endphp
