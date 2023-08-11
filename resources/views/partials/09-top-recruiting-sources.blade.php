@@ -1,7 +1,7 @@
 @php
   
   $data = [
-    ["Hammond Central High School", 13],
+    ["Hammond Central High School", 14],
     ["East Chicago Central High School", 12],
     ["Lighthouse College Preparatory Academy (Gary, IN)", 7],
     ["West Side High School (Gary, IN)", 5],
@@ -33,7 +33,7 @@
        $school_names[] = $val[0];
        $numbers[] = $val[1];
    }
-  $grand_total = 134;
+  $grand_total = 136;
 
   $ranks = calculate_rank($numbers);
   $sum = calculate_sum($numbers);
