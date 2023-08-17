@@ -1,8 +1,9 @@
 @php
   $myData = [
-        ["Indiana", 97],
+        ["Indiana", 94],
         ["Illinois", 20],
-        ["Out-of-State", 27]
+        ["Out-of-State", 26]
+        ["International", 4]
     ];
 
 @endphp
@@ -18,7 +19,6 @@
       <ul>
         <li>FTFT F1 = First-time, Full-time F1 students</li>
         <li>There may be some rounding error with the percentages.</li>
-        <li>Out-of-State includes possible International students.</li>
       </ul>
     </div>
 

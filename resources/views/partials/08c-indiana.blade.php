@@ -3,7 +3,7 @@
     ["Lake", 77],
     ["Porter", 5],
     ["Marion", 3],
-    ["All Other", 12],
+    ["All Other", 9],
   ];
   
 @endphp
