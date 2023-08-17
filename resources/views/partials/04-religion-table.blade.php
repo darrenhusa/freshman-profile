@@ -1,12 +1,12 @@
 @php
   $religions = [
     ["Baptist", 5],
-    ["Christian", 22],
+    ["Christian", 21],
     ["Lutheran", 5],
     ["Roman Catholic", 18],
     ["Other", 4],
-    ["None", 10],
-    ["Unknown Religion", 78]
+    ["None", 11],
+    ["Unknown Religion", 80]
   ];
   
 @endphp

@@ -11,7 +11,6 @@
     ["Highland High School", 4],
     ["Calumet High School (Gary, IN)", 3],
     ["Cuba High School (Cuba, NM)", 3],
-    ["Edison High School (Lake Station, IN)", 3],
     ["Hammond Morton High School", 3],
     ["Thea Bowman Leadership Academy (Gary, IN)", 3],
     ];
@@ -33,7 +32,7 @@
        $school_names[] = $val[0];
        $numbers[] = $val[1];
    }
-  $grand_total = 136;
+  $grand_total = 138;
 
   $ranks = calculate_rank($numbers);
   $sum = calculate_sum($numbers);
