@@ -3,13 +3,13 @@
   $data = [
     ["Hammond Central High School", 14],
     ["East Chicago Central High School", 12],
-    ["Lighthouse College Preparatory Academy (Gary, IN)", 7],
+    ["Lighthouse College Preparatory Academy (Gary, IN)", 6],
     ["West Side High School (Gary, IN)", 5],
+    ["Calumet High School (Gary, IN)", 4],
     ["Crown Point High School", 4],
     ["George Washington High School (Marion, IN)", 4],
     ["Griffith High School", 4],
     ["Highland High School", 4],
-    ["Calumet High School (Gary, IN)", 3],
     ["Cuba High School (Cuba, NM)", 3],
     ["Hammond Morton High School", 3],
     ["Thea Bowman Leadership Academy (Gary, IN)", 3],
@@ -32,7 +32,7 @@
        $school_names[] = $val[0];
        $numbers[] = $val[1];
    }
-  $grand_total = 138;
+  $grand_total = 139;
 
   $ranks = calculate_rank($numbers);
   $sum = calculate_sum($numbers);
