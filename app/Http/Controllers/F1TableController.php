@@ -46,7 +46,7 @@ class F1TableController extends Controller
 
     private function get_f1_students()
     {
-        $term='20231';
+        $term='20241';
         $sr_term = 'CCSJ_PROD.SR_STUDENT_TERM';
         $sr_term_credits = 'CCSJ_PROD.SR_ST_TERM_CRED';
         $name = 'CCSJ_PROD.CCSJ_CO_V_NAME';

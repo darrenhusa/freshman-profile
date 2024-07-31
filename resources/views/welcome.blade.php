@@ -15,7 +15,7 @@
 
       <div id="app">
         
-        <h1 class="mt-5 text-2xl font-bold">Fall 2023 CCSJ Freshman Profile</h1>
+        <h1 class="mt-5 text-2xl font-bold">Fall 2024 CCSJ Freshman Profile</h1>
         <!-- <h3 class="italic">(as of July 14, 2022 at 9:00 AM)</h3> -->
         <h3 class="italic">{{ $report_date_time }}</h3>
         @include('partials.01-f1-table', ['data' => $data])
@@ -28,17 +28,32 @@
         @include('partials.04-religion-table')
         
         @include('partials.05-athletic-status', ['labels' => json_encode($chart4_labels), 'values' => json_encode($chart4_values)])
-        @include('partials.06-zero-efc', ['labels' => json_encode($chart5_labels), 'values' => json_encode($chart5_values)])
+
+        <h2 class="text-2xl font-bold">TODO - 06 - FTFT F1 by Zero EFC Status</h2>
+        <div class="note mt-5">
+          <h4 class="italic"><span class="underline mr-1">Note:</span>Requires query updates from the Estimated Family Contribution (EFC) to the Student Aid Index (SAI)</h4>
+        </div>
+        
+        @includeWhen(false, 'partials.06-zero-efc', ['labels' => json_encode($chart5_labels), 'values' => json_encode($chart5_values)])
         
         <!-- SLATE CRM -->
         @include('partials.07-high-school-gpa')
 
         <!-- SLATE CRM -->
         <!-- 08 = FTFT F1 by primary-residence -->
-        @include('partials.08a')
-        @include('partials.08b-illinois')
-        @include('partials.08c-indiana')
-        @include('partials.08d')
+        <h2 class="text-2xl font-bold">08<span class="block">TODO - A) FTFT F1 by State of Primary Residence</span></h2>
+        <h2 class="text-2xl font-bold"><span>TODO - B) Top Illinois Resident Counties for FTFT F1</span></h2>
+        <h2 class="text-2xl font-bold"><span>TODO - C) Top Indiana Resident Counties for FTFT F1</span></h2>
+        <h2 class="text-2xl font-bold"><span>TODO - D)Top Lake County Resident Cities for FTFT F1</span></h2>
+        
+        <div class="note mt-5">
+          <h4 class="italic"><span class="underline mr-1">Note:</span>Requires Slate query updates for residency address.</h4>
+        </div>
+        
+        @includeWhen(false, 'partials.08a')
+        @includeWhen(false, 'partials.08b-illinois')
+        @includeWhen(false, 'partials.08c-indiana')
+        @includeWhen(false, 'partials.08d')
 
         <!-- SLATE CRM -->
         @include('partials.09-top-recruiting-sources')

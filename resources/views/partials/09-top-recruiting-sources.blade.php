@@ -1,27 +1,30 @@
 @php
   
   $data = [
-    ["Hammond Central High School", 15],
-    ["East Chicago Central High School", 12],
+    ["East Chicago Central High School", 11],
+    ["Hammond Morton High School", 8],
+    ["Hammond Central High School", 7],
+    ["Andrean High School (Merrillville)", 4],
+    ["Wheeler High School (Valparaiso)", 3],
+    ["Michigan City High School", 3],
+    ["Grandview Prepatory High School (Boca Raton, FL)", 3],
+    ["Whiting High School", 3],
+    ];
+
+  /* extra schools to fill in as needed! 
     ["Lighthouse College Preparatory Academy (Gary, IN)", 6],
     ["Griffith High School", 5],
     ["West Side High School (Gary, IN)", 5],
     ["Calumet High School (Gary, IN)", 4],
     ["Crown Point High School", 4],
-    ["George Washington High School (Marion, IN)", 4],
-    ["Hammond Morton High School", 4],
+    ["George Washington High School (Marion, IN)", 4],    
     ["Highland High School", 4],
     ["Cuba High School (Cuba, NM)", 3],
     ["Thea Bowman Leadership Academy (Gary, IN)", 3],
-    ];
 
-  /* extra schools to fill in as needed! 
-  ["Hammond Morton High School", 6],    
     ["Portage High School", 6],
-    ["Michigan City High School", 4],
     ["Joliet West High School West (IL)", 3],
     ["J.W. Sexton High School (Eaton, MI)", 3],    
-  ["Whiting High School", 8],
    ["Clark Middle/High School (Hammond)", 5], 
     ["Hanover Central High School (Cedar Lake)", 4],
     ["Gavit Junior-Senior High School (Hammond)", 3],
@@ -32,7 +35,7 @@
        $school_names[] = $val[0];
        $numbers[] = $val[1];
    }
-  $grand_total = 151;
+  $grand_total = 107;
 
   $ranks = calculate_rank($numbers);
   $sum = calculate_sum($numbers);

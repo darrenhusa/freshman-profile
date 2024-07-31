@@ -2,25 +2,26 @@
   /* Only enter the first 10 majors - in descending order!*/               
   
   $data = [
-    ['Business Management', 43], 
-    ['Kinesiology', 23],
-    ['General Studies', 18], 
-    ['Psychology', 18],
-    ['Criminal Justice', 14],
-    ['Digital & Studio Arts', 13], 
-    ['Associates in Science Degree', 6],
-    ['Elementary Education', 6],
-    ['English & Media Communications', 6],
-    ['Accounting', 4],    
+    ['Business Management', 30], 
+    ['General Studies', 15], 
+    ['Criminal Justice', 10],
+    ['Kinesiology', 9],
+    ['Psychology and Human Services', 9],
+    ['Digital & Studio Arts', 7], 
+    ['Elementary Education', 7],
+    ['Biomedical Science', 5],
+    ['English & Media Communications', 4],
+    ['Public Health Management', 4],
   ];
 
   /* extra majors - fill-in as needed
+    ['Associates in Science Degree', 6],
+    ['Accounting', 4],    
     ['Forensic Science', 2], 
     ['Integrated Studies', 2],
-    ['Biomedical Science', 7],
     ['Medical Lab Science', 2], */ 
 
-  $grand_total = 160;
+  $grand_total = 110;
 
   foreach ($data as $val)
    {
