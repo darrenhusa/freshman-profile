@@ -29,7 +29,7 @@
         
         @include('partials.05-athletic-status', ['labels' => json_encode($chart4_labels), 'values' => json_encode($chart4_values)])
 
-        <h2 class="text-2xl font-bold">TODO - 06 - FTFT F1 by Zero EFC Status</h2>
+        <h2 class="text-2xl font-bold">06 - TODO - FTFT F1 by Zero EFC Status</h2>
         <div class="note mt-5">
           <h4 class="italic"><span class="underline mr-1">Note:</span>Requires query updates from the Estimated Family Contribution (EFC) to the Student Aid Index (SAI)</h4>
         </div>
@@ -49,6 +49,7 @@
         <div class="note mt-5">
           <h4 class="italic"><span class="underline mr-1">Note:</span>Requires Slate query updates for residency address.</h4>
         </div>
+        <p class="item-end"></p>
         
         @includeWhen(false, 'partials.08a')
         @includeWhen(false, 'partials.08b-illinois')
