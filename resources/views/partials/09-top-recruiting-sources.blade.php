@@ -4,10 +4,10 @@
     ["East Chicago Central High School", 11],
     ["Hammond Morton High School", 8],
     ["Hammond Central High School", 7],
-    ["Andrean High School (Merrillville)", 4],
-    ["Wheeler High School (Valparaiso)", 3],
-    ["Michigan City High School", 3],
+    ["Andrean High School (Merrillville)", 4],    
     ["Grandview Prepatory High School (Boca Raton, FL)", 3],
+    ["Michigan City High School", 3],
+    ["Wheeler High School (Valparaiso)", 3],
     ["Whiting High School", 3],
     ];
 
@@ -35,7 +35,7 @@
        $school_names[] = $val[0];
        $numbers[] = $val[1];
    }
-  $grand_total = 107;
+  $grand_total = 109;
 
   $ranks = calculate_rank($numbers);
   $sum = calculate_sum($numbers);
