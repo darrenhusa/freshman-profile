@@ -1,14 +1,14 @@
 @php
   
   $data = [
-    ["East Chicago Central High School", 11],
-    ["Hammond Morton High School", 8],
-    ["Hammond Central High School", 7],
-    ["Andrean High School (Merrillville)", 4],    
+    ["East Chicago Central High School", 10],
+    ["Hammond Central High School", 9],
+    ["Hammond Morton High School", 7],
+    ["Wheeler High School (Valparaiso, IN)", 4],
+    ["Andrean High School (Merrillville, IN)", 4],    
     ["Grandview Prepatory High School (Boca Raton, FL)", 3],
     ["Michigan City High School", 3],
-    ["Wheeler High School (Valparaiso)", 3],
-    ["Whiting High School", 3],
+    ["Whiting High School", 3],    
     ];
 
   /* extra schools to fill in as needed! 

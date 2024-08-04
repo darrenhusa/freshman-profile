@@ -1,9 +1,9 @@
 @php
   $religions = [
     ["Baptist", 3],
-    ["Christian", 16],
+    ["Christian", 15],
     ["Roman Catholic", 12],
-    ["None", 12],
+    ["None", 11],
     ["Unknown Religion", 69]
   ];
   

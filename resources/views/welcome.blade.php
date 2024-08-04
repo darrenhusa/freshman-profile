@@ -41,20 +41,21 @@
 
         <!-- SLATE CRM -->
         <!-- 08 = FTFT F1 by primary-residence -->
-        <h2 class="text-2xl font-bold">08<span class="block">TODO - A) FTFT F1 by State of Primary Residence</span></h2>
-        <h2 class="text-2xl font-bold"><span>TODO - B) Top Illinois Resident Counties for FTFT F1</span></h2>
-        <h2 class="text-2xl font-bold"><span>TODO - C) Top Indiana Resident Counties for FTFT F1</span></h2>
-        <h2 class="text-2xl font-bold"><span>TODO - D)Top Lake County Resident Cities for FTFT F1</span></h2>
+        <!-- <h2 class="text-2xl font-bold">08<span class="block"> A) FTFT F1 by State of Primary Residence</span></h2> -->
+        <!-- <h2 class="text-2xl font-bold">08<span class="block">TODO - A) FTFT F1 by State of Primary Residence</span></h2> -->
+        <!-- <h2 class="text-2xl font-bold"><span>TODO - B) Top Illinois Resident Counties for FTFT F1</span></h2> -->
+        <!-- <h2 class="text-2xl font-bold"><span>TODO - C) Top Indiana Resident Counties for FTFT F1</span></h2> -->
+        <!-- <h2 class="text-2xl font-bold"><span>TODO - D)Top Lake County Resident Cities for FTFT F1</span></h2> -->
         
-        <div class="note mt-5">
-          <h4 class="italic"><span class="underline mr-1">Note:</span>Requires Slate query updates for residency address.</h4>
-        </div>
-        <p class="item-end"></p>
+        <!-- <div class="note mt-5"> -->
+          <!-- <h4 class="italic"><span class="underline mr-1">Note:</span>Requires Slate query updates for residency address.</h4> -->
+        <!-- </div> -->
+        <!-- <p class="item-end"></p> -->
         
-        @includeWhen(false, 'partials.08a')
-        @includeWhen(false, 'partials.08b-illinois')
-        @includeWhen(false, 'partials.08c-indiana')
-        @includeWhen(false, 'partials.08d')
+        @includeWhen(true, 'partials.08a')
+        @includeWhen(true, 'partials.08b-illinois')
+        @includeWhen(true, 'partials.08c-indiana')
+        @includeWhen(true, 'partials.08d')
 
         <!-- SLATE CRM -->
         @include('partials.09-top-recruiting-sources')
