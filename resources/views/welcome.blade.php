@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Fall 2023 Freshman Profile</title>
+        <title>Fall 2024 Freshman Profile</title>
         {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script> --}}
         <link rel="stylesheet" href="/css/app.css">
         <link rel="stylesheet" href="/css/print.css">
@@ -29,12 +29,13 @@
         
         @include('partials.05-athletic-status', ['labels' => json_encode($chart4_labels), 'values' => json_encode($chart4_values)])
 
-        <h2 class="text-2xl font-bold">06 - TODO - FTFT F1 by Zero EFC Status</h2>
+        
+        <h2 class="text-2xl font-bold">06 - TODO - FTFT F1 by Full Pell Status</h2>
         <div class="note mt-5">
           <h4 class="italic"><span class="underline mr-1">Note:</span>Requires query updates from the Estimated Family Contribution (EFC) to the Student Aid Index (SAI)</h4>
         </div>
-        
-        @includeWhen(false, 'partials.06-zero-efc', ['labels' => json_encode($chart5_labels), 'values' => json_encode($chart5_values)])
+
+        @includeWhen(false, 'partials.06-full-pell', ['labels' => json_encode($chart5_labels), 'values' => json_encode($chart5_values)])
         
         <!-- SLATE CRM -->
         @include('partials.07-high-school-gpa')

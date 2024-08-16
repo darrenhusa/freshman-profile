@@ -180,4 +180,25 @@ class EmpowerHelper
       return $result;
     }
 
+    public static function build_is_full_pell_status_text_field($value)
+    {
+      // Need to handle case when input is empty string (blanks) or None
+      if ($value == '')
+      // if (($value == '') || ($value == None))
+      {
+        return 'NO FAFSA';
+      }
+
+      if ($value == 0)
+      {
+          $result = 'Full Pell';
+      }
+      else 
+      {
+          $result = 'Not Full Pell';
+      }
+      return $result;
+    }
+
+
 }

@@ -2,8 +2,8 @@
   
   $data = [
     ["East Chicago Central High School", 10],
-    ["Hammond Central High School", 9],
-    ["Hammond Morton High School", 7],
+    ["Hammond Central High School", 10],
+    ["Hammond Morton High School", 8],
     ["Andrean High School (Merrillville, IN)", 4],    
     ["Wheeler High School (Valparaiso, IN)", 4],
     ["Edison High School (Lake Station, IN)", 3],
@@ -36,7 +36,7 @@
        $school_names[] = $val[0];
        $numbers[] = $val[1];
    }
-  $grand_total = 109;
+  $grand_total = 115;
 
   $ranks = calculate_rank($numbers);
   $sum = calculate_sum($numbers);
