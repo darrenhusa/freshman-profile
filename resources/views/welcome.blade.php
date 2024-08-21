@@ -29,13 +29,13 @@
         
         @include('partials.05-athletic-status', ['labels' => json_encode($chart4_labels), 'values' => json_encode($chart4_values)])
 
-        
+<!--         
         <h2 class="text-2xl font-bold">06 - TODO - FTFT F1 by Full Pell Status</h2>
         <div class="note mt-5">
           <h4 class="italic"><span class="underline mr-1">Note:</span>Requires query updates from the Estimated Family Contribution (EFC) to the Student Aid Index (SAI)</h4>
-        </div>
+        </div> -->
 
-        @includeWhen(false, 'partials.06-full-pell', ['labels' => json_encode($chart5_labels), 'values' => json_encode($chart5_values)])
+        @includeWhen(true, 'partials.06-full-pell', ['labels' => json_encode($chart5_labels), 'values' => json_encode($chart5_values)])
         
         <!-- SLATE CRM -->
         @include('partials.07-high-school-gpa')

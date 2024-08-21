@@ -64,7 +64,8 @@ class PageController extends Controller
         $chart4_labels = $this->extract_chart_labels($chart4);
         $chart4_values = $this->extract_chart_values($chart4);
 
-        $result = (new ChartDataController)->get_fin_aid_efc_data();
+        // $result = (new ChartDataController)->get_fin_aid_efc_data();
+        $result = (new ChartDataController)->get_fin_aid_sai_data();
         $chart5 = $result->getData()->chart5;
 
         $chart5_labels = $this->extract_chart_labels($chart5);

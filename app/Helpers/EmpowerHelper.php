@@ -45,6 +45,21 @@ class EmpowerHelper
       ->first();
     }
 
+    public static function determine_sai_in_award_year($studentId, $term)
+    {
+      $award_year = (int)substr($term, 0, 4);
+
+      return \DB::connection('odbc')
+      ->table('CCSJ_PROD.FA_STUDENT_DATA')
+      ->join('CCSJ_PROD.CCSJ_CO_V_NAME', 'CCSJ_PROD.CCSJ_CO_V_NAME.NAME_ID', '=', 'CCSJ_PROD.FA_STUDENT_DATA.NAME_ID')
+      ->where('DFLT_ID', $studentId)
+      ->where('CCSJ_PROD.FA_STUDENT_DATA.AWYR_YEAR', $award_year)
+      ->get()
+      ->pluck('SAI')
+      ->first();
+    }
+
+    
     public static function build_ethnicity_field($value)
     {
       if($value == '6')
@@ -189,7 +204,7 @@ class EmpowerHelper
         return 'NO FAFSA';
       }
 
-      if ($value == 0)
+      if (($value >= -1500.0) and ($value <= 0.0))
       {
           $result = 'Full Pell';
       }

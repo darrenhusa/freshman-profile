@@ -42,8 +42,8 @@
 
 <div class="item-container ml-5 mt-5">
 
-  <h2 class="text-2xl font-bold">10</h2>
-  <h3 class="text-2xl font-bold">Top Ten Majors for FTFT F1 Students</h3>
+  <!-- <h2 class="text-2xl font-bold">10</h2> -->
+  <h3 class="text-2xl font-bold">10 - Top Ten Majors for FTFT F1 Students</h3>
 
   <div class="table-container ml-10">
     <table class="table-auto">

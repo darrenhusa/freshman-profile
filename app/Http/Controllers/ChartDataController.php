@@ -117,7 +117,31 @@ class ChartDataController extends Controller
         // dd($chart1->keys(), $chart1->values());
     }
     
+    public function get_fin_aid_sai_data()
+    {
+        $f1_students = $this->get_f1_students();
+        $students = $this->get_first_time_full_time_students($f1_students);
+        
+        // ddd($students);
+
+        $studentsWithNewFields = $students->map(function($student) {
+            $student->SaiInAwardYear = EmpowerHelper::determine_sai_in_award_year($student->DFLT_ID, $this->term);
+            $student->FullPellStatus = EmpowerHelper::build_is_full_pell_status_text_field($student->SaiInAwardYear);
+            return $student;
+        });
+
+        // ddd($studentsWithNewFields);
+
+        $chartData = clone $studentsWithNewFields;
+        $chart5 = $chartData->groupBy('FullPellStatus')->map->count();
+
+        return response()->json(['chart5' => $chart5]);
+        
+        // ddd($chart1);
+        // dd($chart1->keys(), $chart1->values());
+    }
     
+
     public function get_fin_aid_efc_data()
     {
         $f1_students = $this->get_f1_students();

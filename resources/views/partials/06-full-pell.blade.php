@@ -31,7 +31,9 @@
   </div>
    
   <div class="note mt-5">
-    <h4 class="italic"><span class="underline mr-1">Note:</span>FTFT F1 = First-time, Full-time F1 students</h4>
+    <h4 class="italic"><span class="underline mr-1">Notes:</span>where Full Pell is defined as Student Aid Index (SAI) such that -$1,500 <= SAI in 2024-25 Award Year <= $0</h4>
+    <h4 class="italic">FTFT F1 = First-time, Full-time F1 students</h4>
+    <!-- <h4 class="italic block indent-5">FTFT F1 = First-time, Full-time F1 students</h4> -->
   </div>
 
   <div class="source mt-2">
