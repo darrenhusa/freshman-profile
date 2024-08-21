@@ -36,7 +36,7 @@
        $school_names[] = $val[0];
        $numbers[] = $val[1];
    }
-  $grand_total = 115;
+  $grand_total = 121;
 
   $ranks = calculate_rank($numbers);
   $sum = calculate_sum($numbers);

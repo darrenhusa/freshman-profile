@@ -1,8 +1,8 @@
 @php
   $myData = [
     ["Hammond", 15],
-    ["East Chicago", 11],
-    ["Whiting", 7],
+    ["East Chicago", 12],
+    ["Whiting", 8],
     ["Gary", 6],
     ["Hobart", 4],
     ["All Other", 10],
